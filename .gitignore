@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Project runtime outputs
+*.log
+*.tmp
+*.bak
+
+# Local model/cache folders (if created)
+.cache/
+models/
+
+# Large or generated outputs
+vlm_results.json
+dataset_results.json
+similarity_matrix.json
+
+# Keep dataset out of git by default (can be removed if you want to version data)
+dataset/

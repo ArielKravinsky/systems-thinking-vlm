@@ -1,0 +1,10 @@
+torch>=1.13.0
+transformers>=4.30.0
+sentence-transformers>=2.2.2
+Pillow>=9.0.0
+faiss-cpu
+regex
+sentencepiece
+accelerate>=0.25.0
+tqdm
+hf_xet
