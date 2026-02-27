@@ -1,0 +1,25 @@
+{
+  "summary": {
+    "empty_questions": 0,
+    "empty_answers": 0,
+    "question_decode_errors_utf8": 0,
+    "answer_decode_errors_utf8": 0,
+    "invalid_answer_filenames": 0,
+    "missing_question_for_answer": 0,
+    "missing_image_for_answer": 0,
+    "orphan_images_no_matching_answers": 2
+  },
+  "issues": {
+    "empty_questions": [],
+    "empty_answers": [],
+    "question_decode_errors_utf8": [],
+    "answer_decode_errors_utf8": [],
+    "invalid_answer_filenames": [],
+    "missing_question_for_answer": [],
+    "missing_image_for_answer": [],
+    "orphan_images_no_matching_answers": [
+      "dataset/images/2_1.png",
+      "dataset/images/7_2.png"
+    ]
+  }
+}

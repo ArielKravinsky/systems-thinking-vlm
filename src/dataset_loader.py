@@ -51,6 +51,15 @@ class SystemsThinkingDataset:
                 skipped.append((stem, f"missing image: {question_num}_{answer_num}.*"))
                 continue
 
+            question_text = q_path.read_text(encoding='utf-8').strip()
+            answer_text = ans_path.read_text(encoding='utf-8').strip()
+            if not question_text:
+                skipped.append((stem, f"empty question: {q_path.name}"))
+                continue
+            if not answer_text:
+                skipped.append((stem, f"empty answer: {ans_path.name}"))
+                continue
+
             self.samples.append({
                 'question_num': question_num,
                 'answer_num': answer_num,
@@ -63,7 +72,7 @@ class SystemsThinkingDataset:
         
         # Log skipped samples
         if skipped:
-            print(f"⚠ Skipped {len(skipped)} incomplete samples:")
+            print(f"[WARN] Skipped {len(skipped)} incomplete samples:")
             for stem, reason in skipped:
                 print(f"  - {stem}: {reason}")
     

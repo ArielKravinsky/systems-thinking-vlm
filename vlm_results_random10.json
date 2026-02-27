@@ -1,0 +1,85 @@
+{
+  "device": "cpu",
+  "results": [
+    {
+      "stem": "6_2_13",
+      "similarity": 0.20808379352092743,
+      "similarity_percent": 20.81,
+      "elapsed_sec": 105.41,
+      "subject_answer": "לקבוצה יש מטרה אחת משותפת והם מתקדמים בזכות אחת  השני",
+      "llm_answer": "-לא, לא, לא, לא, לא, לא."
+    },
+    {
+      "stem": "7_1_22",
+      "similarity": 0.27638062834739685,
+      "similarity_percent": 27.64,
+      "elapsed_sec": 98.88,
+      "subject_answer": "איך שאני מסתכלת במראה ומה שאני רואה ככה זו באמת ההשתקפות",
+      "llm_answer": "-לא, לא, לא, לא, לא, לא."
+    },
+    {
+      "stem": "5_2_20",
+      "similarity": 0.049622759222984314,
+      "similarity_percent": 4.96,
+      "elapsed_sec": 99.33,
+      "subject_answer": "מערכות דומות זה דבורה שעובדת ומפעל שעובד זה די אותו דבר",
+      "llm_answer": "-לא, לא, לא, לא, לא, לא."
+    },
+    {
+      "stem": "2_2_19",
+      "similarity": 0.24917177855968475,
+      "similarity_percent": 24.92,
+      "elapsed_sec": 101.51,
+      "subject_answer": "בעיני החלטה טובה מתקבלת בשיתוף פעולה ובצוות שכולם יוצאים מרוצים וגם אם לא בהכרח נוגע בדעה של כולם, עדיין יוצאים שמחים מהדיון ומהדרך שהכל קרה.",
+      "llm_answer": "-לא, לא, לא, לא, לא, לא."
+    },
+    {
+      "stem": "10_2_17",
+      "similarity": 0.2258056402206421,
+      "similarity_percent": 22.58,
+      "elapsed_sec": 96.99,
+      "subject_answer": "שהפרח פורח",
+      "llm_answer": "-לא, לא, לא, לא, לא, לא."
+    },
+    {
+      "stem": "3_1_19",
+      "similarity": 0.1510157585144043,
+      "similarity_percent": 15.1,
+      "elapsed_sec": 101.53,
+      "subject_answer": "אני חושבת שילדים לומדים שיעור חשוב מהחברים שלהם כל יום, במיוחד שהכל קורה בצורה חיובית.",
+      "llm_answer": "-לא, לא, לא, לא, לא, לא."
+    },
+    {
+      "stem": "5_2_29",
+      "similarity": 0.20617283880710602,
+      "similarity_percent": 20.62,
+      "elapsed_sec": 103.42,
+      "subject_answer": "הדסורות דומות למכונות שעבדות ללא הפשקה",
+      "llm_answer": "-לא, לא, לא, לא, לא, לא."
+    },
+    {
+      "stem": "7_1_8",
+      "similarity": 0.2722930908203125,
+      "similarity_percent": 27.23,
+      "elapsed_sec": 103.67,
+      "subject_answer": "ניתן לראות שמה שאני מבין זה מה שאני רואה",
+      "llm_answer": "-לא, לא, לא, לא, לא, לא."
+    },
+    {
+      "stem": "9_2_21",
+      "similarity": 0.39638036489486694,
+      "similarity_percent": 39.64,
+      "elapsed_sec": 106.39,
+      "subject_answer": "שתלית עץ להרבה שנים קדימה",
+      "llm_answer": "-לא, לא, לא, לא, לא, לא."
+    },
+    {
+      "stem": "7_1_27",
+      "similarity": 0.27501311898231506,
+      "similarity_percent": 27.5,
+      "elapsed_sec": 113.39,
+      "subject_answer": "כי יש מראה ששונה ממה שהוא רואה במציאות",
+      "llm_answer": "-לא, לא, לא, לא, לא, לא."
+    }
+  ]
+}
