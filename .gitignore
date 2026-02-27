@@ -34,5 +34,3 @@ vlm_results.json
 dataset_results.json
 similarity_matrix.json
 
-# Keep dataset out of git by default (can be removed if you want to version data)
-dataset/
