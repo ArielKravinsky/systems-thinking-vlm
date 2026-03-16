@@ -1,0 +1,37 @@
+\xpginauxfiletrue 
+\selectlanguage *{english}
+\contentsline {section}{\numberline {1}Introduction and Motivation}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Research Questions}{2}{subsection.1.1}%
+\contentsline {section}{\numberline {2}Dataset}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Study Design}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Data Collection and Structure}{3}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Pipeline Architecture}{4}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Overview}{4}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Design Decisions}{5}{subsection.3.2}%
+\contentsline {paragraph}{Pre-translating the question.}{5}{section*.4}%
+\contentsline {paragraph}{VLM answer caching.}{5}{section*.5}%
+\contentsline {paragraph}{Fallback and degeneracy detection.}{5}{section*.6}%
+\contentsline {paragraph}{Concept-baseline correction.}{5}{section*.7}%
+\contentsline {subsection}{\numberline {3.3}Formal Definition of Scoring Metrics}{6}{subsection.3.3}%
+\contentsline {paragraph}{Cosine similarity.}{6}{section*.8}%
+\contentsline {paragraph}{Primary similarity metrics.}{6}{section*.9}%
+\contentsline {paragraph}{Concept-baseline similarity (\ensuremath {\mathrm {csim}_{\text {en}}}{}).}{6}{section*.10}%
+\contentsline {paragraph}{Concept-adjusted metrics (project-specific).}{7}{section*.11}%
+\contentsline {paragraph}{BERTScore.}{8}{section*.12}%
+\contentsline {subsection}{\numberline {3.4}Hardware and Models}{8}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Preliminary Results (N = 327)}{8}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Similarity Score Distributions}{8}{subsection.4.1}%
+\contentsline {paragraph}{Paired comparison of \ensuremath {\mathrm {sim}_{\text {he--he}}}{} vs.\ \ensuremath {\mathrm {sim}_{\text {en}}}{}.}{9}{section*.14}%
+\contentsline {subsection}{\numberline {4.2}Concept Baseline and Grounding Analysis}{10}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Answer Length and Similarity}{11}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}BERTScore Analysis}{11}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Metric Inter-Correlations}{11}{subsection.4.5}%
+\contentsline {section}{\numberline {5}Discussion}{12}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Validity of the \textsc {VLM}{}-as-Reference Approach}{12}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Limitations}{12}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Implications for ST Assessment}{13}{subsection.5.3}%
+\contentsline {section}{\numberline {6}Methods Summary}{13}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Software and Reproducibility}{13}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Scoring Metrics Reference}{13}{subsection.6.2}%
+\contentsline {section}{\numberline {7}Next Steps}{14}{section.7}%
+\xpginauxfilefalse 

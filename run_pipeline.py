@@ -32,19 +32,18 @@ else:
 
 # Run the pipeline with BLIP-2 model (lighter, works on CPU)
 print("="*60)
-print("Starting VLM Pipeline with Salesforce/blip2-opt-2.7b")
+print("Starting VLM Pipeline with Salesforce/blip2-flan-t5-xl")
 print("="*60)
 print("\nThis will take several minutes...")
 print("- Loading model: ~1-2 minutes")  
 print("- Processing 1 sample: ~1-3 minutes")
 print("="*60 + "\n")
 
-# Build command - using default BLIP-2 model
+# Build command - using BLIP-2 Flan-T5-XL model
 cmd = [
     sys.executable,
     "-m", "src.pipeline_llm",
     "--dataset", "dataset",
-    "--output", "vlm_results.json"
 ]
 
 # Run pipeline

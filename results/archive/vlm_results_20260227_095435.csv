@@ -1,0 +1,36 @@
+stem,question_num,answer_num,participant_num,image_path,question_he,question_en,full_prompt,vlm_raw_answer_en,used_fallback,fallback_prompt,vlm_answer_en,vlm_answer_he,subject_answer_he,similarity,similarity_percent,comparison_method,vlm_model,embed_model,he_en_model,en_he_model,device,timestamp
+10_1_11,10,1,11,dataset/images/10_1.png,"הסבירו מדוע בחרתם בתמונה זו כמשקפת את המשפט "" השינוי נעשה   ""","Explain why you chose this image as reflecting the sentence ""Change is made""","You are a systems thinking expert.
+Concept to illustrate: ""Change is made""
+Task: Examine this image carefully. In one sentence, describe specific visual elements you observe in the image and explain how they demonstrate the concept above.
+Important: Do NOT restate or rephrase ""Change is made"". Name what you actually see and connect it to the concept.
+Answer:",the image shows a group of people in different stages of life,False,,the image shows a group of people in different stages of life,התמונה מראה קבוצת אנשים בשלבים שונים של החיים,השינוי ניכר לעין,0.28396880626678467,28.4,multilingual semantic embedding cosine similarity,Salesforce/blip2-flan-t5-xl,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,Helsinki-NLP/opus-mt-tc-big-he-en,Helsinki-NLP/opus-mt-en-he,cuda,2026-02-27T09:55:15
+10_1_14,10,1,14,dataset/images/10_1.png,"הסבירו מדוע בחרתם בתמונה זו כמשקפת את המשפט "" השינוי נעשה   ""","Explain why you chose this image as reflecting the sentence ""Change is made""","You are a systems thinking expert.
+Concept to illustrate: ""Change is made""
+Task: Examine this image carefully. In one sentence, describe specific visual elements you observe in the image and explain how they demonstrate the concept above.
+Important: Do NOT restate or rephrase ""Change is made"". Name what you actually see and connect it to the concept.
+Answer:",the image shows a group of people in different stages of life,False,,the image shows a group of people in different stages of life,התמונה מראה קבוצת אנשים בשלבים שונים של החיים,אבולציה של אנשים,0.3761636018753052,37.62,multilingual semantic embedding cosine similarity,Salesforce/blip2-flan-t5-xl,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,Helsinki-NLP/opus-mt-tc-big-he-en,Helsinki-NLP/opus-mt-en-he,cuda,2026-02-27T09:55:23
+10_1_21,10,1,21,dataset/images/10_1.png,"הסבירו מדוע בחרתם בתמונה זו כמשקפת את המשפט "" השינוי נעשה   ""","Explain why you chose this image as reflecting the sentence ""Change is made""","You are a systems thinking expert.
+Concept to illustrate: ""Change is made""
+Task: Examine this image carefully. In one sentence, describe specific visual elements you observe in the image and explain how they demonstrate the concept above.
+Important: Do NOT restate or rephrase ""Change is made"". Name what you actually see and connect it to the concept.
+Answer:",the image shows a group of people in different stages of life,False,,the image shows a group of people in different stages of life,התמונה מראה קבוצת אנשים בשלבים שונים של החיים,קצב היזדקנות של בן אדם,0.40686866641044617,40.69,multilingual semantic embedding cosine similarity,Salesforce/blip2-flan-t5-xl,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,Helsinki-NLP/opus-mt-tc-big-he-en,Helsinki-NLP/opus-mt-en-he,cuda,2026-02-27T09:55:29
+10_1_22,10,1,22,dataset/images/10_1.png,"הסבירו מדוע בחרתם בתמונה זו כמשקפת את המשפט "" השינוי נעשה   ""","Explain why you chose this image as reflecting the sentence ""Change is made""","You are a systems thinking expert.
+Concept to illustrate: ""Change is made""
+Task: Examine this image carefully. In one sentence, describe specific visual elements you observe in the image and explain how they demonstrate the concept above.
+Important: Do NOT restate or rephrase ""Change is made"". Name what you actually see and connect it to the concept.
+Answer:",the image shows a group of people in different stages of life,False,,the image shows a group of people in different stages of life,התמונה מראה קבוצת אנשים בשלבים שונים של החיים,כי רואים את השינוי וההתפתחות של האדם,0.4077213406562805,40.77,multilingual semantic embedding cosine similarity,Salesforce/blip2-flan-t5-xl,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,Helsinki-NLP/opus-mt-tc-big-he-en,Helsinki-NLP/opus-mt-en-he,cuda,2026-02-27T09:55:35
+10_1_24,10,1,24,dataset/images/10_1.png,"הסבירו מדוע בחרתם בתמונה זו כמשקפת את המשפט "" השינוי נעשה   ""","Explain why you chose this image as reflecting the sentence ""Change is made""","You are a systems thinking expert.
+Concept to illustrate: ""Change is made""
+Task: Examine this image carefully. In one sentence, describe specific visual elements you observe in the image and explain how they demonstrate the concept above.
+Important: Do NOT restate or rephrase ""Change is made"". Name what you actually see and connect it to the concept.
+Answer:",the image shows a group of people in different stages of life,False,,the image shows a group of people in different stages of life,התמונה מראה קבוצת אנשים בשלבים שונים של החיים,האדם הולך וגדל,0.4574032127857208,45.74,multilingual semantic embedding cosine similarity,Salesforce/blip2-flan-t5-xl,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,Helsinki-NLP/opus-mt-tc-big-he-en,Helsinki-NLP/opus-mt-en-he,cuda,2026-02-27T09:55:40
+10_1_26,10,1,26,dataset/images/10_1.png,"הסבירו מדוע בחרתם בתמונה זו כמשקפת את המשפט "" השינוי נעשה   ""","Explain why you chose this image as reflecting the sentence ""Change is made""","You are a systems thinking expert.
+Concept to illustrate: ""Change is made""
+Task: Examine this image carefully. In one sentence, describe specific visual elements you observe in the image and explain how they demonstrate the concept above.
+Important: Do NOT restate or rephrase ""Change is made"". Name what you actually see and connect it to the concept.
+Answer:",the image shows a group of people in different stages of life,False,,the image shows a group of people in different stages of life,התמונה מראה קבוצת אנשים בשלבים שונים של החיים,האדם מתבגר ועובר שינויים,0.40846168994903564,40.85,multilingual semantic embedding cosine similarity,Salesforce/blip2-flan-t5-xl,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,Helsinki-NLP/opus-mt-tc-big-he-en,Helsinki-NLP/opus-mt-en-he,cuda,2026-02-27T09:55:46
+10_1_36,10,1,36,dataset/images/10_1.png,"הסבירו מדוע בחרתם בתמונה זו כמשקפת את המשפט "" השינוי נעשה   ""","Explain why you chose this image as reflecting the sentence ""Change is made""","You are a systems thinking expert.
+Concept to illustrate: ""Change is made""
+Task: Examine this image carefully. In one sentence, describe specific visual elements you observe in the image and explain how they demonstrate the concept above.
+Important: Do NOT restate or rephrase ""Change is made"". Name what you actually see and connect it to the concept.
+Answer:",the image shows a group of people in different stages of life,False,,the image shows a group of people in different stages of life,התמונה מראה קבוצת אנשים בשלבים שונים של החיים,כל דור והקשיים שלו זה משתנה גם במראה,0.3096819221973419,30.97,multilingual semantic embedding cosine similarity,Salesforce/blip2-flan-t5-xl,sentence-transformers/paraphrase-multilingual-mpnet-base-v2,Helsinki-NLP/opus-mt-tc-big-he-en,Helsinki-NLP/opus-mt-en-he,cuda,2026-02-27T09:55:52

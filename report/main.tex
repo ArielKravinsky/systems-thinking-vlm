@@ -1,0 +1,803 @@
+\documentclass[12pt,a4paper]{article}
+
+%% ── packages ─────────────────────────────────────────────────────────────────
+%% XeLaTeX: fontspec handles Unicode natively.
+%% IMPORTANT: polyglossia (which loads bidi) must be loaded LAST, after hyperref
+%% and all other packages that bidi is incompatible with when loaded after it.
+\usepackage{fontspec}
+\setmainfont{Linux Libertine O}
+\setmonofont{DejaVu Sans Mono}[Scale=0.88]
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=blue!60!black, citecolor=teal, urlcolor=blue!60!black}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{listings}
+\lstset{
+  basicstyle=\ttfamily\small,
+  backgroundcolor=\color{gray!8},
+  frame=single,
+  breaklines=true,
+  columns=fullflexible,
+}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins}
+\usepackage{natbib}
+\bibliographystyle{plainnat}
+%% polyglossia + bidi go last
+\usepackage{polyglossia}
+\setmainlanguage{english}
+\setotherlanguage{hebrew}
+\newfontfamily\hebrewfont{Noto Serif Hebrew}[Script=Hebrew, Scale=1.05]
+
+%% ── convenience commands ─────────────────────────────────────────────────────
+\newcommand{\vlm}{\textsc{VLM}}
+\newcommand{\simEN}{\ensuremath{\mathrm{sim}_{\text{en}}}}
+\newcommand{\simHH}{\ensuremath{\mathrm{sim}_{\text{he--he}}}}
+\newcommand{\simLaBSE}{\ensuremath{\mathrm{sim}_{\text{LaBSE}}}}
+\newcommand{\csim}{\ensuremath{\mathrm{csim}_{\text{en}}}}
+\newcommand{\SACs}{\ensuremath{\Delta_{\text{concept}}^{\text{scalar}}}}
+\newcommand{\SACv}{\ensuremath{\Delta_{\text{concept}}^{\text{vec}}}}
+\newcommand{\SACvb}{\ensuremath{\Delta_{\text{concept}}^{\text{vec-both}}}}
+\newcommand{\SAC}{\SACs}
+\newcommand{\bsF}{\ensuremath{F_1^{\text{BERT}}}}
+\newcommand{\Qwen}{\textit{Qwen2-VL-7B-Instruct}}
+
+%% ─────────────────────────────────────────────────────────────────────────────
+\title{%
+  \textbf{Evaluating Systems Thinking in Visual Explanation Tasks}\\[0.4em]
+  \large Using a Vision-Language Model as an Expert Reference for Scoring
+  Open-Ended Hebrew Responses\\[0.6em]
+  \normalsize Project Report --- Preliminary Results
+}
+\author{Research Group, Systems Thinking Lab}
+\date{March 2026 \quad \small\textit{(327 samples, image groups 1--2)}}
+
+%% ─────────────────────────────────────────────────────────────────────────────
+\begin{document}
+\maketitle
+\tableofcontents
+\bigskip
+\hrule
+\bigskip
+
+% ═══════════════════════════════════════════════════════════════════════════════
+\section{Introduction and Motivation}
+% ═══════════════════════════════════════════════════════════════════════════════
+
+Systems thinking (ST) is a cognitive capacity that enables individuals to perceive
+interconnected structures, feedback loops, and emergent dynamics rather than isolated
+cause-effect chains~\citep{senge1990fifth}.  Despite growing interest in ST education,
+reliable \emph{automated} assessment of ST competencies in open-ended tasks remains
+largely unsolved.
+
+Traditional closed-form tests (multiple-choice, Likert scales) are easy to score but
+capture only a narrow, surface-level signal.  Richer evidence comes from \emph{free-text
+justifications}: when participants are asked \emph{why} they chose a specific image as
+reflecting a given systems concept, their verbal reasoning reveals the depth of mental
+model activation.  The central challenge is that scoring such justifications at scale
+requires either costly human annotation or a reliable automated proxy.
+
+This project proposes and evaluates a pipeline in which a state-of-the-art
+\emph{Vision-Language Model} (\vlm{}) -- \Qwen{} -- acts as an expert reference:
+it is shown the same images and concept-grounding questions, produces a systems-thinking
+interpretation in English, and the cosine similarity between that reference answer and
+the participant's translated answer is used as a proxy score.
+
+\subsection{Research Questions}
+
+\begin{enumerate}[label=\textbf{RQ\arabic*.}]
+  \item Does the \vlm{}-based similarity score capture meaningful variation in response
+        quality, or does it merely reflect surface lexical similarity to the concept label?
+  \item Does response length (word count) correlate with higher similarity scores, and
+        is this a genuine proxy of deeper engagement or simply verbosity?
+  \item Are there systematic differences across the ten ST concepts in how well
+        participants' answers align with expert \vlm{} interpretations?
+  \item How do different embedding spaces (multilingual He--He, English En--En,
+        cross-lingual LaBSE) compare as scoring bases?
+\end{enumerate}
+
+% ═══════════════════════════════════════════════════════════════════════════════
+\section{Dataset}
+% ═══════════════════════════════════════════════════════════════════════════════
+
+\subsection{Study Design}
+
+Participants were presented with a questionnaire containing ten systems-thinking
+concepts expressed as Hebrew sentences (Table~\ref{tab:concepts}).  For each concept,
+they selected one of four candidate images that they perceived as best representing the
+concept, and then wrote a free-text Hebrew justification explaining their choice.
+
+\begin{table}[H]
+\centering
+\caption{Ten systems-thinking concept sentences used in the study.}
+\label{tab:concepts}
+\small
+\begin{tabular}{clp{4cm}p{4.8cm}}
+\toprule
+\textbf{Q\#} & \textbf{English concept} & \textbf{Phonetic transliteration} & \textbf{Hebrew concept phrase} \\
+\midrule
+Q1  & Work completed successfully
+    & \textit{ha-avoda hushlema be-hatzlacha}
+    & \texthebrew{העבודה הושלמה בהצלחה} \\[3pt]
+Q2  & The decision has been made
+    & \textit{ha-hachlatah hitkabla}
+    & \texthebrew{ההחלטה התקבלה} \\[3pt]
+Q3  & The child has learned an important lesson
+    & \textit{ha-yeled lamad shi'ur hashuv}
+    & \texthebrew{הילד למד שיעור חשוב} \\[3pt]
+Q4  & The ecosystem is functioning well
+    & \textit{ha-ma'arechet ha-ekologit mitpakedet hetev}
+    & \texthebrew{המערכת האקולוגית מתפקדת היטב} \\[3pt]
+Q5  & Similar systems
+    & \textit{ma'arachot domot}
+    & \texthebrew{מערכות דומות} \\[3pt]
+Q6  & The group advanced towards the goal
+    & \textit{ha-kvutza hitzlicha lehitkadem le'ever ha-ya'ad}
+    & \texthebrew{הקבוצה הצליחה להתקדם לעבר היעד} \\[3pt]
+Q7  & The way I understand reality affects what I see
+    & \textit{ha-derech she-bah ani mevin et ha-metziut mashpi'ah al ma she-ani ro'eh}
+    & \texthebrew{הדרך שבה אני מבין את המציאות משפיעה על מה שאני רואה} \\[3pt]
+Q8  & When I try to understand what is happening I sometimes see things differently
+    & \textit{kshe-ani menase lehavin et ma she-kore lif'amim ani ro'eh et ha-dvarim acheret}
+    & \texthebrew{כשאני מנסה להבין את מה שקורה לפעמים אני רואה את הדברים אחרת} \\[3pt]
+Q9  & Man affects the world around him
+    & \textit{ha-adam mashpia al ha-olam saviv}
+    & \texthebrew{האדם משפיע על העולם סביבו} \\[3pt]
+Q10 & Change is made
+    & \textit{ha-shinui na'ase}
+    & \texthebrew{השינוי נעשה} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Data Collection and Structure}
+
+Raw questionnaire data was parsed into a structured dataset organised as follows:
+
+\begin{itemize}[noitemsep]
+  \item \textbf{questions/} -- 10 Hebrew question files (\texttt{1.txt}--\texttt{10.txt}).
+  \item \textbf{images/} -- 20 images: each question has 2 associated images\\
+        (\texttt{<q>\_{1}.png} and \texttt{<q>\_{2}.png}).
+  \item \textbf{answers/} -- One file per (question, image-group, participant) triple,
+        named \texttt{<question>\_<image>\_<participant>.txt}.
+\end{itemize}
+
+The current dataset contains \textbf{539 answer files} across \textbf{10 questions},
+\textbf{4 image groups} (answer\_num 1--4), and variable participant counts per
+question/image combination.  A missing-pairs audit identified 167 (subject, question,
+answer) triples where participants selected an image option but provided no free-text
+justification (\texttt{missing\_text}), plus a smaller number of entries where no option
+was selected at all (\texttt{missing\_option}).
+
+\medskip
+\begin{tcolorbox}[title=Data Completeness Note,colback=yellow!8,colframe=orange!60!black]
+Of the 539 answer files present, \textbf{327 are fully scoreable} (image groups 1--2,
+which have corresponding image files in \texttt{dataset/images/}).  The additional
+212 answer files reference image groups 3 and 4 (participants who selected the third
+or fourth candidate image per question), but no image files for groups 3 or 4 have
+been provided in the dataset.  Until those images are added, the 212 entries cannot
+be scored by the pipeline.  All results in this report are based on the complete
+327-sample set for image groups 1--2.
+\end{tcolorbox}
+
+% ═══════════════════════════════════════════════════════════════════════════════
+\section{Pipeline Architecture}
+% ═══════════════════════════════════════════════════════════════════════════════
+
+\subsection{Overview}
+
+The automated scoring pipeline, implemented in \texttt{src/pipeline\_qwen.py}, proceeds
+in the following stages for each (image, question, subject-answer) triple:
+
+\begin{enumerate}
+  \item \textbf{Translation (He$\to$En):} The Hebrew question is machine-translated to
+        English using \textit{Helsinki-NLP/opus-mt-tc-big-he-en}.
+  \item \textbf{Concept extraction:} A regex extracts the quoted concept phrase from the
+        translated question (e.g., \textit{``The ecosystem is functioning well''}).
+  \item \textbf{VLM inference (cached):} \Qwen{} receives the image and the English
+        question and produces a systems-thinking expert answer in English.  Answers are
+        cached by (image\_path, question\_he), so each of the 20 unique image+question
+        pairs requires exactly one VLM call regardless of how many participants answered
+        it (see \S\ref{sec:cache}).
+  \item \textbf{Subject translation (He$\to$En):} The participant's Hebrew free-text
+        justification is translated to English.
+  \item \textbf{Similarity scoring:} Cosine similarity is computed between the \vlm{}
+        answer and the participant's translated answer using three embedding spaces
+        (Table~\ref{tab:embeddings}).
+  \item \textbf{Concept baseline:} The cosine similarity between the participant's
+        English answer and the bare concept phrase is computed (\csim{}).  Three
+        concept-adjusted metrics are then computed: scalar subtraction (\SACs{}),
+        vector projection with concept removed from subject only (\SACv{}), and
+        bi-projected vector similarity with concept removed from both subject and VLM
+        embeddings (\SACvb{}).
+  \item \textbf{BERTScore:} Token-level F1 (\bsF{}), Precision, and Recall
+        are computed between the \vlm{} reference and the participant's English answer
+        using \textit{roberta-large} embeddings.
+\end{enumerate}
+
+\begin{table}[H]
+\centering
+\caption{Embedding models used for similarity scoring.}
+\label{tab:embeddings}
+\small
+\begin{tabular}{lll}
+\toprule
+\textbf{Metric} & \textbf{Model} & \textbf{Language pair} \\
+\midrule
+\simHH{}  & paraphrase-multilingual-mpnet-base-v2 & Hebrew VLM answer vs.\ Hebrew subject \\
+\simEN{}  & paraphrase-multilingual-mpnet-base-v2 & English VLM answer vs.\ English subject \\
+\simLaBSE{} & LaBSE & Hebrew VLM answer vs.\ Hebrew subject \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Design Decisions}
+
+\paragraph{Pre-translating the question.}
+Early experiments showed that presenting the Hebrew question directly to \Qwen{} caused
+the model to begin its answer with a translation preamble rather than directly engaging
+with the image.  Translating the question to English before the VLM call eliminates
+this artefact.
+
+\paragraph{VLM answer caching.}
+\label{sec:cache}
+Because \Qwen{} is a deterministic model (greedy decoding, \texttt{do\_sample=False}),
+the same image+question pair always produces the same output.  By caching on
+(image\_path, question\_he), the 327-sample run required only \textbf{20 unique VLM
+inference calls} (the remaining 307 were served from cache), achieving an effective
+$\sim\!15\times$ speedup.
+
+\paragraph{Fallback and degeneracy detection.}
+A post-processing function detects degenerate outputs (empty, very short, repetitive
+loops, or encoding errors).  In such cases a simpler descriptive question is posed as
+a fallback.  In the current dataset, \textbf{zero fallbacks were triggered}, indicating
+robust model outputs throughout.
+
+\paragraph{Concept-baseline correction.}
+A known confound in free-text ST assessment is \emph{concept echoing}: a participant
+who simply restates the concept label (e.g., ``this image shows change being made'')
+will score highly on any similarity metric even without genuine visual reasoning.  The
+scalar metric \SACs{} corrects for this by subtracting \csim{} from \simEN{}.
+The vector metrics \SACv{} and \SACvb{} further remove the concept direction in
+embedding space before scoring alignment, providing stricter de-concepted views.
+See \S\ref{sec:metrics} for the full formal definition.
+
+% ─────────────────────────────────────────────────────────────────────────────
+\subsection{Formal Definition of Scoring Metrics}
+\label{sec:metrics}
+% ─────────────────────────────────────────────────────────────────────────────
+
+All metrics are defined over a \emph{sample triple} $(i, q, s)$, where $i$ is the
+presented image, $q$ is the Hebrew systems-thinking concept question, and $s$ is the
+participant's Hebrew free-text justification.
+Let $T(\cdot)$ denote the Helsinki He$\to$En machine translation function, and
+$\mathbf{v}(i,q)$ the English expert answer produced by the VLM for pair $(i,q)$.
+
+\paragraph{Cosine similarity.}
+All embedding-based metrics reduce to cosine similarity over unit-normalised vectors.
+For $\mathbf{a}, \mathbf{b} \in \mathbb{R}^{d}$ with $\|\mathbf{a}\|=\|\mathbf{b}\|=1$:
+\begin{equation}
+  \cos(\mathbf{a}, \mathbf{b})
+    = \frac{\mathbf{a} \cdot \mathbf{b}}{\|\mathbf{a}\|\,\|\mathbf{b}\|}
+    = \mathbf{a} \cdot \mathbf{b}
+  \label{eq:cosine}
+\end{equation}
+Values lie in $[-1,+1]$; for sentence embeddings the practical range is roughly
+$[0, 1]$ for semantically related content.
+
+\paragraph{Primary similarity metrics.}
+Let $\phi_{\text{mp}}(\cdot) \in \mathbb{R}^{768}$ be the sentence embedding from
+\textit{paraphrase-multilingual-mpnet-base-v2} (normalised), and
+$\phi_{\text{LaBSE}}(\cdot) \in \mathbb{R}^{768}$ the embedding from LaBSE.
+Let $T^{-1}(\cdot)$ denote the En$\to$He translation model.
+The three primary similarity metrics are:
+
+\begin{align}
+  \simHH{}(i,q,s)
+    &= \cos\!\Bigl(\phi_{\text{mp}}\!\bigl(T^{-1}(\mathbf{v}(i,q))\bigr),\;
+                   \phi_{\text{mp}}(s)\Bigr)
+    \label{eq:simhh} \\[6pt]
+  \simEN{}(i,q,s)
+    &= \cos\!\Bigl(\phi_{\text{mp}}(\mathbf{v}(i,q)),\;
+                   \phi_{\text{mp}}(T(s))\Bigr)
+    \label{eq:simen} \\[6pt]
+  \simLaBSE{}(i,q,s)
+    &= \cos\!\Bigl(\phi_{\text{LaBSE}}\!\bigl(T^{-1}(\mathbf{v}(i,q))\bigr),\;
+                   \phi_{\text{LaBSE}}(s)\Bigr)
+    \label{eq:simlabse}
+\end{align}
+
+\simHH{} and \simLaBSE{} operate in Hebrew space (both texts in Hebrew);
+\simEN{} operates in English space (both texts are machine-translated to English
+first), which makes it the most translation-dependent but also the most
+semantically explicit metric.
+
+\paragraph{Concept-baseline similarity (\csim{}).}
+Let $c(q)$ be the bare English concept phrase extracted from question $q$ by regex
+(e.g., \textit{``The ecosystem is functioning well''}).  Then:
+\begin{equation}
+  \csim{}(q,s)
+    = \cos\!\Bigl(\phi_{\text{mp}}(c(q)),\;
+                  \phi_{\text{mp}}(T(s))\Bigr)
+  \label{eq:csim}
+\end{equation}
+\csim{} is \emph{image-independent}: it measures how similar a participant's answer is
+to the concept label alone, without any reference to the specific image selected.
+A high \csim{} means the answer echoes the concept; a low \csim{} (even if \simEN{}
+is high) would indicate the participant used image-specific vocabulary not present in
+the concept phrase.
+
+\paragraph{Concept-adjusted metrics (project-specific).}
+\textbf{1) Scalar baseline adjustment:}
+\begin{equation}
+      \boxed{\SACs{}(i,q,s)
+            \;=\; \simEN{}(i,q,s)
+            \;-\; \csim{}(q,s)}
+      \label{eq:sac_scalar}
+\end{equation}
+
+\textbf{2) Subject-only projected vector metric:}
+\begin{equation}
+      \boxed{\SACv{}(i,q,s)
+            \;=\;
+            \cos\!\Bigl(\widetilde{\mathbf{u}}_{\perp c},\; \widetilde{\mathbf{v}}\Bigr)}
+      \label{eq:sac_vec}
+\end{equation}
+where
+\begin{equation}
+      \widetilde{\mathbf{u}}_{\perp c}
+      =
+      \frac{\widetilde{\mathbf{u}} - (\widetilde{\mathbf{u}}\!\cdot\!\widetilde{\mathbf{c}})\widetilde{\mathbf{c}}}
+                   {\left\|\widetilde{\mathbf{u}} - (\widetilde{\mathbf{u}}\!\cdot\!\widetilde{\mathbf{c}})\widetilde{\mathbf{c}}\right\|}
+\end{equation}
+and $\widetilde{\mathbf{u}}, \widetilde{\mathbf{v}}, \widetilde{\mathbf{c}}$ are the
+unit-normalized embeddings of subject answer, VLM answer, and concept phrase.
+
+\textbf{3) Bi-projected vector metric (new):}
+\begin{equation}
+      \boxed{\SACvb{}(i,q,s)
+            \;=\;
+            \cos\!\Bigl(\widetilde{\mathbf{u}}_{\perp c},\; \widetilde{\mathbf{v}}_{\perp c}\Bigr)}
+      \label{eq:sac_vec_both}
+\end{equation}
+with
+\begin{equation}
+      \widetilde{\mathbf{v}}_{\perp c}
+      =
+      \frac{\widetilde{\mathbf{v}} - (\widetilde{\mathbf{v}}\!\cdot\!\widetilde{\mathbf{c}})\widetilde{\mathbf{c}}}
+                   {\left\|\widetilde{\mathbf{v}} - (\widetilde{\mathbf{v}}\!\cdot\!\widetilde{\mathbf{c}})\widetilde{\mathbf{c}}\right\|}
+\end{equation}
+
+Interpretation:
+\begin{itemize}[noitemsep]
+      \item $\SACs{} > 0$ --- the answer is closer to the VLM's image-specific interpretation
+                        than to the bare concept, implying \textbf{visual grounding}.
+      \item $\SACs{} \approx 0$ --- the answer adds no image-specific information; the
+                        participant is writing about the concept, not the image.
+      \item $\SACs{} < 0$ --- the participant's language is semantically more similar to the
+                        concept label than to the VLM reference; a strong indicator of
+                        \textbf{concept echoing} with minimal visual engagement.
+      \item $\SACv{}$ and $\SACvb{}$ are cosine similarities in de-concepted subspaces,
+                        so both lie in $[-1,+1]$; in this dataset they are empirically positive for all
+                        samples.
+\end{itemize}
+
+Grounding rates are defined as fractions of samples above zero per metric:
+\begin{equation}
+      \gamma_s
+            = \frac{1}{N}
+                  \sum_{n=1}^{N}
+                  \mathbf{1}\!\bigl[\SACs{}(i_n, q_n, s_n) > 0\bigr],
+      \quad
+      \gamma_v
+            = \frac{1}{N}\sum_{n=1}^{N}\mathbf{1}\!\bigl[\SACv{}(i_n, q_n, s_n) > 0\bigr],
+      \quad
+      \gamma_{vb}
+            = \frac{1}{N}\sum_{n=1}^{N}\mathbf{1}\!\bigl[\SACvb{}(i_n, q_n, s_n) > 0\bigr]
+      \label{eq:gamma_multi}
+\end{equation}
+In the current 327-sample dataset:
+$\gamma_s=0.621$ (62.1\%), $\gamma_v=1.000$ (100.0\%), and $\gamma_{vb}=1.000$ (100.0\%).
+
+Empirical ranges in this dataset are:
+$\SACs{}\in[-0.516, 0.537]$,
+$\SACv{}\in[0.006, 0.765]$,
+$\SACvb{}\in[0.007, 0.799]$
+(Table~\ref{tab:global_stats}).
+
+\paragraph{BERTScore.}
+BERTScore \citep{bertscore2020} operates at the token level rather than the
+sentence level, providing a complementary perspective.
+Let $\{r_k\}$ be the tokens of the VLM reference $\mathbf{v}(i,q)$ and $\{h_j\}$
+the tokens of the participant's English translation $T(s)$, with contextual embeddings
+$\mathbf{e}_{r_k}$, $\mathbf{e}_{h_j}$ from \textit{roberta-large}:
+\begin{equation}
+  P_{\text{BERT}} = \frac{1}{|H|}\sum_{j}
+    \max_{k}\,\cos(\mathbf{e}_{h_j},\, \mathbf{e}_{r_k}),
+  \qquad
+  R_{\text{BERT}} = \frac{1}{|R|}\sum_{k}
+    \max_{j}\,\cos(\mathbf{e}_{r_k},\, \mathbf{e}_{h_j})
+  \label{eq:bs_pr}
+\end{equation}
+\begin{equation}
+  \bsF{}
+    = \frac{2\,P_{\text{BERT}}\cdot R_{\text{BERT}}}
+           {P_{\text{BERT}} + R_{\text{BERT}}}
+  \label{eq:bertscore}
+\end{equation}
+The consistent pattern $R_{\text{BERT}} > P_{\text{BERT}}$ observed here (means 0.867
+vs.\ 0.825) is expected: participant answers tend to contain vocabulary subsumed by the
+longer VLM reference, but miss some of the VLM's image-specific tokens --- hence high
+recall with lower precision.
+
+\subsection{Hardware and Models}
+
+\begin{itemize}[noitemsep]
+  \item \textbf{VLM:} \Qwen{} (4-bit NF4 quantisation via \texttt{bitsandbytes}),
+        executed on GPU (CUDA).
+  \item \textbf{Translation:} Helsinki opus-mt-tc-big-he-en (He$\to$En) and
+        opus-mt-en-he (En$\to$He).
+  \item \textbf{Embeddings:} paraphrase-multilingual-mpnet-base-v2 and LaBSE via
+        \textit{sentence-transformers}.
+  \item \textbf{BERTScore:} \textit{roberta-large}, CPU evaluation.
+\end{itemize}
+
+% ═══════════════════════════════════════════════════════════════════════════════
+\section{Preliminary Results (N = 327)}
+% ═══════════════════════════════════════════════════════════════════════════════
+
+\subsection{Similarity Score Distributions}
+
+Table~\ref{tab:global_stats} reports global descriptive statistics for all similarity
+metrics across the 327 fully-scored samples.
+
+\begin{table}[H]
+\centering
+\caption{Descriptive statistics for all similarity and quality metrics ($N=327$).}
+\label{tab:global_stats}
+\small
+\begin{tabular}{lrrrrrr}
+\toprule
+\textbf{Metric} & \textbf{Mean} & \textbf{SD} & \textbf{Min} & \textbf{Median} & \textbf{Max} \\
+\midrule
+\simHH{}         & 0.535 & 0.136 & 0.153 & 0.543 & 0.898 \\
+\simEN{}         & 0.494 & 0.166 & 0.015 & 0.505 & 0.828 \\
+\simLaBSE{}      & 0.373 & 0.129 & 0.016 & 0.369 & 0.809 \\
+\csim{}          & 0.419 & 0.170 & 0.017 & 0.412 & 0.826 \\
+\SACs{}          & 0.075 & 0.197 & $-$0.516 & 0.059 & 0.537 \\
+\SACv{}          & 0.350 & 0.174 & 0.006 & 0.354 & 0.765 \\
+\SACvb{}         & 0.389 & 0.191 & 0.007 & 0.394 & 0.799 \\
+\bsF{} (Recall)  & 0.867 & 0.021 & 0.809 & 0.868 & 0.943 \\
+\bsF{} (Precision) & 0.825 & 0.017 & 0.773 & 0.825 & 0.895 \\
+\bsF{} (F1)      & 0.845 & 0.016 & 0.791 & 0.845 & 0.889 \\
+Subject word count & 12.4 & 11.1 & 1 & 9.0 & 75 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Several observations are noteworthy:
+
+\begin{itemize}
+  \item \simHH{} (He--He multilingual embeddings) yields the highest mean
+        ($\bar{x}=0.535$), likely because both texts share Hebrew vocabulary
+        and the multilingual encoder has reduced cross-lingual alignment noise.
+  \item \simEN{} is slightly lower ($\bar{x}=0.494$) due to translation noise
+        introduced by the machine-translation step, but has the widest range
+        ($[0.015,\,0.828]$), making it the most discriminating metric across samples.
+  \item \simLaBSE{} is systematically lower ($\bar{x}=0.373$), consistent with
+        LaBSE's design for document-level rather than short-phrase alignment.
+  \item The concept-baseline \csim{} has a mean of 0.419 -- close to \simEN{} -- 
+        confirming that a substantial fraction of similarity is attributable to
+        concept echoing alone.
+  \item \SACs{} has a positive median (0.059) and mean (0.075), but also a substantial
+        negative tail ($-0.516$), indicating heterogeneous concept-echoing behavior.
+  \item \SACv{} and \SACvb{} are both strongly positive on average (0.350 and 0.389,
+        respectively), with \SACvb{} consistently slightly higher because concept
+        direction is removed from both subject and VLM representations.
+\end{itemize}
+
+\paragraph{Paired comparison of \simHH{} vs.\ \simEN{}.}
+A paired two-tailed $t$-test confirms that \simHH{} is significantly higher than
+\simEN{} ($t(326)=6.43$, $p=4.66\times10^{-10}$), consistent with the hypothesis that
+operating in the same language space inflates similarity.  The Pearson correlation
+between the two metrics is $r=0.720$ ($p<10^{-50}$), indicating strong but imperfect
+agreement.
+
+\subsection{Concept Baseline and Grounding Analysis}
+
+Of the 327 samples, \textbf{62.1\%} had $\SACs{}>0$, while \textbf{100\%} had
+$\SACv{}>0$ and \textbf{100\%} had $\SACvb{}>0$.
+The scalar metric is therefore the only one that produces negative values in this
+dataset and remains the primary diagnostic for explicit concept-echoing failures.
+
+Table~\ref{tab:per_concept} presents per-concept statistics.
+
+\begin{table}[H]
+\centering
+\caption{Per-concept similarity and grounding statistics ($N=327$, partial data).}
+\label{tab:per_concept}
+\small
+\begin{tabular}{clrrrr}
+\toprule
+\textbf{Q} & \textbf{Concept (abbreviated)} & \textbf{N} & \textbf{\simEN{} (M±SD)} & \textbf{\SACs{} mean} & \textbf{\% grounded (\SACs{}$>0$)} \\
+\midrule
+Q1  & Work completed successfully              & 14 & $0.425 \pm 0.136$ & $+0.072$ & 71\% \\
+Q2  & The decision has been made               & 57 & $0.516 \pm 0.156$ & $+0.089$ & 63\% \\
+Q3  & Child learned an important lesson        & 33 & $0.471 \pm 0.149$ & $+0.004$ & 45\% \\
+Q4  & Ecosystem is functioning well            & 39 & $0.490 \pm 0.214$ & $+0.143$ & 67\% \\
+Q5  & Similar systems                          & 27 & $0.523 \pm 0.195$ & $+0.159$ & 78\% \\
+Q6  & Group advanced towards goal              & 31 & $0.558 \pm 0.178$ & $+0.138$ & 77\% \\
+Q7  & Understanding reality affects what I see & 38 & $0.470 \pm 0.141$ & $-0.008$ & 50\% \\
+Q8  & Seeing things differently                & 13 & $0.534 \pm 0.088$ & $+0.014$ & 46\% \\
+Q9  & Man affects the world around him         & 36 & $0.469 \pm 0.165$ & $+0.091$ & 64\% \\
+Q10 & Change is made                           & 39 & $0.471 \pm 0.149$ & $+0.029$ & 59\% \\
+\midrule
+\textbf{Total} & & \textbf{327} & $\mathbf{0.494 \pm 0.166}$ & $\mathbf{+0.075}$ & \textbf{62\%} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Notable patterns:
+
+\begin{itemize}
+  \item \textbf{Q6} (``Group advanced towards goal'') achieves the highest mean \simEN{}
+        ($0.558$) and second-highest grounding rate (77\%), suggesting participants
+        gave descriptively rich, image-specific justifications.
+  \item \textbf{Q5} (``Similar systems'') shows the highest grounding rate (78\%) and
+        second-highest \SACs{} ($+0.159$), despite the concept being abstract -- a
+        possible sign that the two associated images are unambiguous.
+  \item \textbf{Q3} (``Child learned an important lesson'') has the lowest grounding
+        rate (45\%) and near-zero \SACs{} ($+0.004$), consistent with participants
+        simply asserting the concept label rather than reasoning visually.
+  \item \textbf{Q7} (``Understanding reality affects what I see'') is the only concept
+        with a \emph{negative} mean \SACs{} ($-0.008$) and only 50\% grounding -- the
+        high abstraction of Q7 may cause participants to rely heavily on meta-reflective
+        vocabulary that echoes the concept more than it reflects the image.
+\end{itemize}
+
+\subsection{Answer Length and Similarity}
+
+The length of a subject's Hebrew answer (word count) is positively correlated with
+\simEN{} (Spearman $\rho = 0.40$, $p < 10^{-13}$).  Table~\ref{tab:length_brackets}
+shows that this relationship holds monotonically across three length brackets.
+
+\begin{table}[H]
+\centering
+\caption{Mean similarity by subject answer length.}
+\label{tab:length_brackets}
+\small
+\begin{tabular}{lrr}
+\toprule
+\textbf{Length bracket} & \textbf{Mean \simEN{}} & \textbf{Mean \SACs{}} \\
+\midrule
+Short ($1$--$5$ words)  & 0.387 & 0.044 \\
+Medium ($6$--$20$ words)& 0.512 & 0.076 \\
+Long ($>20$ words)      & 0.583 & 0.121 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The increasing \SACs{} across length brackets (0.044 $\to$ 0.076 $\to$ 0.121) is
+particularly informative: longer responses not only score higher overall, but
+they do so by going \emph{beyond} the concept, rather than merely being verbose
+repetitions of the concept phrase.
+
+\subsection{BERTScore Analysis}
+
+BERTScore F1 (\bsF{}) has a narrower range ($[0.791, 0.889]$, mean $0.845$, SD $0.016$)
+compared to cosine similarity, indicating lower discriminative power for this task.
+The Pearson correlation between \bsF{} and \simEN{} is $r=0.584$ ($p<10^{-30}$),
+confirming moderate agreement but suggesting the two metrics capture partially
+independent aspects of response quality.
+
+BERTScore recall (mean $0.867$) consistently exceeds precision (mean $0.825$), which
+makes sense for this task: participant answers tend to contain substrings of the VLM
+reference vocabulary, but the VLM answers also contain information not present in the
+shorter, more telegraphic participant answers.
+
+\subsection{Metric Inter-Correlations}
+\label{sec:correlations}
+
+The strongest Spearman correlations among all numeric metrics are:
+
+\begin{enumerate}[noitemsep]
+  \item $\simHH{}$ vs.\ \simEN{}: $\rho = 0.72$ -- same metric, different language
+        spaces.
+  \item \simEN{} vs.\ \bsF{}: $\rho = 0.58$ -- moderate agreement between embedding
+        cosine and token-level overlap.
+  \item \SACv{} vs.\ \SACvb{}: $\rho \approx 0.99$ -- both vector metrics are nearly
+        collinear, with \SACvb{} systematically slightly higher.
+  \item \simEN{} vs.\ \SACvb{}: $\rho \approx 0.94$ -- de-concepted and raw alignment
+        remain tightly coupled in this dataset.
+  \item Subject word count vs.\ \simEN{}: $\rho = 0.40$ -- length predicts quality
+        but is not sufficient.
+\end{enumerate}
+
+% ═══════════════════════════════════════════════════════════════════════════════
+\section{Discussion}
+% ═══════════════════════════════════════════════════════════════════════════════
+
+\subsection{Validity of the \vlm{}-as-Reference Approach}
+
+The pipeline produces a graded, continuous score for open-ended Hebrew reasoning about
+images, without requiring human annotation.  Several lines of evidence support its
+construct validity:
+
+\begin{enumerate}
+  \item The score is sensitive to response length in the expected direction, and the
+        increase in \SACs{} with length (Table~\ref{tab:length_brackets}) indicates it
+        responds to content richness, not mere length inflation.
+  \item The concept-baseline correction (\SACs{}) successfully identifies the distinction
+        between concept-echoing responses and image-grounded responses.  Q3 and Q7 --
+        both abstract, reflexive concepts -- cluster at low \SACs{}, while Q5 and Q6 --
+        perceptually concrete -- cluster at high \SACs{}, which aligns with theoretical
+        expectations.
+  \item Zero fallbacks were triggered, suggesting \Qwen{} produces consistent,
+        coherent expert answers across the 20 unique image+question pairs.
+\end{enumerate}
+
+\subsection{Limitations}
+
+\begin{itemize}
+  \item \textbf{Translation noise.} Both the question pre-translation and the subject
+        answer translation introduce errors.  Hebrew is morphologically complex, and
+        machine translation at the short-phrase level (1--20 words) is prone to 
+        mis-translating subtle reasoning markers.  A future direction is to use a
+        Hebrew-native embedding model directly (e.g., a Hebrew BERT) to bypass this.
+  \item \textbf{Single VLM reference.} All samples for the same (image, question) pair
+        receive an identical VLM reference.  Inter-image variability in the concept
+        is collapsed: participants who chose image 1 for Q6 are compared against the
+        same reference regardless of their individual interpretation.  A per-participant
+        VLM call with personalised prompting could address this.
+  \item \textbf{Partial dataset.} Results cover 327 of 539 answer files (image
+        groups 1--2 only).  The 212 remaining answer files reference image groups 3--4,
+        for which no image files exist in the dataset at the time of writing.
+        If those images are later added, the pipeline can be resumed and the analysis
+        extended to all 539 samples.
+  \item \textbf{Missing-text entries.} The missing-pairs audit (167 entries with
+        \texttt{missing\_text}, \textasciitilde{}30 with \texttt{missing\_option})
+        suggests a non-trivial dropout in the questionnaire, concentrated in certain
+        subjects (e.g., subjects 1, 2, 3, 6, 51, 65, 66).  These entries are excluded
+        from the analysis but may represent a systematic non-response bias.
+\end{itemize}
+
+\subsection{Implications for ST Assessment}
+
+The \SACs{} metric operationalises a key theoretical distinction in ST measurement:
+the difference between \emph{recognising} a concept (selecting the right image) and
+\emph{applying} it with visual grounding (writing a substantive justification).
+The finding that 38\% of participants score $\SACs{} \le 0$ while still having selected
+a plausible image suggests that image selection alone overestimates ST competence.
+This reinforces the importance of free-text justification in ST assessment batteries.
+
+% ═══════════════════════════════════════════════════════════════════════════════
+\section{Methods Summary}
+% ═══════════════════════════════════════════════════════════════════════════════
+
+\subsection{Software and Reproducibility}
+
+The full pipeline is implemented in Python 3.10 and is available in the project
+repository.  Key dependencies:
+
+\begin{lstlisting}
+transformers>=4.40      # Qwen2-VL, Marian translation
+sentence-transformers   # mpnet, LaBSE embeddings
+bert-score              # BERTScorer (roberta-large)
+bitsandbytes            # 4-bit NF4 quantisation
+qwen-vl-utils           # vision input preprocessing
+torch>=2.1              # CUDA inference
+\end{lstlisting}
+
+The pipeline can be resumed from a partial results file via:
+
+\begin{lstlisting}[language=bash]
+python -m src.pipeline_qwen \
+    --dataset dataset \
+    --resume results/vlm_results_qwen_20260227_152809.json
+\end{lstlisting}
+
+\subsection{Scoring Metrics Reference}
+
+Full formal definitions with equations are in \S\ref{sec:metrics}.  Brief reference:
+
+\begin{description}[leftmargin=3.2cm, labelwidth=3cm]
+  \item[\simHH{}]       Eq.~\eqref{eq:simhh}: cosine, multilingual mpnet,
+                        He VLM answer vs.\ He subject answer.
+  \item[\simEN{}]       Eq.~\eqref{eq:simen}: cosine, multilingual mpnet,
+                        En VLM answer vs.\ En subject answer (both machine-translated).
+  \item[\simLaBSE{}]    Eq.~\eqref{eq:simlabse}: cosine, LaBSE,
+                        He VLM answer vs.\ He subject answer.
+  \item[\csim{}]        Eq.~\eqref{eq:csim}: cosine between En subject answer
+                        and bare English concept phrase (image-independent baseline).
+      \item[\SACs{}]        Eq.~\eqref{eq:sac_scalar}: scalar baseline subtraction,
+                                                                        $\simEN{} - \csim{}$.
+      \item[\SACv{}]        Eq.~\eqref{eq:sac_vec}: concept removed from subject
+                                                                        embedding, then cosine to VLM embedding.
+      \item[\SACvb{}]       Eq.~\eqref{eq:sac_vec_both}: concept removed from both
+                                                                        subject and VLM embeddings before cosine.
+  \item[\bsF{}]         Eqs.~\eqref{eq:bs_pr}--\eqref{eq:bertscore}: BERTScore F1
+                        (roberta-large), En VLM answer vs.\ En subject.
+\end{description}
+
+% ═══════════════════════════════════════════════════════════════════════════════
+\section{Next Steps}
+% ═══════════════════════════════════════════════════════════════════════════════
+
+\begin{enumerate}
+  \item \textbf{Provide images for groups 3--4.} Adding the 20 missing image files
+        (\texttt{<q>\_3.png}, \texttt{<q>\_4.png} for $q=1\ldots10$) to
+        \texttt{dataset/images/} would make the remaining 212 answer files scoreable.
+        The pipeline supports resuming from a checkpoint
+        (\texttt{--resume} flag), so only new samples would be processed.
+  \item \textbf{Human validation.} Annotate a stratified sample ($n \approx 60$) of
+        responses across the score distribution with expert human ratings to establish
+      criterion validity of \SACs{}, \SACv{}, \SACvb{}, and \simEN{}.
+  \item \textbf{Per-subject profiling.} Aggregate scores to the subject level to
+        produce individual ST profiles, and correlate with demographic and
+        background variables.
+  \item \textbf{Predictive modelling.} Explore whether word count, concept, and
+        image variables jointly predict scores in a mixed-effects model.
+  \item \textbf{Hebrew-native embeddings.} Test Hebrew BERT / alephBERT as an
+        alternative embedding backbone to reduce translation noise.
+  \item \textbf{Missing-data strategy.} Investigate whether participants with
+        \texttt{missing\_text} entries differ systematically from those with complete
+        data (non-ignorable vs.\ ignorable missingness).
+\end{enumerate}
+
+% ═══════════════════════════════════════════════════════════════════════════════
+\section*{Acknowledgements}
+% ═══════════════════════════════════════════════════════════════════════════════
+
+Pipeline developed using open-weight models from Qwen (Alibaba), Helsinki NLP,
+and sentence-transformers.  Compute resources: local CUDA GPU workstation.
+
+% ───────────────────────────────────────────────────────────────────────────────
+\begin{thebibliography}{9}
+
+\bibitem[Senge(1990)]{senge1990fifth}
+Senge, P.~M. (1990).
+\newblock \textit{The Fifth Discipline: The Art and Practice of the Learning Organization}.
+\newblock Doubleday/Currency.
+
+\bibitem[Assaraf \& Orion(2005)]{assaraf2005}
+Assaraf, O.~B.-Z., \& Orion, N. (2005).
+\newblock Development of system thinking skills in the context of earth system education.
+\newblock \textit{Journal of Research in Science Teaching}, 42(5), 518--560.
+
+\bibitem[Hmelo-Silver et al.(2007)]{hmelo2007}
+Hmelo-Silver, C.~E., Marathe, S., \& Liu, L. (2007).
+\newblock Fish swim, rocks sit, and lungs breathe: Expert-novice understanding of
+  complex systems.
+\newblock \textit{Journal of the Learning Sciences}, 16(3), 307--331.
+
+\bibitem[Zhang et al.(2020)]{bertscore2020}
+Zhang, T., Kishore, V., Wu, F., Weinberger, K.~Q., \& Artzi, Y. (2020).
+\newblock BERTScore: Evaluating text generation with BERT.
+\newblock In \textit{ICLR 2020}.
+
+\bibitem[Wang et al.(2024)]{qwen2vl2024}
+Wang, P., et al. (2024).
+\newblock Qwen2-VL: Enhancing vision-language model's perception of the world at any resolution.
+\newblock \textit{arXiv:2409.12191}.
+
+\bibitem[Feng et al.(2022)]{labse2022}
+Feng, F., et al. (2022).
+\newblock Language-agnostic BERT sentence embedding.
+\newblock In \textit{Proceedings of ACL 2022}.
+
+\end{thebibliography}
+
+\end{document}

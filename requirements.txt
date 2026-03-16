@@ -8,3 +8,4 @@ sentencepiece
 accelerate>=0.25.0
 tqdm
 hf_xet
+bert-score

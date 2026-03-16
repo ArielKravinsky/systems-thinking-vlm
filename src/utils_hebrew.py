@@ -15,11 +15,6 @@ HEBREW_FINALS = {
     'ץ': 'צ'
 }
 
-PUNCT_RE = re.compile(r"[\u200F\u200E\u202A-\u202E]|[\p{P}\p{S}]", flags=re.UNICODE)
-
-# fallback punctuation removal (basic)
-BASIC_PUNCT = re.compile(r"[\n\r\t]|")
-
 
 def remove_niqqud(text: str) -> str:
     return NIKKUD_RE.sub('', text)

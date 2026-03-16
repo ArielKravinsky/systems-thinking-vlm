@@ -1,0 +1,1461 @@
+{
+  "timestamp": "20260227_131631",
+  "vlm_model": "Salesforce/blip2-flan-t5-xl",
+  "he_en_model": "Helsinki-NLP/opus-mt-tc-big-he-en",
+  "device": "cuda",
+  "n_pairs": 20,
+  "prompts_meta": [
+    {
+      "id": "P1",
+      "style": "plain_description",
+      "description": "Baseline – describe what you see, no concept hint"
+    },
+    {
+      "id": "P2",
+      "style": "concept_connection",
+      "description": "Name the concept, ask for a one-sentence connection"
+    },
+    {
+      "id": "P3",
+      "style": "fill_in_blank",
+      "description": "Fill-in-the-blank – forces 'shows X because Y' structure (current prompt)"
+    },
+    {
+      "id": "P4",
+      "style": "cause_effect",
+      "description": "Ask explicitly for cause-and-effect reasoning"
+    },
+    {
+      "id": "P5",
+      "style": "expert_narrator",
+      "description": "Frame the VLM as an educator explaining to a student"
+    },
+    {
+      "id": "P6",
+      "style": "direct_question",
+      "description": "Pass the translated question directly to the model"
+    },
+    {
+      "id": "P7",
+      "style": "why_evidence",
+      "description": "Ask 'why does this image represent X?' + request visual evidence"
+    },
+    {
+      "id": "P8",
+      "style": "connections",
+      "description": "Focus on visible connections and interdependencies"
+    },
+    {
+      "id": "P9",
+      "style": "narrative",
+      "description": "Ask the model to tell a brief story about the image"
+    },
+    {
+      "id": "P10",
+      "style": "counterfactual",
+      "description": "Contrast: what IS shown vs. what would change if the concept were absent"
+    }
+  ],
+  "results": [
+    {
+      "question_num": 1,
+      "answer_num": 1,
+      "image_path": "/home/alex/systems-thinking-vlm/dataset/images/1_1.png",
+      "question_he": "הסבירו מדוע בחרתם בתמונה זו כמשקפת את המשפט \" העבודה הושלמה בהצלחה\"",
+      "question_en": "Explain why you chose this image as reflecting the sentence \"Work completed successfully\"",
+      "concept": "Work completed successfully",
+      "prompts": {
+        "P1": {
+          "style": "plain_description",
+          "description": "Baseline – describe what you see, no concept hint",
+          "prompt_text": "Describe what you see in this image in one or two sentences.",
+          "answer": "two military men are preparing to load a missile onto a fighter jet"
+        },
+        "P2": {
+          "style": "concept_connection",
+          "description": "Name the concept, ask for a one-sentence connection",
+          "prompt_text": "The concept is: \"Work completed successfully\".\nIn one sentence, describe what this image shows and how it relates to this concept.",
+          "answer": "Two military men are preparing to load a missile onto a fighter jet"
+        },
+        "P3": {
+          "style": "fill_in_blank",
+          "description": "Fill-in-the-blank – forces 'shows X because Y' structure (current prompt)",
+          "prompt_text": "You are a systems thinking expert analyzing an image.\nConcept: \"Work completed successfully\"\nComplete this sentence by filling in what you observe and why it connects to the concept:\n\"This image shows [what you see], which illustrates \\\"Work completed successfully\\\" because [explain the visual link].\"\nAnswer: This image shows",
+          "answer": "This image shows two military men preparing to load a missile onto a fighter jet"
+        },
+        "P4": {
+          "style": "cause_effect",
+          "description": "Ask explicitly for cause-and-effect reasoning",
+          "prompt_text": "Concept: \"Work completed successfully\".\nLook at this image and answer:\nWhat cause-and-effect relationship does it show, and how does that illustrate the concept?",
+          "answer": "the men are completing their work and the plane is on the runway"
+        },
+        "P5": {
+          "style": "expert_narrator",
+          "description": "Frame the VLM as an educator explaining to a student",
+          "prompt_text": "You are a systems thinking educator teaching the concept \"Work completed successfully\".\nWrite one sentence explaining to a student what this image shows and why it was chosen.",
+          "answer": "Two military men are preparing to load a missile onto a fighter jet"
+        },
+        "P6": {
+          "style": "direct_question",
+          "description": "Pass the translated question directly to the model",
+          "prompt_text": "Explain why you chose this image as reflecting the sentence \"Work completed successfully\"",
+          "answer": "this image shows a military man loading a missile onto a jet"
+        },
+        "P7": {
+          "style": "why_evidence",
+          "description": "Ask 'why does this image represent X?' + request visual evidence",
+          "prompt_text": "Why does this image represent the idea that \"Work completed successfully\"?\nWhat specific visual elements support your answer?",
+          "answer": "two men are preparing to load a bomb"
+        },
+        "P8": {
+          "style": "connections",
+          "description": "Focus on visible connections and interdependencies",
+          "prompt_text": "Concept: \"Work completed successfully\".\nWhat connections, relationships, or interdependencies are visible in this image that illustrate this concept?\nAnswer in one sentence.",
+          "answer": "Two men are preparing to load a missile onto a fighter jet"
+        },
+        "P9": {
+          "style": "narrative",
+          "description": "Ask the model to tell a brief story about the image",
+          "prompt_text": "Tell a brief story (one or two sentences) about what is happening in this image that demonstrates the concept \"Work completed successfully\".",
+          "answer": "two soldiers are preparing to load a missile onto a fighter jet"
+        },
+        "P10": {
+          "style": "counterfactual",
+          "description": "Contrast: what IS shown vs. what would change if the concept were absent",
+          "prompt_text": "Look at this image and answer in one sentence:\nWhat is happening here, and how would the situation be different if \"Work completed successfully\" were NOT the case?",
+          "answer": "Two military men are preparing to load a bomb into a fighter jet"
+        }
+      }
+    },
+    {
+      "question_num": 1,
+      "answer_num": 2,
+      "image_path": "/home/alex/systems-thinking-vlm/dataset/images/1_2.png",
+      "question_he": "הסבירו מדוע בחרתם בתמונה זו כמשקפת את המשפט \" העבודה הושלמה בהצלחה\"",
+      "question_en": "Explain why you chose this image as reflecting the sentence \"Work completed successfully\"",
+      "concept": "Work completed successfully",
+      "prompts": {
+        "P1": {
+          "style": "plain_description",
+          "description": "Baseline – describe what you see, no concept hint",
+          "prompt_text": "Describe what you see in this image in one or two sentences.",
+          "answer": "a bulldozer and dump truck in front of a quarry"
+        },
+        "P2": {
+          "style": "concept_connection",
+          "description": "Name the concept, ask for a one-sentence connection",
+          "prompt_text": "The concept is: \"Work completed successfully\".\nIn one sentence, describe what this image shows and how it relates to this concept.",
+          "answer": "a bulldozer is driving a dump truck"
+        },
+        "P3": {
+          "style": "fill_in_blank",
+          "description": "Fill-in-the-blank – forces 'shows X because Y' structure (current prompt)",
+          "prompt_text": "You are a systems thinking expert analyzing an image.\nConcept: \"Work completed successfully\"\nComplete this sentence by filling in what you observe and why it connects to the concept:\n\"This image shows [what you see], which illustrates \\\"Work completed successfully\\\" because [explain the visual link].\"\nAnswer: This image shows",
+          "answer": "This image shows a bulldozer and dump truck"
+        },
+        "P4": {
+          "style": "cause_effect",
+          "description": "Ask explicitly for cause-and-effect reasoning",
+          "prompt_text": "Concept: \"Work completed successfully\".\nLook at this image and answer:\nWhat cause-and-effect relationship does it show, and how does that illustrate the concept?",
+          "answer": "the work is done successfully and the truck is parked"
+        },
+        "P5": {
+          "style": "expert_narrator",
+          "description": "Frame the VLM as an educator explaining to a student",
+          "prompt_text": "You are a systems thinking educator teaching the concept \"Work completed successfully\".\nWrite one sentence explaining to a student what this image shows and why it was chosen.",
+          "answer": "this image shows a bulldozer and dump truck"
+        },
+        "P6": {
+          "style": "direct_question",
+          "description": "Pass the translated question directly to the model",
+          "prompt_text": "Explain why you chose this image as reflecting the sentence \"Work completed successfully\"",
+          "answer": "this image is a good example of the work completed successfully"
+        },
+        "P7": {
+          "style": "why_evidence",
+          "description": "Ask 'why does this image represent X?' + request visual evidence",
+          "prompt_text": "Why does this image represent the idea that \"Work completed successfully\"?\nWhat specific visual elements support your answer?",
+          "answer": "the truck is parked in front of the dump"
+        },
+        "P8": {
+          "style": "connections",
+          "description": "Focus on visible connections and interdependencies",
+          "prompt_text": "Concept: \"Work completed successfully\".\nWhat connections, relationships, or interdependencies are visible in this image that illustrate this concept?\nAnswer in one sentence.",
+          "answer": "the bulldozer is driving away"
+        },
+        "P9": {
+          "style": "narrative",
+          "description": "Ask the model to tell a brief story about the image",
+          "prompt_text": "Tell a brief story (one or two sentences) about what is happening in this image that demonstrates the concept \"Work completed successfully\".",
+          "answer": "a bulldozer is working on the construction site"
+        },
+        "P10": {
+          "style": "counterfactual",
+          "description": "Contrast: what IS shown vs. what would change if the concept were absent",
+          "prompt_text": "Look at this image and answer in one sentence:\nWhat is happening here, and how would the situation be different if \"Work completed successfully\" were NOT the case?",
+          "answer": "a truck is driving past a dump truck"
+        }
+      }
+    },
+    {
+      "question_num": 2,
+      "answer_num": 1,
+      "image_path": "/home/alex/systems-thinking-vlm/dataset/images/2_1.png",
+      "question_he": "הסבירו מדוע בחרתם בתמונה זו כמשקפת את המשפט \"ההחלטה התקבלה\"",
+      "question_en": "Explain why you chose this picture as reflecting the sentence \"The decision has been made\"",
+      "concept": "The decision has been made",
+      "prompts": {
+        "P1": {
+          "style": "plain_description",
+          "description": "Baseline – describe what you see, no concept hint",
+          "prompt_text": "Describe what you see in this image in one or two sentences.",
+          "answer": "a group of people sitting around a table"
+        },
+        "P2": {
+          "style": "concept_connection",
+          "description": "Name the concept, ask for a one-sentence connection",
+          "prompt_text": "The concept is: \"The decision has been made\".\nIn one sentence, describe what this image shows and how it relates to this concept.",
+          "answer": "a group of people are sitting around a table and talking"
+        },
+        "P3": {
+          "style": "fill_in_blank",
+          "description": "Fill-in-the-blank – forces 'shows X because Y' structure (current prompt)",
+          "prompt_text": "You are a systems thinking expert analyzing an image.\nConcept: \"The decision has been made\"\nComplete this sentence by filling in what you observe and why it connects to the concept:\n\"This image shows [what you see], which illustrates \\\"The decision has been made\\\" because [explain the visual link].\"\nAnswer: This image shows",
+          "answer": "This image shows a group of people sitting around a table"
+        },
+        "P4": {
+          "style": "cause_effect",
+          "description": "Ask explicitly for cause-and-effect reasoning",
+          "prompt_text": "Concept: \"The decision has been made\".\nLook at this image and answer:\nWhat cause-and-effect relationship does it show, and how does that illustrate the concept?",
+          "answer": "the decision has been made and the people are happy"
+        },
+        "P5": {
+          "style": "expert_narrator",
+          "description": "Frame the VLM as an educator explaining to a student",
+          "prompt_text": "You are a systems thinking educator teaching the concept \"The decision has been made\".\nWrite one sentence explaining to a student what this image shows and why it was chosen.",
+          "answer": "a group of people sitting around a table"
+        },
+        "P6": {
+          "style": "direct_question",
+          "description": "Pass the translated question directly to the model",
+          "prompt_text": "Explain why you chose this picture as reflecting the sentence \"The decision has been made\"",
+          "answer": "this picture shows a group of people in a meeting"
+        },
+        "P7": {
+          "style": "why_evidence",
+          "description": "Ask 'why does this image represent X?' + request visual evidence",
+          "prompt_text": "Why does this image represent the idea that \"The decision has been made\"?\nWhat specific visual elements support your answer?",
+          "answer": "people are sitting around a table and talking"
+        },
+        "P8": {
+          "style": "connections",
+          "description": "Focus on visible connections and interdependencies",
+          "prompt_text": "Concept: \"The decision has been made\".\nWhat connections, relationships, or interdependencies are visible in this image that illustrate this concept?\nAnswer in one sentence.",
+          "answer": "people are talking to each other in a meeting"
+        },
+        "P9": {
+          "style": "narrative",
+          "description": "Ask the model to tell a brief story about the image",
+          "prompt_text": "Tell a brief story (one or two sentences) about what is happening in this image that demonstrates the concept \"The decision has been made\".",
+          "answer": "a group of business people are having a meeting to decide on a project"
+        },
+        "P10": {
+          "style": "counterfactual",
+          "description": "Contrast: what IS shown vs. what would change if the concept were absent",
+          "prompt_text": "Look at this image and answer in one sentence:\nWhat is happening here, and how would the situation be different if \"The decision has been made\" were NOT the case?",
+          "answer": "a group of people are discussing a decision"
+        }
+      }
+    },
+    {
+      "question_num": 2,
+      "answer_num": 2,
+      "image_path": "/home/alex/systems-thinking-vlm/dataset/images/2_2.png",
+      "question_he": "הסבירו מדוע בחרתם בתמונה זו כמשקפת את המשפט \"ההחלטה התקבלה\"",
+      "question_en": "Explain why you chose this picture as reflecting the sentence \"The decision has been made\"",
+      "concept": "The decision has been made",
+      "prompts": {
+        "P1": {
+          "style": "plain_description",
+          "description": "Baseline – describe what you see, no concept hint",
+          "prompt_text": "Describe what you see in this image in one or two sentences.",
+          "answer": "a group of people are shaking hands around a table"
+        },
+        "P2": {
+          "style": "concept_connection",
+          "description": "Name the concept, ask for a one-sentence connection",
+          "prompt_text": "The concept is: \"The decision has been made\".\nIn one sentence, describe what this image shows and how it relates to this concept.",
+          "answer": "a group of people shake hands after making a decision"
+        },
+        "P3": {
+          "style": "fill_in_blank",
+          "description": "Fill-in-the-blank – forces 'shows X because Y' structure (current prompt)",
+          "prompt_text": "You are a systems thinking expert analyzing an image.\nConcept: \"The decision has been made\"\nComplete this sentence by filling in what you observe and why it connects to the concept:\n\"This image shows [what you see], which illustrates \\\"The decision has been made\\\" because [explain the visual link].\"\nAnswer: This image shows",
+          "answer": "This image shows a group of people clapping"
+        },
+        "P4": {
+          "style": "cause_effect",
+          "description": "Ask explicitly for cause-and-effect reasoning",
+          "prompt_text": "Concept: \"The decision has been made\".\nLook at this image and answer:\nWhat cause-and-effect relationship does it show, and how does that illustrate the concept?",
+          "answer": "the decision has been made and the people are celebrating"
+        },
+        "P5": {
+          "style": "expert_narrator",
+          "description": "Frame the VLM as an educator explaining to a student",
+          "prompt_text": "You are a systems thinking educator teaching the concept \"The decision has been made\".\nWrite one sentence explaining to a student what this image shows and why it was chosen.",
+          "answer": "a group of people shake hands after making a decision"
+        },
+        "P6": {
+          "style": "direct_question",
+          "description": "Pass the translated question directly to the model",
+          "prompt_text": "Explain why you chose this picture as reflecting the sentence \"The decision has been made\"",
+          "answer": "this picture shows a group of people celebrating a decision"
+        },
+        "P7": {
+          "style": "why_evidence",
+          "description": "Ask 'why does this image represent X?' + request visual evidence",
+          "prompt_text": "Why does this image represent the idea that \"The decision has been made\"?\nWhat specific visual elements support your answer?",
+          "answer": "the people are standing around a table"
+        },
+        "P8": {
+          "style": "connections",
+          "description": "Focus on visible connections and interdependencies",
+          "prompt_text": "Concept: \"The decision has been made\".\nWhat connections, relationships, or interdependencies are visible in this image that illustrate this concept?\nAnswer in one sentence.",
+          "answer": "people are clapping and celebrating the decision"
+        },
+        "P9": {
+          "style": "narrative",
+          "description": "Ask the model to tell a brief story about the image",
+          "prompt_text": "Tell a brief story (one or two sentences) about what is happening in this image that demonstrates the concept \"The decision has been made\".",
+          "answer": "a group of people are celebrating the decision to start a new business"
+        },
+        "P10": {
+          "style": "counterfactual",
+          "description": "Contrast: what IS shown vs. what would change if the concept were absent",
+          "prompt_text": "Look at this image and answer in one sentence:\nWhat is happening here, and how would the situation be different if \"The decision has been made\" were NOT the case?",
+          "answer": "a group of people are celebrating a decision"
+        }
+      }
+    },
+    {
+      "question_num": 3,
+      "answer_num": 1,
+      "image_path": "/home/alex/systems-thinking-vlm/dataset/images/3_1.png",
+      "question_he": "הסבירו מדוע בחרתם בתמונה זו כמשקפת את המשפט \" הילד למד שיעור חשוב  \"",
+      "question_en": "Explain why you chose this picture as reflecting the sentence \"The child has learned an important lesson\"",
+      "concept": "The child has learned an important lesson",
+      "prompts": {
+        "P1": {
+          "style": "plain_description",
+          "description": "Baseline – describe what you see, no concept hint",
+          "prompt_text": "Describe what you see in this image in one or two sentences.",
+          "answer": "a group of kids working on homework"
+        },
+        "P2": {
+          "style": "concept_connection",
+          "description": "Name the concept, ask for a one-sentence connection",
+          "prompt_text": "The concept is: \"The child has learned an important lesson\".\nIn one sentence, describe what this image shows and how it relates to this concept.",
+          "answer": "a group of children are working on a project"
+        },
+        "P3": {
+          "style": "fill_in_blank",
+          "description": "Fill-in-the-blank – forces 'shows X because Y' structure (current prompt)",
+          "prompt_text": "You are a systems thinking expert analyzing an image.\nConcept: \"The child has learned an important lesson\"\nComplete this sentence by filling in what you observe and why it connects to the concept:\n\"This image shows [what you see], which illustrates \\\"The child has learned an important lesson\\\" because [explain the visual link].\"\nAnswer: This image shows",
+          "answer": "This image shows a group of children working together on a project"
+        },
+        "P4": {
+          "style": "cause_effect",
+          "description": "Ask explicitly for cause-and-effect reasoning",
+          "prompt_text": "Concept: \"The child has learned an important lesson\".\nLook at this image and answer:\nWhat cause-and-effect relationship does it show, and how does that illustrate the concept?",
+          "answer": "the child has learned a lesson, and the child is happy"
+        },
+        "P5": {
+          "style": "expert_narrator",
+          "description": "Frame the VLM as an educator explaining to a student",
+          "prompt_text": "You are a systems thinking educator teaching the concept \"The child has learned an important lesson\".\nWrite one sentence explaining to a student what this image shows and why it was chosen.",
+          "answer": "a group of children are working together on a project"
+        },
+        "P6": {
+          "style": "direct_question",
+          "description": "Pass the translated question directly to the model",
+          "prompt_text": "Explain why you chose this picture as reflecting the sentence \"The child has learned an important lesson\"",
+          "answer": "this picture shows a group of children working together"
+        },
+        "P7": {
+          "style": "why_evidence",
+          "description": "Ask 'why does this image represent X?' + request visual evidence",
+          "prompt_text": "Why does this image represent the idea that \"The child has learned an important lesson\"?\nWhat specific visual elements support your answer?",
+          "answer": "the child is sitting at a table with other children"
+        },
+        "P8": {
+          "style": "connections",
+          "description": "Focus on visible connections and interdependencies",
+          "prompt_text": "Concept: \"The child has learned an important lesson\".\nWhat connections, relationships, or interdependencies are visible in this image that illustrate this concept?\nAnswer in one sentence.",
+          "answer": "the child has learned an important lesson by doing homework"
+        },
+        "P9": {
+          "style": "narrative",
+          "description": "Ask the model to tell a brief story about the image",
+          "prompt_text": "Tell a brief story (one or two sentences) about what is happening in this image that demonstrates the concept \"The child has learned an important lesson\".",
+          "answer": "The children are working on a project"
+        },
+        "P10": {
+          "style": "counterfactual",
+          "description": "Contrast: what IS shown vs. what would change if the concept were absent",
+          "prompt_text": "Look at this image and answer in one sentence:\nWhat is happening here, and how would the situation be different if \"The child has learned an important lesson\" were NOT the case?",
+          "answer": "a group of children are working together on a project"
+        }
+      }
+    },
+    {
+      "question_num": 3,
+      "answer_num": 2,
+      "image_path": "/home/alex/systems-thinking-vlm/dataset/images/3_2.png",
+      "question_he": "הסבירו מדוע בחרתם בתמונה זו כמשקפת את המשפט \" הילד למד שיעור חשוב  \"",
+      "question_en": "Explain why you chose this picture as reflecting the sentence \"The child has learned an important lesson\"",
+      "concept": "The child has learned an important lesson",
+      "prompts": {
+        "P1": {
+          "style": "plain_description",
+          "description": "Baseline – describe what you see, no concept hint",
+          "prompt_text": "Describe what you see in this image in one or two sentences.",
+          "answer": "a mother and daughter are working on homework"
+        },
+        "P2": {
+          "style": "concept_connection",
+          "description": "Name the concept, ask for a one-sentence connection",
+          "prompt_text": "The concept is: \"The child has learned an important lesson\".\nIn one sentence, describe what this image shows and how it relates to this concept.",
+          "answer": "a mother and daughter are working on homework"
+        },
+        "P3": {
+          "style": "fill_in_blank",
+          "description": "Fill-in-the-blank – forces 'shows X because Y' structure (current prompt)",
+          "prompt_text": "You are a systems thinking expert analyzing an image.\nConcept: \"The child has learned an important lesson\"\nComplete this sentence by filling in what you observe and why it connects to the concept:\n\"This image shows [what you see], which illustrates \\\"The child has learned an important lesson\\\" because [explain the visual link].\"\nAnswer: This image shows",
+          "answer": "This image shows a child writing in a notebook"
+        },
+        "P4": {
+          "style": "cause_effect",
+          "description": "Ask explicitly for cause-and-effect reasoning",
+          "prompt_text": "Concept: \"The child has learned an important lesson\".\nLook at this image and answer:\nWhat cause-and-effect relationship does it show, and how does that illustrate the concept?",
+          "answer": "the child has learned a lesson, and the mother is helping her"
+        },
+        "P5": {
+          "style": "expert_narrator",
+          "description": "Frame the VLM as an educator explaining to a student",
+          "prompt_text": "You are a systems thinking educator teaching the concept \"The child has learned an important lesson\".\nWrite one sentence explaining to a student what this image shows and why it was chosen.",
+          "answer": "The image shows a mother and daughter working together on homework"
+        },
+        "P6": {
+          "style": "direct_question",
+          "description": "Pass the translated question directly to the model",
+          "prompt_text": "Explain why you chose this picture as reflecting the sentence \"The child has learned an important lesson\"",
+          "answer": "this picture shows a young girl writing in her notebook"
+        },
+        "P7": {
+          "style": "why_evidence",
+          "description": "Ask 'why does this image represent X?' + request visual evidence",
+          "prompt_text": "Why does this image represent the idea that \"The child has learned an important lesson\"?\nWhat specific visual elements support your answer?",
+          "answer": "the girl is writing in her notebook and the mother is helping her"
+        },
+        "P8": {
+          "style": "connections",
+          "description": "Focus on visible connections and interdependencies",
+          "prompt_text": "Concept: \"The child has learned an important lesson\".\nWhat connections, relationships, or interdependencies are visible in this image that illustrate this concept?\nAnswer in one sentence.",
+          "answer": "the child is learning a lesson from her mother"
+        },
+        "P9": {
+          "style": "narrative",
+          "description": "Ask the model to tell a brief story about the image",
+          "prompt_text": "Tell a brief story (one or two sentences) about what is happening in this image that demonstrates the concept \"The child has learned an important lesson\".",
+          "answer": "The mother is helping her daughter with her homework"
+        },
+        "P10": {
+          "style": "counterfactual",
+          "description": "Contrast: what IS shown vs. what would change if the concept were absent",
+          "prompt_text": "Look at this image and answer in one sentence:\nWhat is happening here, and how would the situation be different if \"The child has learned an important lesson\" were NOT the case?",
+          "answer": "a mother and daughter are working on homework"
+        }
+      }
+    },
+    {
+      "question_num": 4,
+      "answer_num": 1,
+      "image_path": "/home/alex/systems-thinking-vlm/dataset/images/4_1.png",
+      "question_he": "הסבירו מדוע בחרתם בתמונה זו כמשקפת את המשפט \"  המערכת האקולוגית מתפקדת היטב  \"",
+      "question_en": "Explain why you chose this image as reflecting the sentence \"The ecosystem is functioning well\"",
+      "concept": "The ecosystem is functioning well",
+      "prompts": {
+        "P1": {
+          "style": "plain_description",
+          "description": "Baseline – describe what you see, no concept hint",
+          "prompt_text": "Describe what you see in this image in one or two sentences.",
+          "answer": "Two people are working on a solar panel in the field"
+        },
+        "P2": {
+          "style": "concept_connection",
+          "description": "Name the concept, ask for a one-sentence connection",
+          "prompt_text": "The concept is: \"The ecosystem is functioning well\".\nIn one sentence, describe what this image shows and how it relates to this concept.",
+          "answer": "two people are working on a solar panel in the field"
+        },
+        "P3": {
+          "style": "fill_in_blank",
+          "description": "Fill-in-the-blank – forces 'shows X because Y' structure (current prompt)",
+          "prompt_text": "You are a systems thinking expert analyzing an image.\nConcept: \"The ecosystem is functioning well\"\nComplete this sentence by filling in what you observe and why it connects to the concept:\n\"This image shows [what you see], which illustrates \\\"The ecosystem is functioning well\\\" because [explain the visual link].\"\nAnswer: This image shows",
+          "answer": "This image shows a man and woman working on solar panels"
+        },
+        "P4": {
+          "style": "cause_effect",
+          "description": "Ask explicitly for cause-and-effect reasoning",
+          "prompt_text": "Concept: \"The ecosystem is functioning well\".\nLook at this image and answer:\nWhat cause-and-effect relationship does it show, and how does that illustrate the concept?",
+          "answer": "the ecosystem is functioning well because there is a lot of food"
+        },
+        "P5": {
+          "style": "expert_narrator",
+          "description": "Frame the VLM as an educator explaining to a student",
+          "prompt_text": "You are a systems thinking educator teaching the concept \"The ecosystem is functioning well\".\nWrite one sentence explaining to a student what this image shows and why it was chosen.",
+          "answer": "The image shows two people working on a solar panel in the field"
+        },
+        "P6": {
+          "style": "direct_question",
+          "description": "Pass the translated question directly to the model",
+          "prompt_text": "Explain why you chose this image as reflecting the sentence \"The ecosystem is functioning well\"",
+          "answer": "the image shows two people working on solar panels"
+        },
+        "P7": {
+          "style": "why_evidence",
+          "description": "Ask 'why does this image represent X?' + request visual evidence",
+          "prompt_text": "Why does this image represent the idea that \"The ecosystem is functioning well\"?\nWhat specific visual elements support your answer?",
+          "answer": "the solar panel is in the field and the people are working on it"
+        },
+        "P8": {
+          "style": "connections",
+          "description": "Focus on visible connections and interdependencies",
+          "prompt_text": "Concept: \"The ecosystem is functioning well\".\nWhat connections, relationships, or interdependencies are visible in this image that illustrate this concept?\nAnswer in one sentence.",
+          "answer": "two people are working on solar panels in the field"
+        },
+        "P9": {
+          "style": "narrative",
+          "description": "Ask the model to tell a brief story about the image",
+          "prompt_text": "Tell a brief story (one or two sentences) about what is happening in this image that demonstrates the concept \"The ecosystem is functioning well\".",
+          "answer": "Two people are working on a solar panel in the field"
+        },
+        "P10": {
+          "style": "counterfactual",
+          "description": "Contrast: what IS shown vs. what would change if the concept were absent",
+          "prompt_text": "Look at this image and answer in one sentence:\nWhat is happening here, and how would the situation be different if \"The ecosystem is functioning well\" were NOT the case?",
+          "answer": "the solar panel is being installed on a field"
+        }
+      }
+    },
+    {
+      "question_num": 4,
+      "answer_num": 2,
+      "image_path": "/home/alex/systems-thinking-vlm/dataset/images/4_2.png",
+      "question_he": "הסבירו מדוע בחרתם בתמונה זו כמשקפת את המשפט \"  המערכת האקולוגית מתפקדת היטב  \"",
+      "question_en": "Explain why you chose this image as reflecting the sentence \"The ecosystem is functioning well\"",
+      "concept": "The ecosystem is functioning well",
+      "prompts": {
+        "P1": {
+          "style": "plain_description",
+          "description": "Baseline – describe what you see, no concept hint",
+          "prompt_text": "Describe what you see in this image in one or two sentences.",
+          "answer": "a bee is pollinating blue flowers"
+        },
+        "P2": {
+          "style": "concept_connection",
+          "description": "Name the concept, ask for a one-sentence connection",
+          "prompt_text": "The concept is: \"The ecosystem is functioning well\".\nIn one sentence, describe what this image shows and how it relates to this concept.",
+          "answer": "a bee is pollinating blue flowers"
+        },
+        "P3": {
+          "style": "fill_in_blank",
+          "description": "Fill-in-the-blank – forces 'shows X because Y' structure (current prompt)",
+          "prompt_text": "You are a systems thinking expert analyzing an image.\nConcept: \"The ecosystem is functioning well\"\nComplete this sentence by filling in what you observe and why it connects to the concept:\n\"This image shows [what you see], which illustrates \\\"The ecosystem is functioning well\\\" because [explain the visual link].\"\nAnswer: This image shows",
+          "answer": "This image shows a bee on a flower"
+        },
+        "P4": {
+          "style": "cause_effect",
+          "description": "Ask explicitly for cause-and-effect reasoning",
+          "prompt_text": "Concept: \"The ecosystem is functioning well\".\nLook at this image and answer:\nWhat cause-and-effect relationship does it show, and how does that illustrate the concept?",
+          "answer": "bees are pollinating flowers"
+        },
+        "P5": {
+          "style": "expert_narrator",
+          "description": "Frame the VLM as an educator explaining to a student",
+          "prompt_text": "You are a systems thinking educator teaching the concept \"The ecosystem is functioning well\".\nWrite one sentence explaining to a student what this image shows and why it was chosen.",
+          "answer": "a bee is pollinating blue flowers"
+        },
+        "P6": {
+          "style": "direct_question",
+          "description": "Pass the translated question directly to the model",
+          "prompt_text": "Explain why you chose this image as reflecting the sentence \"The ecosystem is functioning well\"",
+          "answer": "this image shows a bee on a blue flower"
+        },
+        "P7": {
+          "style": "why_evidence",
+          "description": "Ask 'why does this image represent X?' + request visual evidence",
+          "prompt_text": "Why does this image represent the idea that \"The ecosystem is functioning well\"?\nWhat specific visual elements support your answer?",
+          "answer": "bees are pollinating flowers"
+        },
+        "P8": {
+          "style": "connections",
+          "description": "Focus on visible connections and interdependencies",
+          "prompt_text": "Concept: \"The ecosystem is functioning well\".\nWhat connections, relationships, or interdependencies are visible in this image that illustrate this concept?\nAnswer in one sentence.",
+          "answer": "bees are pollinating blue flowers"
+        },
+        "P9": {
+          "style": "narrative",
+          "description": "Ask the model to tell a brief story about the image",
+          "prompt_text": "Tell a brief story (one or two sentences) about what is happening in this image that demonstrates the concept \"The ecosystem is functioning well\".",
+          "answer": "a bee is pollinating blue flowers"
+        },
+        "P10": {
+          "style": "counterfactual",
+          "description": "Contrast: what IS shown vs. what would change if the concept were absent",
+          "prompt_text": "Look at this image and answer in one sentence:\nWhat is happening here, and how would the situation be different if \"The ecosystem is functioning well\" were NOT the case?",
+          "answer": "bees are pollinating flowers"
+        }
+      }
+    },
+    {
+      "question_num": 5,
+      "answer_num": 1,
+      "image_path": "/home/alex/systems-thinking-vlm/dataset/images/5_1.png",
+      "question_he": "הסבירו מדוע בחרתם בתמונה זו כמשקפת את המשפט \"   מערכות דומות   \" ?",
+      "question_en": "Explain why you chose this image as reflecting the sentence \"similar systems\"?",
+      "concept": "similar systems",
+      "prompts": {
+        "P1": {
+          "style": "plain_description",
+          "description": "Baseline – describe what you see, no concept hint",
+          "prompt_text": "Describe what you see in this image in one or two sentences.",
+          "answer": "a cityscape with trees and animals"
+        },
+        "P2": {
+          "style": "concept_connection",
+          "description": "Name the concept, ask for a one-sentence connection",
+          "prompt_text": "The concept is: \"similar systems\".\nIn one sentence, describe what this image shows and how it relates to this concept.",
+          "answer": "a cityscape with trees and a river"
+        },
+        "P3": {
+          "style": "fill_in_blank",
+          "description": "Fill-in-the-blank – forces 'shows X because Y' structure (current prompt)",
+          "prompt_text": "You are a systems thinking expert analyzing an image.\nConcept: \"similar systems\"\nComplete this sentence by filling in what you observe and why it connects to the concept:\n\"This image shows [what you see], which illustrates \\\"similar systems\\\" because [explain the visual link].\"\nAnswer: This image shows",
+          "answer": "This image shows the same city and a different one"
+        },
+        "P4": {
+          "style": "cause_effect",
+          "description": "Ask explicitly for cause-and-effect reasoning",
+          "prompt_text": "Concept: \"similar systems\".\nLook at this image and answer:\nWhat cause-and-effect relationship does it show, and how does that illustrate the concept?",
+          "answer": "the two images show similar systems in nature"
+        },
+        "P5": {
+          "style": "expert_narrator",
+          "description": "Frame the VLM as an educator explaining to a student",
+          "prompt_text": "You are a systems thinking educator teaching the concept \"similar systems\".\nWrite one sentence explaining to a student what this image shows and why it was chosen.",
+          "answer": "the image shows two images of a city and a river"
+        },
+        "P6": {
+          "style": "direct_question",
+          "description": "Pass the translated question directly to the model",
+          "prompt_text": "Explain why you chose this image as reflecting the sentence \"similar systems\"?",
+          "answer": "this image shows a city and a river"
+        },
+        "P7": {
+          "style": "why_evidence",
+          "description": "Ask 'why does this image represent X?' + request visual evidence",
+          "prompt_text": "Why does this image represent the idea that \"similar systems\"?\nWhat specific visual elements support your answer?",
+          "answer": "the image shows a city and a forest"
+        },
+        "P8": {
+          "style": "connections",
+          "description": "Focus on visible connections and interdependencies",
+          "prompt_text": "Concept: \"similar systems\".\nWhat connections, relationships, or interdependencies are visible in this image that illustrate this concept?\nAnswer in one sentence.",
+          "answer": "the two images show similar systems in nature"
+        },
+        "P9": {
+          "style": "narrative",
+          "description": "Ask the model to tell a brief story about the image",
+          "prompt_text": "Tell a brief story (one or two sentences) about what is happening in this image that demonstrates the concept \"similar systems\".",
+          "answer": "the two images are of a city and a forest"
+        },
+        "P10": {
+          "style": "counterfactual",
+          "description": "Contrast: what IS shown vs. what would change if the concept were absent",
+          "prompt_text": "Look at this image and answer in one sentence:\nWhat is happening here, and how would the situation be different if \"similar systems\" were NOT the case?",
+          "answer": "the two images are showing the same scene"
+        }
+      }
+    },
+    {
+      "question_num": 5,
+      "answer_num": 2,
+      "image_path": "/home/alex/systems-thinking-vlm/dataset/images/5_2.png",
+      "question_he": "הסבירו מדוע בחרתם בתמונה זו כמשקפת את המשפט \"   מערכות דומות   \" ?",
+      "question_en": "Explain why you chose this image as reflecting the sentence \"similar systems\"?",
+      "concept": "similar systems",
+      "prompts": {
+        "P1": {
+          "style": "plain_description",
+          "description": "Baseline – describe what you see, no concept hint",
+          "prompt_text": "Describe what you see in this image in one or two sentences.",
+          "answer": "bees in a honey factory and a worker"
+        },
+        "P2": {
+          "style": "concept_connection",
+          "description": "Name the concept, ask for a one-sentence connection",
+          "prompt_text": "The concept is: \"similar systems\".\nIn one sentence, describe what this image shows and how it relates to this concept.",
+          "answer": "a beehive and honeycombs in a laboratory"
+        },
+        "P3": {
+          "style": "fill_in_blank",
+          "description": "Fill-in-the-blank – forces 'shows X because Y' structure (current prompt)",
+          "prompt_text": "You are a systems thinking expert analyzing an image.\nConcept: \"similar systems\"\nComplete this sentence by filling in what you observe and why it connects to the concept:\n\"This image shows [what you see], which illustrates \\\"similar systems\\\" because [explain the visual link].\"\nAnswer: This image shows",
+          "answer": "This image shows bees in a honey factory and a beehive"
+        },
+        "P4": {
+          "style": "cause_effect",
+          "description": "Ask explicitly for cause-and-effect reasoning",
+          "prompt_text": "Concept: \"similar systems\".\nLook at this image and answer:\nWhat cause-and-effect relationship does it show, and how does that illustrate the concept?",
+          "answer": "bees and honeybees are similar systems"
+        },
+        "P5": {
+          "style": "expert_narrator",
+          "description": "Frame the VLM as an educator explaining to a student",
+          "prompt_text": "You are a systems thinking educator teaching the concept \"similar systems\".\nWrite one sentence explaining to a student what this image shows and why it was chosen.",
+          "answer": "the image shows a beehive and honeycombs"
+        },
+        "P6": {
+          "style": "direct_question",
+          "description": "Pass the translated question directly to the model",
+          "prompt_text": "Explain why you chose this image as reflecting the sentence \"similar systems\"?",
+          "answer": "this image shows a beehive and honeycomb"
+        },
+        "P7": {
+          "style": "why_evidence",
+          "description": "Ask 'why does this image represent X?' + request visual evidence",
+          "prompt_text": "Why does this image represent the idea that \"similar systems\"?\nWhat specific visual elements support your answer?",
+          "answer": "the bees are in a factory"
+        },
+        "P8": {
+          "style": "connections",
+          "description": "Focus on visible connections and interdependencies",
+          "prompt_text": "Concept: \"similar systems\".\nWhat connections, relationships, or interdependencies are visible in this image that illustrate this concept?\nAnswer in one sentence.",
+          "answer": "bees and honeycombs in a laboratory"
+        },
+        "P9": {
+          "style": "narrative",
+          "description": "Ask the model to tell a brief story about the image",
+          "prompt_text": "Tell a brief story (one or two sentences) about what is happening in this image that demonstrates the concept \"similar systems\".",
+          "answer": "a beehive is being built in the laboratory"
+        },
+        "P10": {
+          "style": "counterfactual",
+          "description": "Contrast: what IS shown vs. what would change if the concept were absent",
+          "prompt_text": "Look at this image and answer in one sentence:\nWhat is happening here, and how would the situation be different if \"similar systems\" were NOT the case?",
+          "answer": "bees are being hived"
+        }
+      }
+    },
+    {
+      "question_num": 6,
+      "answer_num": 1,
+      "image_path": "/home/alex/systems-thinking-vlm/dataset/images/6_1.png",
+      "question_he": "סבירו מדוע בחרתם בתמונה זו כמשקפת את המשפט \"    הקבוצה הצליחה להתקדם לעבר היעד     \"",
+      "question_en": "Explain why you chose this image as reflecting the sentence \"The group was able to advance towards the goal\"",
+      "concept": "The group was able to advance towards the goal",
+      "prompts": {
+        "P1": {
+          "style": "plain_description",
+          "description": "Baseline – describe what you see, no concept hint",
+          "prompt_text": "Describe what you see in this image in one or two sentences.",
+          "answer": "a group of people walking through the woods"
+        },
+        "P2": {
+          "style": "concept_connection",
+          "description": "Name the concept, ask for a one-sentence connection",
+          "prompt_text": "The concept is: \"The group was able to advance towards the goal\".\nIn one sentence, describe what this image shows and how it relates to this concept.",
+          "answer": "a group of people walking down a trail"
+        },
+        "P3": {
+          "style": "fill_in_blank",
+          "description": "Fill-in-the-blank – forces 'shows X because Y' structure (current prompt)",
+          "prompt_text": "You are a systems thinking expert analyzing an image.\nConcept: \"The group was able to advance towards the goal\"\nComplete this sentence by filling in what you observe and why it connects to the concept:\n\"This image shows [what you see], which illustrates \\\"The group was able to advance towards the goal\\\" because [explain the visual link].\"\nAnswer: This image shows",
+          "answer": "This image shows people walking down a path in the woods"
+        },
+        "P4": {
+          "style": "cause_effect",
+          "description": "Ask explicitly for cause-and-effect reasoning",
+          "prompt_text": "Concept: \"The group was able to advance towards the goal\".\nLook at this image and answer:\nWhat cause-and-effect relationship does it show, and how does that illustrate the concept?",
+          "answer": "The group was able to advance towards the goal"
+        },
+        "P5": {
+          "style": "expert_narrator",
+          "description": "Frame the VLM as an educator explaining to a student",
+          "prompt_text": "You are a systems thinking educator teaching the concept \"The group was able to advance towards the goal\".\nWrite one sentence explaining to a student what this image shows and why it was chosen.",
+          "answer": "The group was able to advance towards the goal because they were all working together"
+        },
+        "P6": {
+          "style": "direct_question",
+          "description": "Pass the translated question directly to the model",
+          "prompt_text": "Explain why you chose this image as reflecting the sentence \"The group was able to advance towards the goal\"",
+          "answer": "this image shows a group of people walking"
+        },
+        "P7": {
+          "style": "why_evidence",
+          "description": "Ask 'why does this image represent X?' + request visual evidence",
+          "prompt_text": "Why does this image represent the idea that \"The group was able to advance towards the goal\"?\nWhat specific visual elements support your answer?",
+          "answer": "the group is walking down a path"
+        },
+        "P8": {
+          "style": "connections",
+          "description": "Focus on visible connections and interdependencies",
+          "prompt_text": "Concept: \"The group was able to advance towards the goal\".\nWhat connections, relationships, or interdependencies are visible in this image that illustrate this concept?\nAnswer in one sentence.",
+          "answer": "the group is walking towards the goal of the hike"
+        },
+        "P9": {
+          "style": "narrative",
+          "description": "Ask the model to tell a brief story about the image",
+          "prompt_text": "Tell a brief story (one or two sentences) about what is happening in this image that demonstrates the concept \"The group was able to advance towards the goal\".",
+          "answer": "The group of hikers are walking down a trail in the woods"
+        },
+        "P10": {
+          "style": "counterfactual",
+          "description": "Contrast: what IS shown vs. what would change if the concept were absent",
+          "prompt_text": "Look at this image and answer in one sentence:\nWhat is happening here, and how would the situation be different if \"The group was able to advance towards the goal\" were NOT the case?",
+          "answer": "the group is walking down a path"
+        }
+      }
+    },
+    {
+      "question_num": 6,
+      "answer_num": 2,
+      "image_path": "/home/alex/systems-thinking-vlm/dataset/images/6_2.png",
+      "question_he": "סבירו מדוע בחרתם בתמונה זו כמשקפת את המשפט \"    הקבוצה הצליחה להתקדם לעבר היעד     \"",
+      "question_en": "Explain why you chose this image as reflecting the sentence \"The group was able to advance towards the goal\"",
+      "concept": "The group was able to advance towards the goal",
+      "prompts": {
+        "P1": {
+          "style": "plain_description",
+          "description": "Baseline – describe what you see, no concept hint",
+          "prompt_text": "Describe what you see in this image in one or two sentences.",
+          "answer": "people rowing in a boat on the water"
+        },
+        "P2": {
+          "style": "concept_connection",
+          "description": "Name the concept, ask for a one-sentence connection",
+          "prompt_text": "The concept is: \"The group was able to advance towards the goal\".\nIn one sentence, describe what this image shows and how it relates to this concept.",
+          "answer": "a group of people rowing in a boat"
+        },
+        "P3": {
+          "style": "fill_in_blank",
+          "description": "Fill-in-the-blank – forces 'shows X because Y' structure (current prompt)",
+          "prompt_text": "You are a systems thinking expert analyzing an image.\nConcept: \"The group was able to advance towards the goal\"\nComplete this sentence by filling in what you observe and why it connects to the concept:\n\"This image shows [what you see], which illustrates \\\"The group was able to advance towards the goal\\\" because [explain the visual link].\"\nAnswer: This image shows",
+          "answer": "This image shows people rowing in a boat on the water"
+        },
+        "P4": {
+          "style": "cause_effect",
+          "description": "Ask explicitly for cause-and-effect reasoning",
+          "prompt_text": "Concept: \"The group was able to advance towards the goal\".\nLook at this image and answer:\nWhat cause-and-effect relationship does it show, and how does that illustrate the concept?",
+          "answer": "the group was able to advance towards the goal"
+        },
+        "P5": {
+          "style": "expert_narrator",
+          "description": "Frame the VLM as an educator explaining to a student",
+          "prompt_text": "You are a systems thinking educator teaching the concept \"The group was able to advance towards the goal\".\nWrite one sentence explaining to a student what this image shows and why it was chosen.",
+          "answer": "a group of people rowing in a boat"
+        },
+        "P6": {
+          "style": "direct_question",
+          "description": "Pass the translated question directly to the model",
+          "prompt_text": "Explain why you chose this image as reflecting the sentence \"The group was able to advance towards the goal\"",
+          "answer": "this image shows a group of people rowing"
+        },
+        "P7": {
+          "style": "why_evidence",
+          "description": "Ask 'why does this image represent X?' + request visual evidence",
+          "prompt_text": "Why does this image represent the idea that \"The group was able to advance towards the goal\"?\nWhat specific visual elements support your answer?",
+          "answer": "the people are rowing in a boat"
+        },
+        "P8": {
+          "style": "connections",
+          "description": "Focus on visible connections and interdependencies",
+          "prompt_text": "Concept: \"The group was able to advance towards the goal\".\nWhat connections, relationships, or interdependencies are visible in this image that illustrate this concept?\nAnswer in one sentence.",
+          "answer": "people rowing in a boat together"
+        },
+        "P9": {
+          "style": "narrative",
+          "description": "Ask the model to tell a brief story about the image",
+          "prompt_text": "Tell a brief story (one or two sentences) about what is happening in this image that demonstrates the concept \"The group was able to advance towards the goal\".",
+          "answer": "The group of people are rowing in a boat"
+        },
+        "P10": {
+          "style": "counterfactual",
+          "description": "Contrast: what IS shown vs. what would change if the concept were absent",
+          "prompt_text": "Look at this image and answer in one sentence:\nWhat is happening here, and how would the situation be different if \"The group was able to advance towards the goal\" were NOT the case?",
+          "answer": "rowing team in a boat on the water"
+        }
+      }
+    },
+    {
+      "question_num": 7,
+      "answer_num": 1,
+      "image_path": "/home/alex/systems-thinking-vlm/dataset/images/7_1.png",
+      "question_he": "הסבירו מדוע בחרתם בתמונה זו כמשקפת את המשפט \"    הדרך שבה אני מבין את המציאות משפיעה על מה שאני רואה   \"",
+      "question_en": "Explain why you chose this image as reflecting the sentence \"The way I understand reality affects what I see\"",
+      "concept": "The way I understand reality affects what I see",
+      "prompts": {
+        "P1": {
+          "style": "plain_description",
+          "description": "Baseline – describe what you see, no concept hint",
+          "prompt_text": "Describe what you see in this image in one or two sentences.",
+          "answer": "a man is standing in front of a mirror"
+        },
+        "P2": {
+          "style": "concept_connection",
+          "description": "Name the concept, ask for a one-sentence connection",
+          "prompt_text": "The concept is: \"The way I understand reality affects what I see\".\nIn one sentence, describe what this image shows and how it relates to this concept.",
+          "answer": "a man is looking at a mirror"
+        },
+        "P3": {
+          "style": "fill_in_blank",
+          "description": "Fill-in-the-blank – forces 'shows X because Y' structure (current prompt)",
+          "prompt_text": "You are a systems thinking expert analyzing an image.\nConcept: \"The way I understand reality affects what I see\"\nComplete this sentence by filling in what you observe and why it connects to the concept:\n\"This image shows [what you see], which illustrates \\\"The way I understand reality affects what I see\\\" because [explain the visual link].\"\nAnswer: This image shows",
+          "answer": "This image shows a man looking at himself in a mirror"
+        },
+        "P4": {
+          "style": "cause_effect",
+          "description": "Ask explicitly for cause-and-effect reasoning",
+          "prompt_text": "Concept: \"The way I understand reality affects what I see\".\nLook at this image and answer:\nWhat cause-and-effect relationship does it show, and how does that illustrate the concept?",
+          "answer": "the man is looking at a mirror and seeing himself"
+        },
+        "P5": {
+          "style": "expert_narrator",
+          "description": "Frame the VLM as an educator explaining to a student",
+          "prompt_text": "You are a systems thinking educator teaching the concept \"The way I understand reality affects what I see\".\nWrite one sentence explaining to a student what this image shows and why it was chosen.",
+          "answer": "the image shows a man looking at himself in a mirror"
+        },
+        "P6": {
+          "style": "direct_question",
+          "description": "Pass the translated question directly to the model",
+          "prompt_text": "Explain why you chose this image as reflecting the sentence \"The way I understand reality affects what I see\"",
+          "answer": "this image is a mirror with a man in it"
+        },
+        "P7": {
+          "style": "why_evidence",
+          "description": "Ask 'why does this image represent X?' + request visual evidence",
+          "prompt_text": "Why does this image represent the idea that \"The way I understand reality affects what I see\"?\nWhat specific visual elements support your answer?",
+          "answer": "the man is looking at a mirror"
+        },
+        "P8": {
+          "style": "connections",
+          "description": "Focus on visible connections and interdependencies",
+          "prompt_text": "Concept: \"The way I understand reality affects what I see\".\nWhat connections, relationships, or interdependencies are visible in this image that illustrate this concept?\nAnswer in one sentence.",
+          "answer": "the man is looking at a mirror"
+        },
+        "P9": {
+          "style": "narrative",
+          "description": "Ask the model to tell a brief story about the image",
+          "prompt_text": "Tell a brief story (one or two sentences) about what is happening in this image that demonstrates the concept \"The way I understand reality affects what I see\".",
+          "answer": "a man is looking at a mirror and seeing himself in it"
+        },
+        "P10": {
+          "style": "counterfactual",
+          "description": "Contrast: what IS shown vs. what would change if the concept were absent",
+          "prompt_text": "Look at this image and answer in one sentence:\nWhat is happening here, and how would the situation be different if \"The way I understand reality affects what I see\" were NOT the case?",
+          "answer": "a man is looking at himself in the mirror"
+        }
+      }
+    },
+    {
+      "question_num": 7,
+      "answer_num": 2,
+      "image_path": "/home/alex/systems-thinking-vlm/dataset/images/7_2.png",
+      "question_he": "הסבירו מדוע בחרתם בתמונה זו כמשקפת את המשפט \"    הדרך שבה אני מבין את המציאות משפיעה על מה שאני רואה   \"",
+      "question_en": "Explain why you chose this image as reflecting the sentence \"The way I understand reality affects what I see\"",
+      "concept": "The way I understand reality affects what I see",
+      "prompts": {
+        "P1": {
+          "style": "plain_description",
+          "description": "Baseline – describe what you see, no concept hint",
+          "prompt_text": "Describe what you see in this image in one or two sentences.",
+          "answer": "a group of gears in a circle"
+        },
+        "P2": {
+          "style": "concept_connection",
+          "description": "Name the concept, ask for a one-sentence connection",
+          "prompt_text": "The concept is: \"The way I understand reality affects what I see\".\nIn one sentence, describe what this image shows and how it relates to this concept.",
+          "answer": "a group of gears in the shape of a circle"
+        },
+        "P3": {
+          "style": "fill_in_blank",
+          "description": "Fill-in-the-blank – forces 'shows X because Y' structure (current prompt)",
+          "prompt_text": "You are a systems thinking expert analyzing an image.\nConcept: \"The way I understand reality affects what I see\"\nComplete this sentence by filling in what you observe and why it connects to the concept:\n\"This image shows [what you see], which illustrates \\\"The way I understand reality affects what I see\\\" because [explain the visual link].\"\nAnswer: This image shows",
+          "answer": "This image shows a group of gears, which illustrates \"The way I understand reality affects what I see\" because"
+        },
+        "P4": {
+          "style": "cause_effect",
+          "description": "Ask explicitly for cause-and-effect reasoning",
+          "prompt_text": "Concept: \"The way I understand reality affects what I see\".\nLook at this image and answer:\nWhat cause-and-effect relationship does it show, and how does that illustrate the concept?",
+          "answer": "the way i see the world affects what i see"
+        },
+        "P5": {
+          "style": "expert_narrator",
+          "description": "Frame the VLM as an educator explaining to a student",
+          "prompt_text": "You are a systems thinking educator teaching the concept \"The way I understand reality affects what I see\".\nWrite one sentence explaining to a student what this image shows and why it was chosen.",
+          "answer": "The image shows a group of gears and gears"
+        },
+        "P6": {
+          "style": "direct_question",
+          "description": "Pass the translated question directly to the model",
+          "prompt_text": "Explain why you chose this image as reflecting the sentence \"The way I understand reality affects what I see\"",
+          "answer": "this image is a representation of the way i see reality"
+        },
+        "P7": {
+          "style": "why_evidence",
+          "description": "Ask 'why does this image represent X?' + request visual evidence",
+          "prompt_text": "Why does this image represent the idea that \"The way I understand reality affects what I see\"?\nWhat specific visual elements support your answer?",
+          "answer": "the image is a representation of reality"
+        },
+        "P8": {
+          "style": "connections",
+          "description": "Focus on visible connections and interdependencies",
+          "prompt_text": "Concept: \"The way I understand reality affects what I see\".\nWhat connections, relationships, or interdependencies are visible in this image that illustrate this concept?\nAnswer in one sentence.",
+          "answer": "the gears are connected to each other"
+        },
+        "P9": {
+          "style": "narrative",
+          "description": "Ask the model to tell a brief story about the image",
+          "prompt_text": "Tell a brief story (one or two sentences) about what is happening in this image that demonstrates the concept \"The way I understand reality affects what I see\".",
+          "answer": "a group of gears are arranged in a circle"
+        },
+        "P10": {
+          "style": "counterfactual",
+          "description": "Contrast: what IS shown vs. what would change if the concept were absent",
+          "prompt_text": "Look at this image and answer in one sentence:\nWhat is happening here, and how would the situation be different if \"The way I understand reality affects what I see\" were NOT the case?",
+          "answer": "the image is a representation of reality"
+        }
+      }
+    },
+    {
+      "question_num": 8,
+      "answer_num": 1,
+      "image_path": "/home/alex/systems-thinking-vlm/dataset/images/8_1.png",
+      "question_he": "הסבירו מדוע בחרתם בתמונה זו כמשקפת את המשפט \"    כשאני מנסה להבין את מה שקורה לפעמים אני רואה את הדברים אחרת   \"",
+      "question_en": "Explain why you chose this image as reflecting the sentence \"When I try to understand what is happening sometimes I see things differently\"",
+      "concept": "When I try to understand what is happening sometimes I see things differently",
+      "prompts": {
+        "P1": {
+          "style": "plain_description",
+          "description": "Baseline – describe what you see, no concept hint",
+          "prompt_text": "Describe what you see in this image in one or two sentences.",
+          "answer": "two pictures of a path in the field"
+        },
+        "P2": {
+          "style": "concept_connection",
+          "description": "Name the concept, ask for a one-sentence connection",
+          "prompt_text": "The concept is: \"When I try to understand what is happening sometimes I see things differently\".\nIn one sentence, describe what this image shows and how it relates to this concept.",
+          "answer": "two pictures of a path in the fog"
+        },
+        "P3": {
+          "style": "fill_in_blank",
+          "description": "Fill-in-the-blank – forces 'shows X because Y' structure (current prompt)",
+          "prompt_text": "You are a systems thinking expert analyzing an image.\nConcept: \"When I try to understand what is happening sometimes I see things differently\"\nComplete this sentence by filling in what you observe and why it connects to the concept:\n\"This image shows [what you see], which illustrates \\\"When I try to understand what is happening sometimes I see things differently\\\" because [explain the visual link].\"\nAnswer: This image shows",
+          "answer": "This image shows two different paths in the same field with a misty sky"
+        },
+        "P4": {
+          "style": "cause_effect",
+          "description": "Ask explicitly for cause-and-effect reasoning",
+          "prompt_text": "Concept: \"When I try to understand what is happening sometimes I see things differently\".\nLook at this image and answer:\nWhat cause-and-effect relationship does it show, and how does that illustrate the concept?",
+          "answer": "the fog is obscuring the path"
+        },
+        "P5": {
+          "style": "expert_narrator",
+          "description": "Frame the VLM as an educator explaining to a student",
+          "prompt_text": "You are a systems thinking educator teaching the concept \"When I try to understand what is happening sometimes I see things differently\".\nWrite one sentence explaining to a student what this image shows and why it was chosen.",
+          "answer": "a path through the fog in a field"
+        },
+        "P6": {
+          "style": "direct_question",
+          "description": "Pass the translated question directly to the model",
+          "prompt_text": "Explain why you chose this image as reflecting the sentence \"When I try to understand what is happening sometimes I see things differently\"",
+          "answer": "this image is a good example of how to use the fog effect"
+        },
+        "P7": {
+          "style": "why_evidence",
+          "description": "Ask 'why does this image represent X?' + request visual evidence",
+          "prompt_text": "Why does this image represent the idea that \"When I try to understand what is happening sometimes I see things differently\"?\nWhat specific visual elements support your answer?",
+          "answer": "the fog and the grasses are different"
+        },
+        "P8": {
+          "style": "connections",
+          "description": "Focus on visible connections and interdependencies",
+          "prompt_text": "Concept: \"When I try to understand what is happening sometimes I see things differently\".\nWhat connections, relationships, or interdependencies are visible in this image that illustrate this concept?\nAnswer in one sentence.",
+          "answer": "the path is a dirt road in the middle of a field"
+        },
+        "P9": {
+          "style": "narrative",
+          "description": "Ask the model to tell a brief story about the image",
+          "prompt_text": "Tell a brief story (one or two sentences) about what is happening in this image that demonstrates the concept \"When I try to understand what is happening sometimes I see things differently\".",
+          "answer": "i am trying to understand what is happening in this image"
+        },
+        "P10": {
+          "style": "counterfactual",
+          "description": "Contrast: what IS shown vs. what would change if the concept were absent",
+          "prompt_text": "Look at this image and answer in one sentence:\nWhat is happening here, and how would the situation be different if \"When I try to understand what is happening sometimes I see things differently\" were NOT the case?",
+          "answer": "the two images are a different color"
+        }
+      }
+    },
+    {
+      "question_num": 8,
+      "answer_num": 2,
+      "image_path": "/home/alex/systems-thinking-vlm/dataset/images/8_2.png",
+      "question_he": "הסבירו מדוע בחרתם בתמונה זו כמשקפת את המשפט \"    כשאני מנסה להבין את מה שקורה לפעמים אני רואה את הדברים אחרת   \"",
+      "question_en": "Explain why you chose this image as reflecting the sentence \"When I try to understand what is happening sometimes I see things differently\"",
+      "concept": "When I try to understand what is happening sometimes I see things differently",
+      "prompts": {
+        "P1": {
+          "style": "plain_description",
+          "description": "Baseline – describe what you see, no concept hint",
+          "prompt_text": "Describe what you see in this image in one or two sentences.",
+          "answer": "a spider web with a green background"
+        },
+        "P2": {
+          "style": "concept_connection",
+          "description": "Name the concept, ask for a one-sentence connection",
+          "prompt_text": "The concept is: \"When I try to understand what is happening sometimes I see things differently\".\nIn one sentence, describe what this image shows and how it relates to this concept.",
+          "answer": "a spider web with two different views"
+        },
+        "P3": {
+          "style": "fill_in_blank",
+          "description": "Fill-in-the-blank – forces 'shows X because Y' structure (current prompt)",
+          "prompt_text": "You are a systems thinking expert analyzing an image.\nConcept: \"When I try to understand what is happening sometimes I see things differently\"\nComplete this sentence by filling in what you observe and why it connects to the concept:\n\"This image shows [what you see], which illustrates \\\"When I try to understand what is happening sometimes I see things differently\\\" because [explain the visual link].\"\nAnswer: This image shows",
+          "answer": "This image shows a spider web and a tree"
+        },
+        "P4": {
+          "style": "cause_effect",
+          "description": "Ask explicitly for cause-and-effect reasoning",
+          "prompt_text": "Concept: \"When I try to understand what is happening sometimes I see things differently\".\nLook at this image and answer:\nWhat cause-and-effect relationship does it show, and how does that illustrate the concept?",
+          "answer": "the spider web is a reflection of the light"
+        },
+        "P5": {
+          "style": "expert_narrator",
+          "description": "Frame the VLM as an educator explaining to a student",
+          "prompt_text": "You are a systems thinking educator teaching the concept \"When I try to understand what is happening sometimes I see things differently\".\nWrite one sentence explaining to a student what this image shows and why it was chosen.",
+          "answer": "a spider web with two different colors"
+        },
+        "P6": {
+          "style": "direct_question",
+          "description": "Pass the translated question directly to the model",
+          "prompt_text": "Explain why you chose this image as reflecting the sentence \"When I try to understand what is happening sometimes I see things differently\"",
+          "answer": "this image is a spider web with a blurry background"
+        },
+        "P7": {
+          "style": "why_evidence",
+          "description": "Ask 'why does this image represent X?' + request visual evidence",
+          "prompt_text": "Why does this image represent the idea that \"When I try to understand what is happening sometimes I see things differently\"?\nWhat specific visual elements support your answer?",
+          "answer": "the spider web is a symbol of the idea of trying to understand"
+        },
+        "P8": {
+          "style": "connections",
+          "description": "Focus on visible connections and interdependencies",
+          "prompt_text": "Concept: \"When I try to understand what is happening sometimes I see things differently\".\nWhat connections, relationships, or interdependencies are visible in this image that illustrate this concept?\nAnswer in one sentence.",
+          "answer": "the spider web is a symbol of understanding"
+        },
+        "P9": {
+          "style": "narrative",
+          "description": "Ask the model to tell a brief story about the image",
+          "prompt_text": "Tell a brief story (one or two sentences) about what is happening in this image that demonstrates the concept \"When I try to understand what is happening sometimes I see things differently\".",
+          "answer": "i was trying to understand what was happening in this image"
+        },
+        "P10": {
+          "style": "counterfactual",
+          "description": "Contrast: what IS shown vs. what would change if the concept were absent",
+          "prompt_text": "Look at this image and answer in one sentence:\nWhat is happening here, and how would the situation be different if \"When I try to understand what is happening sometimes I see things differently\" were NOT the case?",
+          "answer": "the spider web is being photographed in a different way"
+        }
+      }
+    },
+    {
+      "question_num": 9,
+      "answer_num": 1,
+      "image_path": "/home/alex/systems-thinking-vlm/dataset/images/9_1.png",
+      "question_he": "הסבירו מדוע בחרתם בתמונה זו כמשקפת את המשפט \"  האדם משפיע על העולם סביבו   \"",
+      "question_en": "Explain why you chose this image as reflecting the sentence \"Man affects the world around him\"",
+      "concept": "Man affects the world around him",
+      "prompts": {
+        "P1": {
+          "style": "plain_description",
+          "description": "Baseline – describe what you see, no concept hint",
+          "prompt_text": "Describe what you see in this image in one or two sentences.",
+          "answer": "a hand holding a globe in the palm of its hand"
+        },
+        "P2": {
+          "style": "concept_connection",
+          "description": "Name the concept, ask for a one-sentence connection",
+          "prompt_text": "The concept is: \"Man affects the world around him\".\nIn one sentence, describe what this image shows and how it relates to this concept.",
+          "answer": "a hand holding a globe in the air"
+        },
+        "P3": {
+          "style": "fill_in_blank",
+          "description": "Fill-in-the-blank – forces 'shows X because Y' structure (current prompt)",
+          "prompt_text": "You are a systems thinking expert analyzing an image.\nConcept: \"Man affects the world around him\"\nComplete this sentence by filling in what you observe and why it connects to the concept:\n\"This image shows [what you see], which illustrates \\\"Man affects the world around him\\\" because [explain the visual link].\"\nAnswer: This image shows",
+          "answer": "This image shows the earth in a hand, which illustrates man affects the world around him because"
+        },
+        "P4": {
+          "style": "cause_effect",
+          "description": "Ask explicitly for cause-and-effect reasoning",
+          "prompt_text": "Concept: \"Man affects the world around him\".\nLook at this image and answer:\nWhat cause-and-effect relationship does it show, and how does that illustrate the concept?",
+          "answer": "the earth is in man's hands"
+        },
+        "P5": {
+          "style": "expert_narrator",
+          "description": "Frame the VLM as an educator explaining to a student",
+          "prompt_text": "You are a systems thinking educator teaching the concept \"Man affects the world around him\".\nWrite one sentence explaining to a student what this image shows and why it was chosen.",
+          "answer": "a hand holding a globe in the palm of his hand"
+        },
+        "P6": {
+          "style": "direct_question",
+          "description": "Pass the translated question directly to the model",
+          "prompt_text": "Explain why you chose this image as reflecting the sentence \"Man affects the world around him\"",
+          "answer": "this image is a simple black and white icon of a hand holding a globe"
+        },
+        "P7": {
+          "style": "why_evidence",
+          "description": "Ask 'why does this image represent X?' + request visual evidence",
+          "prompt_text": "Why does this image represent the idea that \"Man affects the world around him\"?\nWhat specific visual elements support your answer?",
+          "answer": "the hand is holding the earth in his hands"
+        },
+        "P8": {
+          "style": "connections",
+          "description": "Focus on visible connections and interdependencies",
+          "prompt_text": "Concept: \"Man affects the world around him\".\nWhat connections, relationships, or interdependencies are visible in this image that illustrate this concept?\nAnswer in one sentence.",
+          "answer": "the earth is in man's hands"
+        },
+        "P9": {
+          "style": "narrative",
+          "description": "Ask the model to tell a brief story about the image",
+          "prompt_text": "Tell a brief story (one or two sentences) about what is happening in this image that demonstrates the concept \"Man affects the world around him\".",
+          "answer": "The hand is holding a globe in his hands"
+        },
+        "P10": {
+          "style": "counterfactual",
+          "description": "Contrast: what IS shown vs. what would change if the concept were absent",
+          "prompt_text": "Look at this image and answer in one sentence:\nWhat is happening here, and how would the situation be different if \"Man affects the world around him\" were NOT the case?",
+          "answer": "the earth is being held in the hands of a person"
+        }
+      }
+    },
+    {
+      "question_num": 9,
+      "answer_num": 2,
+      "image_path": "/home/alex/systems-thinking-vlm/dataset/images/9_2.png",
+      "question_he": "הסבירו מדוע בחרתם בתמונה זו כמשקפת את המשפט \"  האדם משפיע על העולם סביבו   \"",
+      "question_en": "Explain why you chose this image as reflecting the sentence \"Man affects the world around him\"",
+      "concept": "Man affects the world around him",
+      "prompts": {
+        "P1": {
+          "style": "plain_description",
+          "description": "Baseline – describe what you see, no concept hint",
+          "prompt_text": "Describe what you see in this image in one or two sentences.",
+          "answer": "a man and woman are planting trees in the park"
+        },
+        "P2": {
+          "style": "concept_connection",
+          "description": "Name the concept, ask for a one-sentence connection",
+          "prompt_text": "The concept is: \"Man affects the world around him\".\nIn one sentence, describe what this image shows and how it relates to this concept.",
+          "answer": "man planting tree in the park with a shovel"
+        },
+        "P3": {
+          "style": "fill_in_blank",
+          "description": "Fill-in-the-blank – forces 'shows X because Y' structure (current prompt)",
+          "prompt_text": "You are a systems thinking expert analyzing an image.\nConcept: \"Man affects the world around him\"\nComplete this sentence by filling in what you observe and why it connects to the concept:\n\"This image shows [what you see], which illustrates \\\"Man affects the world around him\\\" because [explain the visual link].\"\nAnswer: This image shows",
+          "answer": "This image shows a man planting a tree in the park"
+        },
+        "P4": {
+          "style": "cause_effect",
+          "description": "Ask explicitly for cause-and-effect reasoning",
+          "prompt_text": "Concept: \"Man affects the world around him\".\nLook at this image and answer:\nWhat cause-and-effect relationship does it show, and how does that illustrate the concept?",
+          "answer": "planting trees has a positive effect on the environment"
+        },
+        "P5": {
+          "style": "expert_narrator",
+          "description": "Frame the VLM as an educator explaining to a student",
+          "prompt_text": "You are a systems thinking educator teaching the concept \"Man affects the world around him\".\nWrite one sentence explaining to a student what this image shows and why it was chosen.",
+          "answer": "A man and woman are planting a tree in a park"
+        },
+        "P6": {
+          "style": "direct_question",
+          "description": "Pass the translated question directly to the model",
+          "prompt_text": "Explain why you chose this image as reflecting the sentence \"Man affects the world around him\"",
+          "answer": "this image shows a man and woman planting trees"
+        },
+        "P7": {
+          "style": "why_evidence",
+          "description": "Ask 'why does this image represent X?' + request visual evidence",
+          "prompt_text": "Why does this image represent the idea that \"Man affects the world around him\"?\nWhat specific visual elements support your answer?",
+          "answer": "the man is planting a tree and the woman is helping him"
+        },
+        "P8": {
+          "style": "connections",
+          "description": "Focus on visible connections and interdependencies",
+          "prompt_text": "Concept: \"Man affects the world around him\".\nWhat connections, relationships, or interdependencies are visible in this image that illustrate this concept?\nAnswer in one sentence.",
+          "answer": "man planting tree in the park with woman"
+        },
+        "P9": {
+          "style": "narrative",
+          "description": "Ask the model to tell a brief story about the image",
+          "prompt_text": "Tell a brief story (one or two sentences) about what is happening in this image that demonstrates the concept \"Man affects the world around him\".",
+          "answer": "A man and woman are planting a tree in the park"
+        },
+        "P10": {
+          "style": "counterfactual",
+          "description": "Contrast: what IS shown vs. what would change if the concept were absent",
+          "prompt_text": "Look at this image and answer in one sentence:\nWhat is happening here, and how would the situation be different if \"Man affects the world around him\" were NOT the case?",
+          "answer": "planting trees in the park with a shovel"
+        }
+      }
+    },
+    {
+      "question_num": 10,
+      "answer_num": 1,
+      "image_path": "/home/alex/systems-thinking-vlm/dataset/images/10_1.png",
+      "question_he": "הסבירו מדוע בחרתם בתמונה זו כמשקפת את המשפט \" השינוי נעשה   \"",
+      "question_en": "Explain why you chose this image as reflecting the sentence \"Change is made\"",
+      "concept": "Change is made",
+      "prompts": {
+        "P1": {
+          "style": "plain_description",
+          "description": "Baseline – describe what you see, no concept hint",
+          "prompt_text": "Describe what you see in this image in one or two sentences.",
+          "answer": "a group of people with different faces"
+        },
+        "P2": {
+          "style": "concept_connection",
+          "description": "Name the concept, ask for a one-sentence connection",
+          "prompt_text": "The concept is: \"Change is made\".\nIn one sentence, describe what this image shows and how it relates to this concept.",
+          "answer": "a group of people with different faces"
+        },
+        "P3": {
+          "style": "fill_in_blank",
+          "description": "Fill-in-the-blank – forces 'shows X because Y' structure (current prompt)",
+          "prompt_text": "You are a systems thinking expert analyzing an image.\nConcept: \"Change is made\"\nComplete this sentence by filling in what you observe and why it connects to the concept:\n\"This image shows [what you see], which illustrates \\\"Change is made\\\" because [explain the visual link].\"\nAnswer: This image shows",
+          "answer": "This image shows the faces of different people in a row"
+        },
+        "P4": {
+          "style": "cause_effect",
+          "description": "Ask explicitly for cause-and-effect reasoning",
+          "prompt_text": "Concept: \"Change is made\".\nLook at this image and answer:\nWhat cause-and-effect relationship does it show, and how does that illustrate the concept?",
+          "answer": "the man is a young man and the woman is an old woman"
+        },
+        "P5": {
+          "style": "expert_narrator",
+          "description": "Frame the VLM as an educator explaining to a student",
+          "prompt_text": "You are a systems thinking educator teaching the concept \"Change is made\".\nWrite one sentence explaining to a student what this image shows and why it was chosen.",
+          "answer": "this image shows a group of people with different faces"
+        },
+        "P6": {
+          "style": "direct_question",
+          "description": "Pass the translated question directly to the model",
+          "prompt_text": "Explain why you chose this image as reflecting the sentence \"Change is made\"",
+          "answer": "this image is a representation of the change that is made in the world"
+        },
+        "P7": {
+          "style": "why_evidence",
+          "description": "Ask 'why does this image represent X?' + request visual evidence",
+          "prompt_text": "Why does this image represent the idea that \"Change is made\"?\nWhat specific visual elements support your answer?",
+          "answer": "the image shows a group of people with different faces"
+        },
+        "P8": {
+          "style": "connections",
+          "description": "Focus on visible connections and interdependencies",
+          "prompt_text": "Concept: \"Change is made\".\nWhat connections, relationships, or interdependencies are visible in this image that illustrate this concept?\nAnswer in one sentence.",
+          "answer": "the image shows a group of people with different faces"
+        },
+        "P9": {
+          "style": "narrative",
+          "description": "Ask the model to tell a brief story about the image",
+          "prompt_text": "Tell a brief story (one or two sentences) about what is happening in this image that demonstrates the concept \"Change is made\".",
+          "answer": "the image shows a group of people with different faces"
+        },
+        "P10": {
+          "style": "counterfactual",
+          "description": "Contrast: what IS shown vs. what would change if the concept were absent",
+          "prompt_text": "Look at this image and answer in one sentence:\nWhat is happening here, and how would the situation be different if \"Change is made\" were NOT the case?",
+          "answer": "change is made in the image of the old man and young man"
+        }
+      }
+    },
+    {
+      "question_num": 10,
+      "answer_num": 2,
+      "image_path": "/home/alex/systems-thinking-vlm/dataset/images/10_2.png",
+      "question_he": "הסבירו מדוע בחרתם בתמונה זו כמשקפת את המשפט \" השינוי נעשה   \"",
+      "question_en": "Explain why you chose this image as reflecting the sentence \"Change is made\"",
+      "concept": "Change is made",
+      "prompts": {
+        "P1": {
+          "style": "plain_description",
+          "description": "Baseline – describe what you see, no concept hint",
+          "prompt_text": "Describe what you see in this image in one or two sentences.",
+          "answer": "four different flowers in the field with leaves"
+        },
+        "P2": {
+          "style": "concept_connection",
+          "description": "Name the concept, ask for a one-sentence connection",
+          "prompt_text": "The concept is: \"Change is made\".\nIn one sentence, describe what this image shows and how it relates to this concept.",
+          "answer": "four different flowers in the field with a yellow flower"
+        },
+        "P3": {
+          "style": "fill_in_blank",
+          "description": "Fill-in-the-blank – forces 'shows X because Y' structure (current prompt)",
+          "prompt_text": "You are a systems thinking expert analyzing an image.\nConcept: \"Change is made\"\nComplete this sentence by filling in what you observe and why it connects to the concept:\n\"This image shows [what you see], which illustrates \\\"Change is made\\\" because [explain the visual link].\"\nAnswer: This image shows",
+          "answer": "This image shows four different flowers in the field, which illustrates change is made"
+        },
+        "P4": {
+          "style": "cause_effect",
+          "description": "Ask explicitly for cause-and-effect reasoning",
+          "prompt_text": "Concept: \"Change is made\".\nLook at this image and answer:\nWhat cause-and-effect relationship does it show, and how does that illustrate the concept?",
+          "answer": "the flowers are changing color and shape as the weather changes"
+        },
+        "P5": {
+          "style": "expert_narrator",
+          "description": "Frame the VLM as an educator explaining to a student",
+          "prompt_text": "You are a systems thinking educator teaching the concept \"Change is made\".\nWrite one sentence explaining to a student what this image shows and why it was chosen.",
+          "answer": "a collage of four different flowers in the field"
+        },
+        "P6": {
+          "style": "direct_question",
+          "description": "Pass the translated question directly to the model",
+          "prompt_text": "Explain why you chose this image as reflecting the sentence \"Change is made\"",
+          "answer": "this image is a collage of four different flowers"
+        },
+        "P7": {
+          "style": "why_evidence",
+          "description": "Ask 'why does this image represent X?' + request visual evidence",
+          "prompt_text": "Why does this image represent the idea that \"Change is made\"?\nWhat specific visual elements support your answer?",
+          "answer": "the image is a collage of four different flowers"
+        },
+        "P8": {
+          "style": "connections",
+          "description": "Focus on visible connections and interdependencies",
+          "prompt_text": "Concept: \"Change is made\".\nWhat connections, relationships, or interdependencies are visible in this image that illustrate this concept?\nAnswer in one sentence.",
+          "answer": "the flowers are growing in different colors and shapes"
+        },
+        "P9": {
+          "style": "narrative",
+          "description": "Ask the model to tell a brief story about the image",
+          "prompt_text": "Tell a brief story (one or two sentences) about what is happening in this image that demonstrates the concept \"Change is made\".",
+          "answer": "a flower is growing in the field"
+        },
+        "P10": {
+          "style": "counterfactual",
+          "description": "Contrast: what IS shown vs. what would change if the concept were absent",
+          "prompt_text": "Look at this image and answer in one sentence:\nWhat is happening here, and how would the situation be different if \"Change is made\" were NOT the case?",
+          "answer": "change is made in the image of flowers"
+        }
+      }
+    }
+  ]
+}

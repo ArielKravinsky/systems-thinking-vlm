@@ -11,8 +11,46 @@ from sentence_transformers import SentenceTransformer
 from tqdm import tqdm
 
 # Default models
-VLM_MODEL = "Salesforce/blip2-opt-2.7b"
+VLM_MODEL = "Salesforce/blip2-flan-t5-xl"
 EMBED_MODEL = "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+LABSE_MODEL  = "sentence-transformers/LaBSE"
+QWEN_MODEL   = "Qwen/Qwen2-VL-7B-Instruct"
+
+
+def download_qwen_vlm(force: bool = False):
+    """Download Qwen2-VL-7B-Instruct (processor + weights, CPU offload)."""
+    from transformers import Qwen2VLForConditionalGeneration, AutoProcessor, BitsAndBytesConfig
+    import torch
+
+    if not force and check_model_exists(QWEN_MODEL):
+        print(f"\n{'='*60}")
+        print(f"Qwen2-VL Model: {QWEN_MODEL}")
+        print("✓ Already cached – skipping download (use --force to re-download)")
+        print(f"{'='*60}\n")
+        return
+
+    print(f"\n{'='*60}")
+    print(f"Downloading Qwen2-VL Model: {QWEN_MODEL}")
+    print("~15 GB – this may take 10-30 minutes depending on your connection ...")
+    print(f"{'='*60}\n")
+
+    # Download without quantisation (CPU, weights only) so the files are cached
+    model = Qwen2VLForConditionalGeneration.from_pretrained(
+        QWEN_MODEL,
+        torch_dtype=torch.float16,
+        device_map="cpu",
+        trust_remote_code=True,
+    )
+    print("✓ Model weights downloaded!")
+    del model
+
+    processor = AutoProcessor.from_pretrained(QWEN_MODEL, trust_remote_code=True)
+    print("✓ Processor downloaded!")
+    del processor
+
+    print(f"\n{'='*60}")
+    print("Qwen2-VL download complete!")
+    print(f"{'='*60}\n")
 
 
 def check_model_exists(model_name: str, cache_dir: str = None) -> bool:
@@ -56,7 +94,7 @@ def download_vlm(model_name: str, force: bool = False):
     print(f"\n{'='*60}")
     print(f"Downloading VLM Model: {model_name}")
     print(f"{'='*60}")
-    print("This is BLIP-2 2.7B model (~5GB) and may take 3-10 minutes...")
+    print("This may take 3-10 minutes depending on your connection...")
     print("Progress will be shown during download.\n")
     
     # Download model
@@ -125,6 +163,11 @@ def main():
         help=f"Embedding model to download (default: {EMBED_MODEL})"
     )
     parser.add_argument(
+        "--qwen",
+        action="store_true",
+        help=f"Also download the Qwen2-VL-7B-Instruct model ({QWEN_MODEL})"
+    )
+    parser.add_argument(
         "--skip-vlm", 
         action="store_true", 
         help="Skip VLM download"
@@ -147,8 +190,17 @@ def main():
     print("="*60)
     print(f"VLM Model: {args.vlm}")
     print(f"Embedding Model: {args.embed}")
+    print(f"LaBSE Model: {LABSE_MODEL}")
     print("="*60 + "\n")
     
+    # Download Qwen2-VL if requested
+    if getattr(args, "qwen", False):
+        try:
+            download_qwen_vlm(force=args.force)
+        except Exception as e:
+            print(f"\n❌ Error downloading Qwen2-VL: {e}")
+            return 1
+
     # Download VLM
     if not args.skip_vlm:
         try:
@@ -166,9 +218,16 @@ def main():
         except Exception as e:
             print(f"\n❌ Error downloading embedding model: {e}")
             return 1
+
+        # Always download LaBSE alongside the primary embed model
+        try:
+            download_embedding_model(LABSE_MODEL, force=args.force)
+        except Exception as e:
+            print(f"\n❌ Error downloading LaBSE: {e}")
+            return 1
     else:
         print("Skipping embedding model download (--skip-embed flag set)\n")
-    
+
     print("\n" + "="*60)
     print("✓ ALL MODELS DOWNLOADED SUCCESSFULLY!")
     print("="*60)
