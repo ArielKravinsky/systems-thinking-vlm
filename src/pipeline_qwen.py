@@ -403,7 +403,7 @@ def process_dataset(dataset_root: Path, embed_name: str, device: str,
     en_he_tokenizer, en_he_m = load_translation_model(EN_HE_MODEL, device)
 
     print("Loading BERTScorer ...")
-    bert_scorer = BERTScorer(lang="en", rescale_with_baseline=False, device="cpu")
+    bert_scorer = BERTScorer(lang="en", rescale_with_baseline=False, device=device)
     print("[OK] BERTScorer loaded!\n")
 
     payload_meta = {
