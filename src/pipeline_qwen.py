@@ -15,13 +15,24 @@ Key design choices:
   - Extra metrics beyond cosine similarity:
       concept_sim_en            – cosine similarity between the SUBJECT answer and the bare
                                   concept phrase (high = subject just echoed the concept word)
-      sim_above_concept_scalar  – similarity_en minus concept_sim_en; scalar difference of two
+    sim_above_concept_correct_scalar  – similarity_en minus concept_sim_en for
+                        answer groups 1-2 ("correct" image options)
+    sim_above_concept_total_scalar    – similarity_en minus concept_sim_en for
+                        all answer groups (1-4)
                                   independent cosine projections (approximate baseline adjustment)
-      sim_above_concept_vec     – cos(subj − proj_concept(subj), vlm); projects the concept
+    sim_above_concept_correct_vec     – cos(subj − proj_concept(subj), vlm) for
+                        answer groups 1-2 only
+    sim_above_concept_total_vec       – cos(subj − proj_concept(subj), vlm) for
+                        all answer groups (1-4)
+                        projects the concept
                                   direction out of the subject embedding before measuring
                                   alignment with the VLM description; geometrically distinct
                                   from the scalar version and NOT equivalent to it
-      sim_above_concept_vec_both – cos(subj_perp_concept, vlm_perp_concept); removes concept
+    sim_above_concept_correct_vec_both – cos(subj_perp_concept, vlm_perp_concept)
+                        for answer groups 1-2 only
+    sim_above_concept_total_vec_both   – cos(subj_perp_concept, vlm_perp_concept)
+                        for all answer groups (1-4)
+                        removes concept
                                   direction from BOTH subject and VLM embeddings before
                                   measuring alignment (stricter de-concepted grounding score)
       subject_word_count – word count of Hebrew subject answer (low → likely vague)
@@ -67,7 +78,9 @@ CSV_COLUMNS = [
     "subject_answer_en",
     "similarity_labse_he", "similarity_labse_he_percent",
     "similarity_en", "similarity_en_percent",
-    "concept_sim_en", "sim_above_concept_scalar", "sim_above_concept_vec", "sim_above_concept_vec_both",
+    "concept_sim_en",
+    "sim_above_concept_correct_scalar", "sim_above_concept_correct_vec", "sim_above_concept_correct_vec_both",
+    "sim_above_concept_total_scalar", "sim_above_concept_total_vec", "sim_above_concept_total_vec_both",
     "bertscore_precision", "bertscore_recall", "bertscore_f1",
     "vlm_model", "embed_model", "he_en_model", "en_he_model", "device", "timestamp",
 ]
@@ -485,9 +498,14 @@ def process_dataset(dataset_root: Path, embed_name: str, device: str,
             # concept baseline: how similar is the subject answer to the bare concept?
             # High → subject answer just echoed the concept without visual content
             concept_sim_en           = compute_similarity(embed_model, subj_en, concept)
-            sim_above_concept_scalar = round(scr_en - concept_sim_en, 4)
-            sim_above_concept_vec    = compute_sac_vec(embed_model, subj_en, trace["vlm_answer_en"], concept)
-            sim_above_concept_vec_both = compute_sac_vec_both(embed_model, subj_en, trace["vlm_answer_en"], concept)
+            sim_above_concept_total_scalar = round(scr_en - concept_sim_en, 4)
+            sim_above_concept_total_vec = compute_sac_vec(embed_model, subj_en, trace["vlm_answer_en"], concept)
+            sim_above_concept_total_vec_both = compute_sac_vec_both(embed_model, subj_en, trace["vlm_answer_en"], concept)
+
+            is_correct_answer_group = str(a_num) in {"1", "2"}
+            sim_above_concept_correct_scalar = sim_above_concept_total_scalar if is_correct_answer_group else None
+            sim_above_concept_correct_vec = sim_above_concept_total_vec if is_correct_answer_group else None
+            sim_above_concept_correct_vec_both = sim_above_concept_total_vec_both if is_correct_answer_group else None
 
             bs_p, bs_r, bs_f1 = compute_bertscore(
                 bert_scorer, trace["vlm_answer_en"], subj_en
@@ -517,9 +535,12 @@ def process_dataset(dataset_root: Path, embed_name: str, device: str,
                 "similarity_en": scr_en,
                 "similarity_en_percent": round(max(0.0, min(1.0, scr_en)) * 100, 2),
                 "concept_sim_en": round(concept_sim_en, 4),
-                "sim_above_concept_scalar": sim_above_concept_scalar,
-                "sim_above_concept_vec": sim_above_concept_vec,
-                "sim_above_concept_vec_both": sim_above_concept_vec_both,
+                "sim_above_concept_correct_scalar": sim_above_concept_correct_scalar,
+                "sim_above_concept_correct_vec": sim_above_concept_correct_vec,
+                "sim_above_concept_correct_vec_both": sim_above_concept_correct_vec_both,
+                "sim_above_concept_total_scalar": sim_above_concept_total_scalar,
+                "sim_above_concept_total_vec": sim_above_concept_total_vec,
+                "sim_above_concept_total_vec_both": sim_above_concept_total_vec_both,
                 "bertscore_precision": bs_p,
                 "bertscore_recall": bs_r,
                 "bertscore_f1": bs_f1,
@@ -536,7 +557,8 @@ def process_dataset(dataset_root: Path, embed_name: str, device: str,
 
             cache_marker = " [cached]" if cached else ""
             tqdm.write(
-                f"{stem}: sim_en={scr_en:.3f}  Δscalar={sim_above_concept_scalar:+.3f}  Δvec={sim_above_concept_vec:+.3f}  Δvec2={sim_above_concept_vec_both:+.3f}"
+                f"{stem}: sim_en={scr_en:.3f}  Δcorr_vec2={sim_above_concept_correct_vec_both if sim_above_concept_correct_vec_both is not None else float('nan'):+.3f}"
+                f"  Δtotal_vec2={sim_above_concept_total_vec_both:+.3f}"
                 f"  subj_words={subject_word_count}{cache_marker}"
             )
 
