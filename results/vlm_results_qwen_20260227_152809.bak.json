@@ -41,8 +41,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:31:31",
-      "sim_above_concept_scalar": -0.4708,
-      "sim_above_concept_vec": 0.1495
+      "sim_above_concept_correct_vec": 0.1495,
+      "sim_above_concept_correct_scalar": -0.4708,
+      "sim_above_concept_total_scalar": -0.4708,
+      "sim_above_concept_total_vec": 0.1495
     },
     {
       "stem": "10_1_14",
@@ -80,8 +82,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:32:22",
-      "sim_above_concept_scalar": 0.1476,
-      "sim_above_concept_vec": 0.412
+      "sim_above_concept_correct_vec": 0.412,
+      "sim_above_concept_correct_scalar": 0.1476,
+      "sim_above_concept_total_scalar": 0.1476,
+      "sim_above_concept_total_vec": 0.412
     },
     {
       "stem": "10_1_16",
@@ -119,8 +123,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:32:33",
-      "sim_above_concept_scalar": -0.2191,
-      "sim_above_concept_vec": 0.2169
+      "sim_above_concept_correct_vec": 0.2169,
+      "sim_above_concept_correct_scalar": -0.2191,
+      "sim_above_concept_total_scalar": -0.2191,
+      "sim_above_concept_total_vec": 0.2169
     },
     {
       "stem": "10_1_21",
@@ -158,8 +164,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:32:43",
-      "sim_above_concept_scalar": 0.3557,
-      "sim_above_concept_vec": 0.5145
+      "sim_above_concept_correct_vec": 0.5145,
+      "sim_above_concept_correct_scalar": 0.3557,
+      "sim_above_concept_total_scalar": 0.3557,
+      "sim_above_concept_total_vec": 0.5145
     },
     {
       "stem": "10_1_22",
@@ -197,8 +205,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:32:54",
-      "sim_above_concept_scalar": -0.0507,
-      "sim_above_concept_vec": 0.3923
+      "sim_above_concept_correct_vec": 0.3923,
+      "sim_above_concept_correct_scalar": -0.0507,
+      "sim_above_concept_total_scalar": -0.0507,
+      "sim_above_concept_total_vec": 0.3923
     },
     {
       "stem": "10_1_24",
@@ -236,8 +246,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:33:04",
-      "sim_above_concept_scalar": 0.088,
-      "sim_above_concept_vec": 0.2281
+      "sim_above_concept_correct_vec": 0.2281,
+      "sim_above_concept_correct_scalar": 0.088,
+      "sim_above_concept_total_scalar": 0.088,
+      "sim_above_concept_total_vec": 0.2281
     },
     {
       "stem": "10_1_26",
@@ -275,8 +287,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:33:15",
-      "sim_above_concept_scalar": -0.0256,
-      "sim_above_concept_vec": 0.4825
+      "sim_above_concept_correct_vec": 0.4825,
+      "sim_above_concept_correct_scalar": -0.0256,
+      "sim_above_concept_total_scalar": -0.0256,
+      "sim_above_concept_total_vec": 0.4825
     },
     {
       "stem": "10_1_28",
@@ -314,8 +328,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:33:26",
-      "sim_above_concept_scalar": -0.1896,
-      "sim_above_concept_vec": 0.1661
+      "sim_above_concept_correct_vec": 0.1661,
+      "sim_above_concept_correct_scalar": -0.1896,
+      "sim_above_concept_total_scalar": -0.1896,
+      "sim_above_concept_total_vec": 0.1661
     },
     {
       "stem": "10_1_32",
@@ -353,8 +369,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:33:37",
-      "sim_above_concept_scalar": -0.0505,
-      "sim_above_concept_vec": 0.4085
+      "sim_above_concept_correct_vec": 0.4085,
+      "sim_above_concept_correct_scalar": -0.0505,
+      "sim_above_concept_total_scalar": -0.0505,
+      "sim_above_concept_total_vec": 0.4085
     },
     {
       "stem": "10_1_36",
@@ -392,8 +410,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:33:49",
-      "sim_above_concept_scalar": 0.1112,
-      "sim_above_concept_vec": 0.5396
+      "sim_above_concept_correct_vec": 0.5396,
+      "sim_above_concept_correct_scalar": 0.1112,
+      "sim_above_concept_total_scalar": 0.1112,
+      "sim_above_concept_total_vec": 0.5396
     },
     {
       "stem": "10_1_37",
@@ -431,8 +451,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:33:59",
-      "sim_above_concept_scalar": -0.1742,
-      "sim_above_concept_vec": 0.2704
+      "sim_above_concept_correct_vec": 0.2704,
+      "sim_above_concept_correct_scalar": -0.1742,
+      "sim_above_concept_total_scalar": -0.1742,
+      "sim_above_concept_total_vec": 0.2704
     },
     {
       "stem": "10_1_38",
@@ -470,8 +492,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:34:09",
-      "sim_above_concept_scalar": 0.1729,
-      "sim_above_concept_vec": 0.415
+      "sim_above_concept_correct_vec": 0.415,
+      "sim_above_concept_correct_scalar": 0.1729,
+      "sim_above_concept_total_scalar": 0.1729,
+      "sim_above_concept_total_vec": 0.415
     },
     {
       "stem": "10_1_39",
@@ -509,8 +533,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:34:19",
-      "sim_above_concept_scalar": 0.0807,
-      "sim_above_concept_vec": 0.3733
+      "sim_above_concept_correct_vec": 0.3733,
+      "sim_above_concept_correct_scalar": 0.0807,
+      "sim_above_concept_total_scalar": 0.0807,
+      "sim_above_concept_total_vec": 0.3733
     },
     {
       "stem": "10_1_49",
@@ -548,8 +574,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:34:31",
-      "sim_above_concept_scalar": 0.1481,
-      "sim_above_concept_vec": 0.389
+      "sim_above_concept_correct_vec": 0.389,
+      "sim_above_concept_correct_scalar": 0.1481,
+      "sim_above_concept_total_scalar": 0.1481,
+      "sim_above_concept_total_vec": 0.389
     },
     {
       "stem": "10_1_52",
@@ -587,8 +615,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:34:42",
-      "sim_above_concept_scalar": -0.2445,
-      "sim_above_concept_vec": 0.3296
+      "sim_above_concept_correct_vec": 0.3296,
+      "sim_above_concept_correct_scalar": -0.2445,
+      "sim_above_concept_total_scalar": -0.2445,
+      "sim_above_concept_total_vec": 0.3296
     },
     {
       "stem": "10_1_54",
@@ -626,8 +656,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:34:53",
-      "sim_above_concept_scalar": 0.1663,
-      "sim_above_concept_vec": 0.4919
+      "sim_above_concept_correct_vec": 0.4919,
+      "sim_above_concept_correct_scalar": 0.1663,
+      "sim_above_concept_total_scalar": 0.1663,
+      "sim_above_concept_total_vec": 0.4919
     },
     {
       "stem": "10_1_56",
@@ -665,8 +697,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:35:04",
-      "sim_above_concept_scalar": 0.2251,
-      "sim_above_concept_vec": 0.5218
+      "sim_above_concept_correct_vec": 0.5218,
+      "sim_above_concept_correct_scalar": 0.2251,
+      "sim_above_concept_total_scalar": 0.2251,
+      "sim_above_concept_total_vec": 0.5218
     },
     {
       "stem": "10_1_58",
@@ -704,8 +738,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:35:15",
-      "sim_above_concept_scalar": 0.069,
-      "sim_above_concept_vec": 0.5145
+      "sim_above_concept_correct_vec": 0.5145,
+      "sim_above_concept_correct_scalar": 0.069,
+      "sim_above_concept_total_scalar": 0.069,
+      "sim_above_concept_total_vec": 0.5145
     },
     {
       "stem": "10_1_59",
@@ -743,8 +779,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:35:29",
-      "sim_above_concept_scalar": 0.2429,
-      "sim_above_concept_vec": 0.5245
+      "sim_above_concept_correct_vec": 0.5245,
+      "sim_above_concept_correct_scalar": 0.2429,
+      "sim_above_concept_total_scalar": 0.2429,
+      "sim_above_concept_total_vec": 0.5245
     },
     {
       "stem": "10_1_61",
@@ -782,8 +820,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:35:41",
-      "sim_above_concept_scalar": 0.026,
-      "sim_above_concept_vec": 0.287
+      "sim_above_concept_correct_vec": 0.287,
+      "sim_above_concept_correct_scalar": 0.026,
+      "sim_above_concept_total_scalar": 0.026,
+      "sim_above_concept_total_vec": 0.287
     },
     {
       "stem": "10_1_63",
@@ -821,8 +861,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:35:55",
-      "sim_above_concept_scalar": -0.0244,
-      "sim_above_concept_vec": 0.4396
+      "sim_above_concept_correct_vec": 0.4396,
+      "sim_above_concept_correct_scalar": -0.0244,
+      "sim_above_concept_total_scalar": -0.0244,
+      "sim_above_concept_total_vec": 0.4396
     },
     {
       "stem": "10_1_64",
@@ -860,8 +902,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:36:13",
-      "sim_above_concept_scalar": -0.2073,
-      "sim_above_concept_vec": 0.1098
+      "sim_above_concept_correct_vec": 0.1098,
+      "sim_above_concept_correct_scalar": -0.2073,
+      "sim_above_concept_total_scalar": -0.2073,
+      "sim_above_concept_total_vec": 0.1098
     },
     {
       "stem": "10_2_15",
@@ -899,8 +943,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:36:25",
-      "sim_above_concept_scalar": 0.3347,
-      "sim_above_concept_vec": 0.3766
+      "sim_above_concept_correct_vec": 0.3766,
+      "sim_above_concept_correct_scalar": 0.3347,
+      "sim_above_concept_total_scalar": 0.3347,
+      "sim_above_concept_total_vec": 0.3766
     },
     {
       "stem": "10_2_17",
@@ -938,8 +984,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:37:13",
-      "sim_above_concept_scalar": 0.4215,
-      "sim_above_concept_vec": 0.5138
+      "sim_above_concept_correct_vec": 0.5138,
+      "sim_above_concept_correct_scalar": 0.4215,
+      "sim_above_concept_total_scalar": 0.4215,
+      "sim_above_concept_total_vec": 0.5138
     },
     {
       "stem": "10_2_19",
@@ -977,8 +1025,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:37:24",
-      "sim_above_concept_scalar": -0.2752,
-      "sim_above_concept_vec": 0.3653
+      "sim_above_concept_correct_vec": 0.3653,
+      "sim_above_concept_correct_scalar": -0.2752,
+      "sim_above_concept_total_scalar": -0.2752,
+      "sim_above_concept_total_vec": 0.3653
     },
     {
       "stem": "10_2_20",
@@ -1016,8 +1066,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:37:36",
-      "sim_above_concept_scalar": -0.057,
-      "sim_above_concept_vec": 0.2604
+      "sim_above_concept_correct_vec": 0.2604,
+      "sim_above_concept_correct_scalar": -0.057,
+      "sim_above_concept_total_scalar": -0.057,
+      "sim_above_concept_total_vec": 0.2604
     },
     {
       "stem": "10_2_23",
@@ -1055,8 +1107,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:37:51",
-      "sim_above_concept_scalar": 0.2943,
-      "sim_above_concept_vec": 0.4675
+      "sim_above_concept_correct_vec": 0.4675,
+      "sim_above_concept_correct_scalar": 0.2943,
+      "sim_above_concept_total_scalar": 0.2943,
+      "sim_above_concept_total_vec": 0.4675
     },
     {
       "stem": "10_2_25",
@@ -1094,8 +1148,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:38:02",
-      "sim_above_concept_scalar": -0.5158,
-      "sim_above_concept_vec": 0.0917
+      "sim_above_concept_correct_vec": 0.0917,
+      "sim_above_concept_correct_scalar": -0.5158,
+      "sim_above_concept_total_scalar": -0.5158,
+      "sim_above_concept_total_vec": 0.0917
     },
     {
       "stem": "10_2_27",
@@ -1133,8 +1189,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:38:13",
-      "sim_above_concept_scalar": 0.1024,
-      "sim_above_concept_vec": 0.218
+      "sim_above_concept_correct_vec": 0.218,
+      "sim_above_concept_correct_scalar": 0.1024,
+      "sim_above_concept_total_scalar": 0.1024,
+      "sim_above_concept_total_vec": 0.218
     },
     {
       "stem": "10_2_31",
@@ -1172,8 +1230,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:38:25",
-      "sim_above_concept_scalar": -0.0469,
-      "sim_above_concept_vec": 0.2155
+      "sim_above_concept_correct_vec": 0.2155,
+      "sim_above_concept_correct_scalar": -0.0469,
+      "sim_above_concept_total_scalar": -0.0469,
+      "sim_above_concept_total_vec": 0.2155
     },
     {
       "stem": "10_2_35",
@@ -1211,8 +1271,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:38:35",
-      "sim_above_concept_scalar": 0.2422,
-      "sim_above_concept_vec": 0.5603
+      "sim_above_concept_correct_vec": 0.5603,
+      "sim_above_concept_correct_scalar": 0.2422,
+      "sim_above_concept_total_scalar": 0.2422,
+      "sim_above_concept_total_vec": 0.5603
     },
     {
       "stem": "10_2_41",
@@ -1250,8 +1312,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:38:47",
-      "sim_above_concept_scalar": 0.2346,
-      "sim_above_concept_vec": 0.4185
+      "sim_above_concept_correct_vec": 0.4185,
+      "sim_above_concept_correct_scalar": 0.2346,
+      "sim_above_concept_total_scalar": 0.2346,
+      "sim_above_concept_total_vec": 0.4185
     },
     {
       "stem": "10_2_42",
@@ -1289,8 +1353,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:38:59",
-      "sim_above_concept_scalar": -0.4749,
-      "sim_above_concept_vec": 0.1723
+      "sim_above_concept_correct_vec": 0.1723,
+      "sim_above_concept_correct_scalar": -0.4749,
+      "sim_above_concept_total_scalar": -0.4749,
+      "sim_above_concept_total_vec": 0.1723
     },
     {
       "stem": "10_2_43",
@@ -1328,8 +1394,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:39:09",
-      "sim_above_concept_scalar": 0.3429,
-      "sim_above_concept_vec": 0.6852
+      "sim_above_concept_correct_vec": 0.6852,
+      "sim_above_concept_correct_scalar": 0.3429,
+      "sim_above_concept_total_scalar": 0.3429,
+      "sim_above_concept_total_vec": 0.6852
     },
     {
       "stem": "10_2_46",
@@ -1367,8 +1435,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:39:22",
-      "sim_above_concept_scalar": 0.2221,
-      "sim_above_concept_vec": 0.6023
+      "sim_above_concept_correct_vec": 0.6023,
+      "sim_above_concept_correct_scalar": 0.2221,
+      "sim_above_concept_total_scalar": 0.2221,
+      "sim_above_concept_total_vec": 0.6023
     },
     {
       "stem": "10_2_47",
@@ -1406,8 +1476,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:39:35",
-      "sim_above_concept_scalar": 0.1323,
-      "sim_above_concept_vec": 0.5477
+      "sim_above_concept_correct_vec": 0.5477,
+      "sim_above_concept_correct_scalar": 0.1323,
+      "sim_above_concept_total_scalar": 0.1323,
+      "sim_above_concept_total_vec": 0.5477
     },
     {
       "stem": "10_2_5",
@@ -1445,8 +1517,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:39:47",
-      "sim_above_concept_scalar": 0.4155,
-      "sim_above_concept_vec": 0.7653
+      "sim_above_concept_correct_vec": 0.7653,
+      "sim_above_concept_correct_scalar": 0.4155,
+      "sim_above_concept_total_scalar": 0.4155,
+      "sim_above_concept_total_vec": 0.7653
     },
     {
       "stem": "10_2_68",
@@ -1484,8 +1558,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:39:58",
-      "sim_above_concept_scalar": -0.4207,
-      "sim_above_concept_vec": 0.2237
+      "sim_above_concept_correct_vec": 0.2237,
+      "sim_above_concept_correct_scalar": -0.4207,
+      "sim_above_concept_total_scalar": -0.4207,
+      "sim_above_concept_total_vec": 0.2237
     },
     {
       "stem": "10_2_71",
@@ -1523,8 +1599,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:40:09",
-      "sim_above_concept_scalar": 0.0016,
-      "sim_above_concept_vec": 0.0884
+      "sim_above_concept_correct_vec": 0.0884,
+      "sim_above_concept_correct_scalar": 0.0016,
+      "sim_above_concept_total_scalar": 0.0016,
+      "sim_above_concept_total_vec": 0.0884
     },
     {
       "stem": "1_1_13",
@@ -1562,8 +1640,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:40:20",
-      "sim_above_concept_scalar": 0.1656,
-      "sim_above_concept_vec": 0.2228
+      "sim_above_concept_correct_vec": 0.2228,
+      "sim_above_concept_correct_scalar": 0.1656,
+      "sim_above_concept_total_scalar": 0.1656,
+      "sim_above_concept_total_vec": 0.2228
     },
     {
       "stem": "1_1_16",
@@ -1601,8 +1681,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:41:17",
-      "sim_above_concept_scalar": -0.2782,
-      "sim_above_concept_vec": 0.2499
+      "sim_above_concept_correct_vec": 0.2499,
+      "sim_above_concept_correct_scalar": -0.2782,
+      "sim_above_concept_total_scalar": -0.2782,
+      "sim_above_concept_total_vec": 0.2499
     },
     {
       "stem": "1_1_21",
@@ -1640,8 +1722,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:41:30",
-      "sim_above_concept_scalar": 0.0566,
-      "sim_above_concept_vec": 0.3429
+      "sim_above_concept_correct_vec": 0.3429,
+      "sim_above_concept_correct_scalar": 0.0566,
+      "sim_above_concept_total_scalar": 0.0566,
+      "sim_above_concept_total_vec": 0.3429
     },
     {
       "stem": "1_1_4",
@@ -1679,8 +1763,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:41:44",
-      "sim_above_concept_scalar": 0.2538,
-      "sim_above_concept_vec": 0.3105
+      "sim_above_concept_correct_vec": 0.3105,
+      "sim_above_concept_correct_scalar": 0.2538,
+      "sim_above_concept_total_scalar": 0.2538,
+      "sim_above_concept_total_vec": 0.3105
     },
     {
       "stem": "1_1_43",
@@ -1718,8 +1804,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:41:57",
-      "sim_above_concept_scalar": 0.2321,
-      "sim_above_concept_vec": 0.4129
+      "sim_above_concept_correct_vec": 0.4129,
+      "sim_above_concept_correct_scalar": 0.2321,
+      "sim_above_concept_total_scalar": 0.2321,
+      "sim_above_concept_total_vec": 0.4129
     },
     {
       "stem": "1_1_47",
@@ -1757,8 +1845,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:42:11",
-      "sim_above_concept_scalar": 0.1366,
-      "sim_above_concept_vec": 0.5531
+      "sim_above_concept_correct_vec": 0.5531,
+      "sim_above_concept_correct_scalar": 0.1366,
+      "sim_above_concept_total_scalar": 0.1366,
+      "sim_above_concept_total_vec": 0.5531
     },
     {
       "stem": "1_1_67",
@@ -1796,8 +1886,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:42:32",
-      "sim_above_concept_scalar": -0.0658,
-      "sim_above_concept_vec": 0.2002
+      "sim_above_concept_correct_vec": 0.2002,
+      "sim_above_concept_correct_scalar": -0.0658,
+      "sim_above_concept_total_scalar": -0.0658,
+      "sim_above_concept_total_vec": 0.2002
     },
     {
       "stem": "1_2_20",
@@ -1835,8 +1927,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:42:44",
-      "sim_above_concept_scalar": 0.0719,
-      "sim_above_concept_vec": 0.4405
+      "sim_above_concept_correct_vec": 0.4405,
+      "sim_above_concept_correct_scalar": 0.0719,
+      "sim_above_concept_total_scalar": 0.0719,
+      "sim_above_concept_total_vec": 0.4405
     },
     {
       "stem": "1_2_30",
@@ -1874,8 +1968,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:43:50",
-      "sim_above_concept_scalar": 0.0966,
-      "sim_above_concept_vec": 0.342
+      "sim_above_concept_correct_vec": 0.342,
+      "sim_above_concept_correct_scalar": 0.0966,
+      "sim_above_concept_total_scalar": 0.0966,
+      "sim_above_concept_total_vec": 0.342
     },
     {
       "stem": "1_2_32",
@@ -1913,8 +2009,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:43:57",
-      "sim_above_concept_scalar": 0.1904,
-      "sim_above_concept_vec": 0.3515
+      "sim_above_concept_correct_vec": 0.3515,
+      "sim_above_concept_correct_scalar": 0.1904,
+      "sim_above_concept_total_scalar": 0.1904,
+      "sim_above_concept_total_vec": 0.3515
     },
     {
       "stem": "1_2_36",
@@ -1952,8 +2050,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:44:04",
-      "sim_above_concept_scalar": 0.0762,
-      "sim_above_concept_vec": 0.1542
+      "sim_above_concept_correct_vec": 0.1542,
+      "sim_above_concept_correct_scalar": 0.0762,
+      "sim_above_concept_total_scalar": 0.0762,
+      "sim_above_concept_total_vec": 0.1542
     },
     {
       "stem": "1_2_48",
@@ -1991,8 +2091,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:44:12",
-      "sim_above_concept_scalar": -0.0266,
-      "sim_above_concept_vec": 0.2429
+      "sim_above_concept_correct_vec": 0.2429,
+      "sim_above_concept_correct_scalar": -0.0266,
+      "sim_above_concept_total_scalar": -0.0266,
+      "sim_above_concept_total_vec": 0.2429
     },
     {
       "stem": "1_2_49",
@@ -2030,8 +2132,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:44:19",
-      "sim_above_concept_scalar": 0.292,
-      "sim_above_concept_vec": 0.4218
+      "sim_above_concept_correct_vec": 0.4218,
+      "sim_above_concept_correct_scalar": 0.292,
+      "sim_above_concept_total_scalar": 0.292,
+      "sim_above_concept_total_vec": 0.4218
     },
     {
       "stem": "1_2_53",
@@ -2069,8 +2173,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:44:26",
-      "sim_above_concept_scalar": -0.1893,
-      "sim_above_concept_vec": 0.0471
+      "sim_above_concept_correct_vec": 0.0471,
+      "sim_above_concept_correct_scalar": -0.1893,
+      "sim_above_concept_total_scalar": -0.1893,
+      "sim_above_concept_total_vec": 0.0471
     },
     {
       "stem": "2_1_29",
@@ -2108,8 +2214,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:44:34",
-      "sim_above_concept_scalar": 0.2529,
-      "sim_above_concept_vec": 0.4134
+      "sim_above_concept_correct_vec": 0.4134,
+      "sim_above_concept_correct_scalar": 0.2529,
+      "sim_above_concept_total_scalar": 0.2529,
+      "sim_above_concept_total_vec": 0.4134
     },
     {
       "stem": "2_1_36",
@@ -2147,8 +2255,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:45:50",
-      "sim_above_concept_scalar": 0.3223,
-      "sim_above_concept_vec": 0.4987
+      "sim_above_concept_correct_vec": 0.4987,
+      "sim_above_concept_correct_scalar": 0.3223,
+      "sim_above_concept_total_scalar": 0.3223,
+      "sim_above_concept_total_vec": 0.4987
     },
     {
       "stem": "2_1_67",
@@ -2186,8 +2296,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:46:02",
-      "sim_above_concept_scalar": -0.0608,
-      "sim_above_concept_vec": 0.2426
+      "sim_above_concept_correct_vec": 0.2426,
+      "sim_above_concept_correct_scalar": -0.0608,
+      "sim_above_concept_total_scalar": -0.0608,
+      "sim_above_concept_total_vec": 0.2426
     },
     {
       "stem": "2_2_11",
@@ -2225,8 +2337,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:46:14",
-      "sim_above_concept_scalar": 0.4555,
-      "sim_above_concept_vec": 0.5978
+      "sim_above_concept_correct_vec": 0.5978,
+      "sim_above_concept_correct_scalar": 0.4555,
+      "sim_above_concept_total_scalar": 0.4555,
+      "sim_above_concept_total_vec": 0.5978
     },
     {
       "stem": "2_2_13",
@@ -2264,8 +2378,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:47:17",
-      "sim_above_concept_scalar": -0.0632,
-      "sim_above_concept_vec": 0.2787
+      "sim_above_concept_correct_vec": 0.2787,
+      "sim_above_concept_correct_scalar": -0.0632,
+      "sim_above_concept_total_scalar": -0.0632,
+      "sim_above_concept_total_vec": 0.2787
     },
     {
       "stem": "2_2_14",
@@ -2303,8 +2419,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:47:28",
-      "sim_above_concept_scalar": 0.4012,
-      "sim_above_concept_vec": 0.5887
+      "sim_above_concept_correct_vec": 0.5887,
+      "sim_above_concept_correct_scalar": 0.4012,
+      "sim_above_concept_total_scalar": 0.4012,
+      "sim_above_concept_total_vec": 0.5887
     },
     {
       "stem": "2_2_15",
@@ -2342,8 +2460,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:47:39",
-      "sim_above_concept_scalar": 0.4583,
-      "sim_above_concept_vec": 0.5185
+      "sim_above_concept_correct_vec": 0.5185,
+      "sim_above_concept_correct_scalar": 0.4583,
+      "sim_above_concept_total_scalar": 0.4583,
+      "sim_above_concept_total_vec": 0.5185
     },
     {
       "stem": "2_2_16",
@@ -2381,8 +2501,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:47:49",
-      "sim_above_concept_scalar": 0.0517,
-      "sim_above_concept_vec": 0.356
+      "sim_above_concept_correct_vec": 0.356,
+      "sim_above_concept_correct_scalar": 0.0517,
+      "sim_above_concept_total_scalar": 0.0517,
+      "sim_above_concept_total_vec": 0.356
     },
     {
       "stem": "2_2_17",
@@ -2420,8 +2542,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:48:00",
-      "sim_above_concept_scalar": 0.1321,
-      "sim_above_concept_vec": 0.5618
+      "sim_above_concept_correct_vec": 0.5618,
+      "sim_above_concept_correct_scalar": 0.1321,
+      "sim_above_concept_total_scalar": 0.1321,
+      "sim_above_concept_total_vec": 0.5618
     },
     {
       "stem": "2_2_18",
@@ -2459,8 +2583,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:48:15",
-      "sim_above_concept_scalar": -0.0254,
-      "sim_above_concept_vec": 0.4064
+      "sim_above_concept_correct_vec": 0.4064,
+      "sim_above_concept_correct_scalar": -0.0254,
+      "sim_above_concept_total_scalar": -0.0254,
+      "sim_above_concept_total_vec": 0.4064
     },
     {
       "stem": "2_2_19",
@@ -2498,8 +2624,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:48:30",
-      "sim_above_concept_scalar": 0.0528,
-      "sim_above_concept_vec": 0.4529
+      "sim_above_concept_correct_vec": 0.4529,
+      "sim_above_concept_correct_scalar": 0.0528,
+      "sim_above_concept_total_scalar": 0.0528,
+      "sim_above_concept_total_vec": 0.4529
     },
     {
       "stem": "2_2_20",
@@ -2537,8 +2665,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:48:44",
-      "sim_above_concept_scalar": -0.3161,
-      "sim_above_concept_vec": 0.2536
+      "sim_above_concept_correct_vec": 0.2536,
+      "sim_above_concept_correct_scalar": -0.3161,
+      "sim_above_concept_total_scalar": -0.3161,
+      "sim_above_concept_total_vec": 0.2536
     },
     {
       "stem": "2_2_21",
@@ -2576,8 +2706,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:48:54",
-      "sim_above_concept_scalar": -0.1846,
-      "sim_above_concept_vec": 0.295
+      "sim_above_concept_correct_vec": 0.295,
+      "sim_above_concept_correct_scalar": -0.1846,
+      "sim_above_concept_total_scalar": -0.1846,
+      "sim_above_concept_total_vec": 0.295
     },
     {
       "stem": "2_2_22",
@@ -2615,8 +2747,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:49:04",
-      "sim_above_concept_scalar": -0.0837,
-      "sim_above_concept_vec": 0.3526
+      "sim_above_concept_correct_vec": 0.3526,
+      "sim_above_concept_correct_scalar": -0.0837,
+      "sim_above_concept_total_scalar": -0.0837,
+      "sim_above_concept_total_vec": 0.3526
     },
     {
       "stem": "2_2_23",
@@ -2654,8 +2788,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:49:18",
-      "sim_above_concept_scalar": 0.3403,
-      "sim_above_concept_vec": 0.566
+      "sim_above_concept_correct_vec": 0.566,
+      "sim_above_concept_correct_scalar": 0.3403,
+      "sim_above_concept_total_scalar": 0.3403,
+      "sim_above_concept_total_vec": 0.566
     },
     {
       "stem": "2_2_24",
@@ -2693,8 +2829,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:49:29",
-      "sim_above_concept_scalar": 0.4017,
-      "sim_above_concept_vec": 0.5825
+      "sim_above_concept_correct_vec": 0.5825,
+      "sim_above_concept_correct_scalar": 0.4017,
+      "sim_above_concept_total_scalar": 0.4017,
+      "sim_above_concept_total_vec": 0.5825
     },
     {
       "stem": "2_2_25",
@@ -2732,8 +2870,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:49:42",
-      "sim_above_concept_scalar": 0.1276,
-      "sim_above_concept_vec": 0.4804
+      "sim_above_concept_correct_vec": 0.4804,
+      "sim_above_concept_correct_scalar": 0.1276,
+      "sim_above_concept_total_scalar": 0.1276,
+      "sim_above_concept_total_vec": 0.4804
     },
     {
       "stem": "2_2_27",
@@ -2771,8 +2911,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:49:54",
-      "sim_above_concept_scalar": 0.2222,
-      "sim_above_concept_vec": 0.4842
+      "sim_above_concept_correct_vec": 0.4842,
+      "sim_above_concept_correct_scalar": 0.2222,
+      "sim_above_concept_total_scalar": 0.2222,
+      "sim_above_concept_total_vec": 0.4842
     },
     {
       "stem": "2_2_28",
@@ -2810,8 +2952,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:50:08",
-      "sim_above_concept_scalar": 0.0807,
-      "sim_above_concept_vec": 0.4563
+      "sim_above_concept_correct_vec": 0.4563,
+      "sim_above_concept_correct_scalar": 0.0807,
+      "sim_above_concept_total_scalar": 0.0807,
+      "sim_above_concept_total_vec": 0.4563
     },
     {
       "stem": "2_2_30",
@@ -2849,8 +2993,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:50:19",
-      "sim_above_concept_scalar": -0.2014,
-      "sim_above_concept_vec": 0.3212
+      "sim_above_concept_correct_vec": 0.3212,
+      "sim_above_concept_correct_scalar": -0.2014,
+      "sim_above_concept_total_scalar": -0.2014,
+      "sim_above_concept_total_vec": 0.3212
     },
     {
       "stem": "2_2_31",
@@ -2888,8 +3034,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:50:30",
-      "sim_above_concept_scalar": 0.1862,
-      "sim_above_concept_vec": 0.4567
+      "sim_above_concept_correct_vec": 0.4567,
+      "sim_above_concept_correct_scalar": 0.1862,
+      "sim_above_concept_total_scalar": 0.1862,
+      "sim_above_concept_total_vec": 0.4567
     },
     {
       "stem": "2_2_32",
@@ -2927,8 +3075,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:50:40",
-      "sim_above_concept_scalar": -0.0057,
-      "sim_above_concept_vec": 0.3417
+      "sim_above_concept_correct_vec": 0.3417,
+      "sim_above_concept_correct_scalar": -0.0057,
+      "sim_above_concept_total_scalar": -0.0057,
+      "sim_above_concept_total_vec": 0.3417
     },
     {
       "stem": "2_2_33",
@@ -2966,8 +3116,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:50:51",
-      "sim_above_concept_scalar": 0.1438,
-      "sim_above_concept_vec": 0.516
+      "sim_above_concept_correct_vec": 0.516,
+      "sim_above_concept_correct_scalar": 0.1438,
+      "sim_above_concept_total_scalar": 0.1438,
+      "sim_above_concept_total_vec": 0.516
     },
     {
       "stem": "2_2_34",
@@ -3005,8 +3157,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:51:01",
-      "sim_above_concept_scalar": -0.194,
-      "sim_above_concept_vec": 0.2536
+      "sim_above_concept_correct_vec": 0.2536,
+      "sim_above_concept_correct_scalar": -0.194,
+      "sim_above_concept_total_scalar": -0.194,
+      "sim_above_concept_total_vec": 0.2536
     },
     {
       "stem": "2_2_35",
@@ -3044,8 +3198,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:51:15",
-      "sim_above_concept_scalar": -0.074,
-      "sim_above_concept_vec": 0.4214
+      "sim_above_concept_correct_vec": 0.4214,
+      "sim_above_concept_correct_scalar": -0.074,
+      "sim_above_concept_total_scalar": -0.074,
+      "sim_above_concept_total_vec": 0.4214
     },
     {
       "stem": "2_2_37",
@@ -3083,8 +3239,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:51:25",
-      "sim_above_concept_scalar": 0.0978,
-      "sim_above_concept_vec": 0.3873
+      "sim_above_concept_correct_vec": 0.3873,
+      "sim_above_concept_correct_scalar": 0.0978,
+      "sim_above_concept_total_scalar": 0.0978,
+      "sim_above_concept_total_vec": 0.3873
     },
     {
       "stem": "2_2_38",
@@ -3122,8 +3280,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:51:35",
-      "sim_above_concept_scalar": 0.1358,
-      "sim_above_concept_vec": 0.3182
+      "sim_above_concept_correct_vec": 0.3182,
+      "sim_above_concept_correct_scalar": 0.1358,
+      "sim_above_concept_total_scalar": 0.1358,
+      "sim_above_concept_total_vec": 0.3182
     },
     {
       "stem": "2_2_39",
@@ -3161,8 +3321,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:51:46",
-      "sim_above_concept_scalar": -0.0241,
-      "sim_above_concept_vec": 0.0488
+      "sim_above_concept_correct_vec": 0.0488,
+      "sim_above_concept_correct_scalar": -0.0241,
+      "sim_above_concept_total_scalar": -0.0241,
+      "sim_above_concept_total_vec": 0.0488
     },
     {
       "stem": "2_2_4",
@@ -3200,8 +3362,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:51:55",
-      "sim_above_concept_scalar": -0.1223,
-      "sim_above_concept_vec": 0.0393
+      "sim_above_concept_correct_vec": 0.0393,
+      "sim_above_concept_correct_scalar": -0.1223,
+      "sim_above_concept_total_scalar": -0.1223,
+      "sim_above_concept_total_vec": 0.0393
     },
     {
       "stem": "2_2_40",
@@ -3239,8 +3403,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:52:05",
-      "sim_above_concept_scalar": 0.4078,
-      "sim_above_concept_vec": 0.6199
+      "sim_above_concept_correct_vec": 0.6199,
+      "sim_above_concept_correct_scalar": 0.4078,
+      "sim_above_concept_total_scalar": 0.4078,
+      "sim_above_concept_total_vec": 0.6199
     },
     {
       "stem": "2_2_41",
@@ -3278,8 +3444,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:52:15",
-      "sim_above_concept_scalar": 0.3059,
-      "sim_above_concept_vec": 0.4665
+      "sim_above_concept_correct_vec": 0.4665,
+      "sim_above_concept_correct_scalar": 0.3059,
+      "sim_above_concept_total_scalar": 0.3059,
+      "sim_above_concept_total_vec": 0.4665
     },
     {
       "stem": "2_2_42",
@@ -3317,8 +3485,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:52:26",
-      "sim_above_concept_scalar": 0.2129,
-      "sim_above_concept_vec": 0.399
+      "sim_above_concept_correct_vec": 0.399,
+      "sim_above_concept_correct_scalar": 0.2129,
+      "sim_above_concept_total_scalar": 0.2129,
+      "sim_above_concept_total_vec": 0.399
     },
     {
       "stem": "2_2_43",
@@ -3356,8 +3526,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:52:37",
-      "sim_above_concept_scalar": -0.1178,
-      "sim_above_concept_vec": 0.2927
+      "sim_above_concept_correct_vec": 0.2927,
+      "sim_above_concept_correct_scalar": -0.1178,
+      "sim_above_concept_total_scalar": -0.1178,
+      "sim_above_concept_total_vec": 0.2927
     },
     {
       "stem": "2_2_44",
@@ -3395,8 +3567,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:52:47",
-      "sim_above_concept_scalar": -0.2683,
-      "sim_above_concept_vec": 0.0644
+      "sim_above_concept_correct_vec": 0.0644,
+      "sim_above_concept_correct_scalar": -0.2683,
+      "sim_above_concept_total_scalar": -0.2683,
+      "sim_above_concept_total_vec": 0.0644
     },
     {
       "stem": "2_2_46",
@@ -3434,8 +3608,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:52:58",
-      "sim_above_concept_scalar": 0.4292,
-      "sim_above_concept_vec": 0.6132
+      "sim_above_concept_correct_vec": 0.6132,
+      "sim_above_concept_correct_scalar": 0.4292,
+      "sim_above_concept_total_scalar": 0.4292,
+      "sim_above_concept_total_vec": 0.6132
     },
     {
       "stem": "2_2_48",
@@ -3473,8 +3649,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:53:09",
-      "sim_above_concept_scalar": 0.2722,
-      "sim_above_concept_vec": 0.6015
+      "sim_above_concept_correct_vec": 0.6015,
+      "sim_above_concept_correct_scalar": 0.2722,
+      "sim_above_concept_total_scalar": 0.2722,
+      "sim_above_concept_total_vec": 0.6015
     },
     {
       "stem": "2_2_49",
@@ -3512,8 +3690,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:53:21",
-      "sim_above_concept_scalar": 0.1068,
-      "sim_above_concept_vec": 0.5844
+      "sim_above_concept_correct_vec": 0.5844,
+      "sim_above_concept_correct_scalar": 0.1068,
+      "sim_above_concept_total_scalar": 0.1068,
+      "sim_above_concept_total_vec": 0.5844
     },
     {
       "stem": "2_2_5",
@@ -3551,8 +3731,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:53:31",
-      "sim_above_concept_scalar": 0.1047,
-      "sim_above_concept_vec": 0.507
+      "sim_above_concept_correct_vec": 0.507,
+      "sim_above_concept_correct_scalar": 0.1047,
+      "sim_above_concept_total_scalar": 0.1047,
+      "sim_above_concept_total_vec": 0.507
     },
     {
       "stem": "2_2_50",
@@ -3590,8 +3772,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:53:41",
-      "sim_above_concept_scalar": -0.1394,
-      "sim_above_concept_vec": 0.2597
+      "sim_above_concept_correct_vec": 0.2597,
+      "sim_above_concept_correct_scalar": -0.1394,
+      "sim_above_concept_total_scalar": -0.1394,
+      "sim_above_concept_total_vec": 0.2597
     },
     {
       "stem": "2_2_52",
@@ -3629,8 +3813,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:53:51",
-      "sim_above_concept_scalar": -0.092,
-      "sim_above_concept_vec": 0.2292
+      "sim_above_concept_correct_vec": 0.2292,
+      "sim_above_concept_correct_scalar": -0.092,
+      "sim_above_concept_total_scalar": -0.092,
+      "sim_above_concept_total_vec": 0.2292
     },
     {
       "stem": "2_2_53",
@@ -3668,8 +3854,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:54:06",
-      "sim_above_concept_scalar": -0.1149,
-      "sim_above_concept_vec": 0.0759
+      "sim_above_concept_correct_vec": 0.0759,
+      "sim_above_concept_correct_scalar": -0.1149,
+      "sim_above_concept_total_scalar": -0.1149,
+      "sim_above_concept_total_vec": 0.0759
     },
     {
       "stem": "2_2_54",
@@ -3707,8 +3895,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:54:16",
-      "sim_above_concept_scalar": 0.2635,
-      "sim_above_concept_vec": 0.39
+      "sim_above_concept_correct_vec": 0.39,
+      "sim_above_concept_correct_scalar": 0.2635,
+      "sim_above_concept_total_scalar": 0.2635,
+      "sim_above_concept_total_vec": 0.39
     },
     {
       "stem": "2_2_55",
@@ -3746,8 +3936,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:54:31",
-      "sim_above_concept_scalar": 0.0251,
-      "sim_above_concept_vec": 0.3044
+      "sim_above_concept_correct_vec": 0.3044,
+      "sim_above_concept_correct_scalar": 0.0251,
+      "sim_above_concept_total_scalar": 0.0251,
+      "sim_above_concept_total_vec": 0.3044
     },
     {
       "stem": "2_2_56",
@@ -3785,8 +3977,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:54:41",
-      "sim_above_concept_scalar": 0.1571,
-      "sim_above_concept_vec": 0.468
+      "sim_above_concept_correct_vec": 0.468,
+      "sim_above_concept_correct_scalar": 0.1571,
+      "sim_above_concept_total_scalar": 0.1571,
+      "sim_above_concept_total_vec": 0.468
     },
     {
       "stem": "2_2_57",
@@ -3824,8 +4018,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:54:54",
-      "sim_above_concept_scalar": 0.2025,
-      "sim_above_concept_vec": 0.3944
+      "sim_above_concept_correct_vec": 0.3944,
+      "sim_above_concept_correct_scalar": 0.2025,
+      "sim_above_concept_total_scalar": 0.2025,
+      "sim_above_concept_total_vec": 0.3944
     },
     {
       "stem": "2_2_58",
@@ -3863,8 +4059,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:55:05",
-      "sim_above_concept_scalar": 0.3727,
-      "sim_above_concept_vec": 0.6358
+      "sim_above_concept_correct_vec": 0.6358,
+      "sim_above_concept_correct_scalar": 0.3727,
+      "sim_above_concept_total_scalar": 0.3727,
+      "sim_above_concept_total_vec": 0.6358
     },
     {
       "stem": "2_2_59",
@@ -3902,8 +4100,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:55:17",
-      "sim_above_concept_scalar": 0.3432,
-      "sim_above_concept_vec": 0.6629
+      "sim_above_concept_correct_vec": 0.6629,
+      "sim_above_concept_correct_scalar": 0.3432,
+      "sim_above_concept_total_scalar": 0.3432,
+      "sim_above_concept_total_vec": 0.6629
     },
     {
       "stem": "2_2_60",
@@ -3941,8 +4141,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:55:30",
-      "sim_above_concept_scalar": -0.166,
-      "sim_above_concept_vec": 0.1057
+      "sim_above_concept_correct_vec": 0.1057,
+      "sim_above_concept_correct_scalar": -0.166,
+      "sim_above_concept_total_scalar": -0.166,
+      "sim_above_concept_total_vec": 0.1057
     },
     {
       "stem": "2_2_61",
@@ -3980,8 +4182,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:55:42",
-      "sim_above_concept_scalar": 0.2817,
-      "sim_above_concept_vec": 0.5964
+      "sim_above_concept_correct_vec": 0.5964,
+      "sim_above_concept_correct_scalar": 0.2817,
+      "sim_above_concept_total_scalar": 0.2817,
+      "sim_above_concept_total_vec": 0.5964
     },
     {
       "stem": "2_2_62",
@@ -4019,8 +4223,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:55:54",
-      "sim_above_concept_scalar": -0.2391,
-      "sim_above_concept_vec": 0.0326
+      "sim_above_concept_correct_vec": 0.0326,
+      "sim_above_concept_correct_scalar": -0.2391,
+      "sim_above_concept_total_scalar": -0.2391,
+      "sim_above_concept_total_vec": 0.0326
     },
     {
       "stem": "2_2_63",
@@ -4058,8 +4264,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:56:05",
-      "sim_above_concept_scalar": 0.1434,
-      "sim_above_concept_vec": 0.613
+      "sim_above_concept_correct_vec": 0.613,
+      "sim_above_concept_correct_scalar": 0.1434,
+      "sim_above_concept_total_scalar": 0.1434,
+      "sim_above_concept_total_vec": 0.613
     },
     {
       "stem": "2_2_64",
@@ -4097,8 +4305,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:56:22",
-      "sim_above_concept_scalar": 0.1951,
-      "sim_above_concept_vec": 0.4233
+      "sim_above_concept_correct_vec": 0.4233,
+      "sim_above_concept_correct_scalar": 0.1951,
+      "sim_above_concept_total_scalar": 0.1951,
+      "sim_above_concept_total_vec": 0.4233
     },
     {
       "stem": "2_2_68",
@@ -4136,8 +4346,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:56:33",
-      "sim_above_concept_scalar": -0.3017,
-      "sim_above_concept_vec": 0.1252
+      "sim_above_concept_correct_vec": 0.1252,
+      "sim_above_concept_correct_scalar": -0.3017,
+      "sim_above_concept_total_scalar": -0.3017,
+      "sim_above_concept_total_vec": 0.1252
     },
     {
       "stem": "2_2_69",
@@ -4175,8 +4387,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:56:43",
-      "sim_above_concept_scalar": 0.0487,
-      "sim_above_concept_vec": 0.4539
+      "sim_above_concept_correct_vec": 0.4539,
+      "sim_above_concept_correct_scalar": 0.0487,
+      "sim_above_concept_total_scalar": 0.0487,
+      "sim_above_concept_total_vec": 0.4539
     },
     {
       "stem": "2_2_70",
@@ -4214,8 +4428,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:56:54",
-      "sim_above_concept_scalar": 0.1819,
-      "sim_above_concept_vec": 0.4182
+      "sim_above_concept_correct_vec": 0.4182,
+      "sim_above_concept_correct_scalar": 0.1819,
+      "sim_above_concept_total_scalar": 0.1819,
+      "sim_above_concept_total_vec": 0.4182
     },
     {
       "stem": "2_2_71",
@@ -4253,8 +4469,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:57:06",
-      "sim_above_concept_scalar": 0.2128,
-      "sim_above_concept_vec": 0.6246
+      "sim_above_concept_correct_vec": 0.6246,
+      "sim_above_concept_correct_scalar": 0.2128,
+      "sim_above_concept_total_scalar": 0.2128,
+      "sim_above_concept_total_vec": 0.6246
     },
     {
       "stem": "2_2_8",
@@ -4292,8 +4510,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:57:22",
-      "sim_above_concept_scalar": -0.2656,
-      "sim_above_concept_vec": 0.2873
+      "sim_above_concept_correct_vec": 0.2873,
+      "sim_above_concept_correct_scalar": -0.2656,
+      "sim_above_concept_total_scalar": -0.2656,
+      "sim_above_concept_total_vec": 0.2873
     },
     {
       "stem": "3_1_14",
@@ -4331,8 +4551,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:57:35",
-      "sim_above_concept_scalar": 0.215,
-      "sim_above_concept_vec": 0.3724
+      "sim_above_concept_correct_vec": 0.3724,
+      "sim_above_concept_correct_scalar": 0.215,
+      "sim_above_concept_total_scalar": 0.215,
+      "sim_above_concept_total_vec": 0.3724
     },
     {
       "stem": "3_1_15",
@@ -4370,8 +4592,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:58:49",
-      "sim_above_concept_scalar": -0.0582,
-      "sim_above_concept_vec": 0.0579
+      "sim_above_concept_correct_vec": 0.0579,
+      "sim_above_concept_correct_scalar": -0.0582,
+      "sim_above_concept_total_scalar": -0.0582,
+      "sim_above_concept_total_vec": 0.0579
     },
     {
       "stem": "3_1_16",
@@ -4409,8 +4633,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:59:02",
-      "sim_above_concept_scalar": 0.1171,
-      "sim_above_concept_vec": 0.2298
+      "sim_above_concept_correct_vec": 0.2298,
+      "sim_above_concept_correct_scalar": 0.1171,
+      "sim_above_concept_total_scalar": 0.1171,
+      "sim_above_concept_total_vec": 0.2298
     },
     {
       "stem": "3_1_18",
@@ -4448,8 +4674,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:59:14",
-      "sim_above_concept_scalar": -0.082,
-      "sim_above_concept_vec": 0.4102
+      "sim_above_concept_correct_vec": 0.4102,
+      "sim_above_concept_correct_scalar": -0.082,
+      "sim_above_concept_total_scalar": -0.082,
+      "sim_above_concept_total_vec": 0.4102
     },
     {
       "stem": "3_1_19",
@@ -4487,8 +4715,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:59:29",
-      "sim_above_concept_scalar": -0.0509,
-      "sim_above_concept_vec": 0.2967
+      "sim_above_concept_correct_vec": 0.2967,
+      "sim_above_concept_correct_scalar": -0.0509,
+      "sim_above_concept_total_scalar": -0.0509,
+      "sim_above_concept_total_vec": 0.2967
     },
     {
       "stem": "3_1_32",
@@ -4526,8 +4756,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:59:43",
-      "sim_above_concept_scalar": -0.1002,
-      "sim_above_concept_vec": 0.0815
+      "sim_above_concept_correct_vec": 0.0815,
+      "sim_above_concept_correct_scalar": -0.1002,
+      "sim_above_concept_total_scalar": -0.1002,
+      "sim_above_concept_total_vec": 0.0815
     },
     {
       "stem": "3_1_37",
@@ -4565,8 +4797,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T15:59:56",
-      "sim_above_concept_scalar": 0.1363,
-      "sim_above_concept_vec": 0.2646
+      "sim_above_concept_correct_vec": 0.2646,
+      "sim_above_concept_correct_scalar": 0.1363,
+      "sim_above_concept_total_scalar": 0.1363,
+      "sim_above_concept_total_vec": 0.2646
     },
     {
       "stem": "3_1_40",
@@ -4604,8 +4838,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:00:09",
-      "sim_above_concept_scalar": -0.0782,
-      "sim_above_concept_vec": 0.074
+      "sim_above_concept_correct_vec": 0.074,
+      "sim_above_concept_correct_scalar": -0.0782,
+      "sim_above_concept_total_scalar": -0.0782,
+      "sim_above_concept_total_vec": 0.074
     },
     {
       "stem": "3_1_50",
@@ -4643,8 +4879,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:00:23",
-      "sim_above_concept_scalar": -0.0827,
-      "sim_above_concept_vec": 0.2864
+      "sim_above_concept_correct_vec": 0.2864,
+      "sim_above_concept_correct_scalar": -0.0827,
+      "sim_above_concept_total_scalar": -0.0827,
+      "sim_above_concept_total_vec": 0.2864
     },
     {
       "stem": "3_1_53",
@@ -4682,8 +4920,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:00:36",
-      "sim_above_concept_scalar": -0.0289,
-      "sim_above_concept_vec": 0.3539
+      "sim_above_concept_correct_vec": 0.3539,
+      "sim_above_concept_correct_scalar": -0.0289,
+      "sim_above_concept_total_scalar": -0.0289,
+      "sim_above_concept_total_vec": 0.3539
     },
     {
       "stem": "3_1_57",
@@ -4721,8 +4961,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:00:54",
-      "sim_above_concept_scalar": 0.0511,
-      "sim_above_concept_vec": 0.2327
+      "sim_above_concept_correct_vec": 0.2327,
+      "sim_above_concept_correct_scalar": 0.0511,
+      "sim_above_concept_total_scalar": 0.0511,
+      "sim_above_concept_total_vec": 0.2327
     },
     {
       "stem": "3_1_62",
@@ -4760,8 +5002,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:01:07",
-      "sim_above_concept_scalar": 0.056,
-      "sim_above_concept_vec": 0.2375
+      "sim_above_concept_correct_vec": 0.2375,
+      "sim_above_concept_correct_scalar": 0.056,
+      "sim_above_concept_total_scalar": 0.056,
+      "sim_above_concept_total_vec": 0.2375
     },
     {
       "stem": "3_1_67",
@@ -4799,8 +5043,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:01:20",
-      "sim_above_concept_scalar": 0.0875,
-      "sim_above_concept_vec": 0.1806
+      "sim_above_concept_correct_vec": 0.1806,
+      "sim_above_concept_correct_scalar": 0.0875,
+      "sim_above_concept_total_scalar": 0.0875,
+      "sim_above_concept_total_vec": 0.1806
     },
     {
       "stem": "3_1_68",
@@ -4838,8 +5084,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:01:33",
-      "sim_above_concept_scalar": -0.1763,
-      "sim_above_concept_vec": 0.2046
+      "sim_above_concept_correct_vec": 0.2046,
+      "sim_above_concept_correct_scalar": -0.1763,
+      "sim_above_concept_total_scalar": -0.1763,
+      "sim_above_concept_total_vec": 0.2046
     },
     {
       "stem": "3_1_69",
@@ -4877,8 +5125,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:01:47",
-      "sim_above_concept_scalar": -0.0293,
-      "sim_above_concept_vec": 0.3819
+      "sim_above_concept_correct_vec": 0.3819,
+      "sim_above_concept_correct_scalar": -0.0293,
+      "sim_above_concept_total_scalar": -0.0293,
+      "sim_above_concept_total_vec": 0.3819
     },
     {
       "stem": "3_1_71",
@@ -4916,8 +5166,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:02:01",
-      "sim_above_concept_scalar": 0.214,
-      "sim_above_concept_vec": 0.4245
+      "sim_above_concept_correct_vec": 0.4245,
+      "sim_above_concept_correct_scalar": 0.214,
+      "sim_above_concept_total_scalar": 0.214,
+      "sim_above_concept_total_vec": 0.4245
     },
     {
       "stem": "3_2_11",
@@ -4955,8 +5207,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:02:15",
-      "sim_above_concept_scalar": -0.0809,
-      "sim_above_concept_vec": 0.0956
+      "sim_above_concept_correct_vec": 0.0956,
+      "sim_above_concept_correct_scalar": -0.0809,
+      "sim_above_concept_total_scalar": -0.0809,
+      "sim_above_concept_total_vec": 0.0956
     },
     {
       "stem": "3_2_24",
@@ -4994,8 +5248,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:03:10",
-      "sim_above_concept_scalar": 0.0075,
-      "sim_above_concept_vec": 0.3342
+      "sim_above_concept_correct_vec": 0.3342,
+      "sim_above_concept_correct_scalar": 0.0075,
+      "sim_above_concept_total_scalar": 0.0075,
+      "sim_above_concept_total_vec": 0.3342
     },
     {
       "stem": "3_2_27",
@@ -5033,8 +5289,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:03:19",
-      "sim_above_concept_scalar": -0.1821,
-      "sim_above_concept_vec": 0.2317
+      "sim_above_concept_correct_vec": 0.2317,
+      "sim_above_concept_correct_scalar": -0.1821,
+      "sim_above_concept_total_scalar": -0.1821,
+      "sim_above_concept_total_vec": 0.2317
     },
     {
       "stem": "3_2_28",
@@ -5072,8 +5330,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:03:30",
-      "sim_above_concept_scalar": -0.1784,
-      "sim_above_concept_vec": 0.0652
+      "sim_above_concept_correct_vec": 0.0652,
+      "sim_above_concept_correct_scalar": -0.1784,
+      "sim_above_concept_total_scalar": -0.1784,
+      "sim_above_concept_total_vec": 0.0652
     },
     {
       "stem": "3_2_29",
@@ -5111,8 +5371,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:03:39",
-      "sim_above_concept_scalar": -0.0464,
-      "sim_above_concept_vec": 0.2571
+      "sim_above_concept_correct_vec": 0.2571,
+      "sim_above_concept_correct_scalar": -0.0464,
+      "sim_above_concept_total_scalar": -0.0464,
+      "sim_above_concept_total_vec": 0.2571
     },
     {
       "stem": "3_2_31",
@@ -5150,8 +5412,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:03:50",
-      "sim_above_concept_scalar": 0.0379,
-      "sim_above_concept_vec": 0.3876
+      "sim_above_concept_correct_vec": 0.3876,
+      "sim_above_concept_correct_scalar": 0.0379,
+      "sim_above_concept_total_scalar": 0.0379,
+      "sim_above_concept_total_vec": 0.3876
     },
     {
       "stem": "3_2_35",
@@ -5189,8 +5453,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:04:00",
-      "sim_above_concept_scalar": 0.0573,
-      "sim_above_concept_vec": 0.4262
+      "sim_above_concept_correct_vec": 0.4262,
+      "sim_above_concept_correct_scalar": 0.0573,
+      "sim_above_concept_total_scalar": 0.0573,
+      "sim_above_concept_total_vec": 0.4262
     },
     {
       "stem": "3_2_36",
@@ -5228,8 +5494,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:04:10",
-      "sim_above_concept_scalar": 0.0536,
-      "sim_above_concept_vec": 0.2271
+      "sim_above_concept_correct_vec": 0.2271,
+      "sim_above_concept_correct_scalar": 0.0536,
+      "sim_above_concept_total_scalar": 0.0536,
+      "sim_above_concept_total_vec": 0.2271
     },
     {
       "stem": "3_2_38",
@@ -5267,8 +5535,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:04:20",
-      "sim_above_concept_scalar": 0.1371,
-      "sim_above_concept_vec": 0.2558
+      "sim_above_concept_correct_vec": 0.2558,
+      "sim_above_concept_correct_scalar": 0.1371,
+      "sim_above_concept_total_scalar": 0.1371,
+      "sim_above_concept_total_vec": 0.2558
     },
     {
       "stem": "3_2_49",
@@ -5306,8 +5576,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:04:30",
-      "sim_above_concept_scalar": -0.0697,
-      "sim_above_concept_vec": 0.3708
+      "sim_above_concept_correct_vec": 0.3708,
+      "sim_above_concept_correct_scalar": -0.0697,
+      "sim_above_concept_total_scalar": -0.0697,
+      "sim_above_concept_total_vec": 0.3708
     },
     {
       "stem": "3_2_5",
@@ -5345,8 +5617,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:04:39",
-      "sim_above_concept_scalar": -0.0179,
-      "sim_above_concept_vec": 0.1979
+      "sim_above_concept_correct_vec": 0.1979,
+      "sim_above_concept_correct_scalar": -0.0179,
+      "sim_above_concept_total_scalar": -0.0179,
+      "sim_above_concept_total_vec": 0.1979
     },
     {
       "stem": "3_2_51",
@@ -5384,8 +5658,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:04:51",
-      "sim_above_concept_scalar": -0.0362,
-      "sim_above_concept_vec": 0.1066
+      "sim_above_concept_correct_vec": 0.1066,
+      "sim_above_concept_correct_scalar": -0.0362,
+      "sim_above_concept_total_scalar": -0.0362,
+      "sim_above_concept_total_vec": 0.1066
     },
     {
       "stem": "3_2_52",
@@ -5423,8 +5699,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:05:00",
-      "sim_above_concept_scalar": -0.0467,
-      "sim_above_concept_vec": 0.2775
+      "sim_above_concept_correct_vec": 0.2775,
+      "sim_above_concept_correct_scalar": -0.0467,
+      "sim_above_concept_total_scalar": -0.0467,
+      "sim_above_concept_total_vec": 0.2775
     },
     {
       "stem": "3_2_55",
@@ -5462,8 +5740,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:05:11",
-      "sim_above_concept_scalar": 0.1105,
-      "sim_above_concept_vec": 0.3216
+      "sim_above_concept_correct_vec": 0.3216,
+      "sim_above_concept_correct_scalar": 0.1105,
+      "sim_above_concept_total_scalar": 0.1105,
+      "sim_above_concept_total_vec": 0.3216
     },
     {
       "stem": "3_2_56",
@@ -5501,8 +5781,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:05:20",
-      "sim_above_concept_scalar": 0.1488,
-      "sim_above_concept_vec": 0.4597
+      "sim_above_concept_correct_vec": 0.4597,
+      "sim_above_concept_correct_scalar": 0.1488,
+      "sim_above_concept_total_scalar": 0.1488,
+      "sim_above_concept_total_vec": 0.4597
     },
     {
       "stem": "3_2_60",
@@ -5540,8 +5822,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:05:32",
-      "sim_above_concept_scalar": -0.0416,
-      "sim_above_concept_vec": 0.404
+      "sim_above_concept_correct_vec": 0.404,
+      "sim_above_concept_correct_scalar": -0.0416,
+      "sim_above_concept_total_scalar": -0.0416,
+      "sim_above_concept_total_vec": 0.404
     },
     {
       "stem": "3_2_63",
@@ -5579,8 +5863,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:05:43",
-      "sim_above_concept_scalar": 0.0762,
-      "sim_above_concept_vec": 0.4278
+      "sim_above_concept_correct_vec": 0.4278,
+      "sim_above_concept_correct_scalar": 0.0762,
+      "sim_above_concept_total_scalar": 0.0762,
+      "sim_above_concept_total_vec": 0.4278
     },
     {
       "stem": "4_1_18",
@@ -5618,8 +5904,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:05:58",
-      "sim_above_concept_scalar": 0.4183,
-      "sim_above_concept_vec": 0.5456
+      "sim_above_concept_correct_vec": 0.5456,
+      "sim_above_concept_correct_scalar": 0.4183,
+      "sim_above_concept_total_scalar": 0.4183,
+      "sim_above_concept_total_vec": 0.5456
     },
     {
       "stem": "4_1_24",
@@ -5657,8 +5945,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:07:00",
-      "sim_above_concept_scalar": 0.1711,
-      "sim_above_concept_vec": 0.2911
+      "sim_above_concept_correct_vec": 0.2911,
+      "sim_above_concept_correct_scalar": 0.1711,
+      "sim_above_concept_total_scalar": 0.1711,
+      "sim_above_concept_total_vec": 0.2911
     },
     {
       "stem": "4_1_27",
@@ -5696,8 +5986,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:07:11",
-      "sim_above_concept_scalar": -0.0587,
-      "sim_above_concept_vec": 0.0585
+      "sim_above_concept_correct_vec": 0.0585,
+      "sim_above_concept_correct_scalar": -0.0587,
+      "sim_above_concept_total_scalar": -0.0587,
+      "sim_above_concept_total_vec": 0.0585
     },
     {
       "stem": "4_1_34",
@@ -5735,8 +6027,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:07:21",
-      "sim_above_concept_scalar": -0.0822,
-      "sim_above_concept_vec": 0.2138
+      "sim_above_concept_correct_vec": 0.2138,
+      "sim_above_concept_correct_scalar": -0.0822,
+      "sim_above_concept_total_scalar": -0.0822,
+      "sim_above_concept_total_vec": 0.2138
     },
     {
       "stem": "4_1_4",
@@ -5774,8 +6068,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:07:35",
-      "sim_above_concept_scalar": -0.014,
-      "sim_above_concept_vec": 0.0773
+      "sim_above_concept_correct_vec": 0.0773,
+      "sim_above_concept_correct_scalar": -0.014,
+      "sim_above_concept_total_scalar": -0.014,
+      "sim_above_concept_total_vec": 0.0773
     },
     {
       "stem": "4_1_43",
@@ -5813,8 +6109,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:07:46",
-      "sim_above_concept_scalar": 0.1623,
-      "sim_above_concept_vec": 0.488
+      "sim_above_concept_correct_vec": 0.488,
+      "sim_above_concept_correct_scalar": 0.1623,
+      "sim_above_concept_total_scalar": 0.1623,
+      "sim_above_concept_total_vec": 0.488
     },
     {
       "stem": "4_1_44",
@@ -5852,8 +6150,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:07:59",
-      "sim_above_concept_scalar": -0.0279,
-      "sim_above_concept_vec": 0.3618
+      "sim_above_concept_correct_vec": 0.3618,
+      "sim_above_concept_correct_scalar": -0.0279,
+      "sim_above_concept_total_scalar": -0.0279,
+      "sim_above_concept_total_vec": 0.3618
     },
     {
       "stem": "4_1_67",
@@ -5891,8 +6191,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:08:11",
-      "sim_above_concept_scalar": 0.0592,
-      "sim_above_concept_vec": 0.1651
+      "sim_above_concept_correct_vec": 0.1651,
+      "sim_above_concept_correct_scalar": 0.0592,
+      "sim_above_concept_total_scalar": 0.0592,
+      "sim_above_concept_total_vec": 0.1651
     },
     {
       "stem": "4_2_16",
@@ -5930,8 +6232,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:08:22",
-      "sim_above_concept_scalar": -0.0431,
-      "sim_above_concept_vec": 0.1164
+      "sim_above_concept_correct_vec": 0.1164,
+      "sim_above_concept_correct_scalar": -0.0431,
+      "sim_above_concept_total_scalar": -0.0431,
+      "sim_above_concept_total_vec": 0.1164
     },
     {
       "stem": "4_2_19",
@@ -5969,8 +6273,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:09:16",
-      "sim_above_concept_scalar": 0.0691,
-      "sim_above_concept_vec": 0.2883
+      "sim_above_concept_correct_vec": 0.2883,
+      "sim_above_concept_correct_scalar": 0.0691,
+      "sim_above_concept_total_scalar": 0.0691,
+      "sim_above_concept_total_vec": 0.2883
     },
     {
       "stem": "4_2_20",
@@ -6008,8 +6314,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:09:31",
-      "sim_above_concept_scalar": -0.0205,
-      "sim_above_concept_vec": 0.0384
+      "sim_above_concept_correct_vec": 0.0384,
+      "sim_above_concept_correct_scalar": -0.0205,
+      "sim_above_concept_total_scalar": -0.0205,
+      "sim_above_concept_total_vec": 0.0384
     },
     {
       "stem": "4_2_21",
@@ -6047,8 +6355,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:09:43",
-      "sim_above_concept_scalar": 0.4013,
-      "sim_above_concept_vec": 0.5502
+      "sim_above_concept_correct_vec": 0.5502,
+      "sim_above_concept_correct_scalar": 0.4013,
+      "sim_above_concept_total_scalar": 0.4013,
+      "sim_above_concept_total_vec": 0.5502
     },
     {
       "stem": "4_2_22",
@@ -6086,8 +6396,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:09:56",
-      "sim_above_concept_scalar": 0.1725,
-      "sim_above_concept_vec": 0.526
+      "sim_above_concept_correct_vec": 0.526,
+      "sim_above_concept_correct_scalar": 0.1725,
+      "sim_above_concept_total_scalar": 0.1725,
+      "sim_above_concept_total_vec": 0.526
     },
     {
       "stem": "4_2_26",
@@ -6125,8 +6437,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:10:10",
-      "sim_above_concept_scalar": 0.312,
-      "sim_above_concept_vec": 0.589
+      "sim_above_concept_correct_vec": 0.589,
+      "sim_above_concept_correct_scalar": 0.312,
+      "sim_above_concept_total_scalar": 0.312,
+      "sim_above_concept_total_vec": 0.589
     },
     {
       "stem": "4_2_28",
@@ -6164,8 +6478,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:10:23",
-      "sim_above_concept_scalar": 0.3064,
-      "sim_above_concept_vec": 0.5396
+      "sim_above_concept_correct_vec": 0.5396,
+      "sim_above_concept_correct_scalar": 0.3064,
+      "sim_above_concept_total_scalar": 0.3064,
+      "sim_above_concept_total_vec": 0.5396
     },
     {
       "stem": "4_2_29",
@@ -6203,8 +6519,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:10:36",
-      "sim_above_concept_scalar": -0.1298,
-      "sim_above_concept_vec": 0.0636
+      "sim_above_concept_correct_vec": 0.0636,
+      "sim_above_concept_correct_scalar": -0.1298,
+      "sim_above_concept_total_scalar": -0.1298,
+      "sim_above_concept_total_vec": 0.0636
     },
     {
       "stem": "4_2_30",
@@ -6242,8 +6560,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:10:50",
-      "sim_above_concept_scalar": 0.0376,
-      "sim_above_concept_vec": 0.3338
+      "sim_above_concept_correct_vec": 0.3338,
+      "sim_above_concept_correct_scalar": 0.0376,
+      "sim_above_concept_total_scalar": 0.0376,
+      "sim_above_concept_total_vec": 0.3338
     },
     {
       "stem": "4_2_31",
@@ -6281,8 +6601,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:11:04",
-      "sim_above_concept_scalar": -0.0813,
-      "sim_above_concept_vec": 0.1058
+      "sim_above_concept_correct_vec": 0.1058,
+      "sim_above_concept_correct_scalar": -0.0813,
+      "sim_above_concept_total_scalar": -0.0813,
+      "sim_above_concept_total_vec": 0.1058
     },
     {
       "stem": "4_2_32",
@@ -6320,8 +6642,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:11:16",
-      "sim_above_concept_scalar": 0.4507,
-      "sim_above_concept_vec": 0.6409
+      "sim_above_concept_correct_vec": 0.6409,
+      "sim_above_concept_correct_scalar": 0.4507,
+      "sim_above_concept_total_scalar": 0.4507,
+      "sim_above_concept_total_vec": 0.6409
     },
     {
       "stem": "4_2_35",
@@ -6359,8 +6683,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:11:29",
-      "sim_above_concept_scalar": 0.3242,
-      "sim_above_concept_vec": 0.5042
+      "sim_above_concept_correct_vec": 0.5042,
+      "sim_above_concept_correct_scalar": 0.3242,
+      "sim_above_concept_total_scalar": 0.3242,
+      "sim_above_concept_total_vec": 0.5042
     },
     {
       "stem": "4_2_39",
@@ -6398,8 +6724,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:11:42",
-      "sim_above_concept_scalar": -0.0368,
-      "sim_above_concept_vec": 0.2207
+      "sim_above_concept_correct_vec": 0.2207,
+      "sim_above_concept_correct_scalar": -0.0368,
+      "sim_above_concept_total_scalar": -0.0368,
+      "sim_above_concept_total_vec": 0.2207
     },
     {
       "stem": "4_2_40",
@@ -6437,8 +6765,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:11:55",
-      "sim_above_concept_scalar": 0.0196,
-      "sim_above_concept_vec": 0.1999
+      "sim_above_concept_correct_vec": 0.1999,
+      "sim_above_concept_correct_scalar": 0.0196,
+      "sim_above_concept_total_scalar": 0.0196,
+      "sim_above_concept_total_vec": 0.1999
     },
     {
       "stem": "4_2_41",
@@ -6476,8 +6806,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:12:07",
-      "sim_above_concept_scalar": -0.0233,
-      "sim_above_concept_vec": 0.2012
+      "sim_above_concept_correct_vec": 0.2012,
+      "sim_above_concept_correct_scalar": -0.0233,
+      "sim_above_concept_total_scalar": -0.0233,
+      "sim_above_concept_total_vec": 0.2012
     },
     {
       "stem": "4_2_42",
@@ -6515,8 +6847,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:12:20",
-      "sim_above_concept_scalar": -0.0079,
-      "sim_above_concept_vec": 0.1621
+      "sim_above_concept_correct_vec": 0.1621,
+      "sim_above_concept_correct_scalar": -0.0079,
+      "sim_above_concept_total_scalar": -0.0079,
+      "sim_above_concept_total_vec": 0.1621
     },
     {
       "stem": "4_2_45",
@@ -6554,8 +6888,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:12:32",
-      "sim_above_concept_scalar": 0.2605,
-      "sim_above_concept_vec": 0.6134
+      "sim_above_concept_correct_vec": 0.6134,
+      "sim_above_concept_correct_scalar": 0.2605,
+      "sim_above_concept_total_scalar": 0.2605,
+      "sim_above_concept_total_vec": 0.6134
     },
     {
       "stem": "4_2_48",
@@ -6593,8 +6929,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:12:46",
-      "sim_above_concept_scalar": 0.1424,
-      "sim_above_concept_vec": 0.4707
+      "sim_above_concept_correct_vec": 0.4707,
+      "sim_above_concept_correct_scalar": 0.1424,
+      "sim_above_concept_total_scalar": 0.1424,
+      "sim_above_concept_total_vec": 0.4707
     },
     {
       "stem": "4_2_49",
@@ -6632,8 +6970,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:13:00",
-      "sim_above_concept_scalar": 0.4294,
-      "sim_above_concept_vec": 0.6223
+      "sim_above_concept_correct_vec": 0.6223,
+      "sim_above_concept_correct_scalar": 0.4294,
+      "sim_above_concept_total_scalar": 0.4294,
+      "sim_above_concept_total_vec": 0.6223
     },
     {
       "stem": "4_2_50",
@@ -6671,8 +7011,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:13:15",
-      "sim_above_concept_scalar": -0.188,
-      "sim_above_concept_vec": 0.0068
+      "sim_above_concept_correct_vec": 0.0068,
+      "sim_above_concept_correct_scalar": -0.188,
+      "sim_above_concept_total_scalar": -0.188,
+      "sim_above_concept_total_vec": 0.0068
     },
     {
       "stem": "4_2_52",
@@ -6710,8 +7052,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:13:29",
-      "sim_above_concept_scalar": 0.2077,
-      "sim_above_concept_vec": 0.4902
+      "sim_above_concept_correct_vec": 0.4902,
+      "sim_above_concept_correct_scalar": 0.2077,
+      "sim_above_concept_total_scalar": 0.2077,
+      "sim_above_concept_total_vec": 0.4902
     },
     {
       "stem": "4_2_57",
@@ -6749,8 +7093,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:13:44",
-      "sim_above_concept_scalar": 0.0738,
-      "sim_above_concept_vec": 0.1214
+      "sim_above_concept_correct_vec": 0.1214,
+      "sim_above_concept_correct_scalar": 0.0738,
+      "sim_above_concept_total_scalar": 0.0738,
+      "sim_above_concept_total_vec": 0.1214
     },
     {
       "stem": "4_2_58",
@@ -6788,8 +7134,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:13:56",
-      "sim_above_concept_scalar": 0.3868,
-      "sim_above_concept_vec": 0.5721
+      "sim_above_concept_correct_vec": 0.5721,
+      "sim_above_concept_correct_scalar": 0.3868,
+      "sim_above_concept_total_scalar": 0.3868,
+      "sim_above_concept_total_vec": 0.5721
     },
     {
       "stem": "4_2_59",
@@ -6827,8 +7175,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:14:14",
-      "sim_above_concept_scalar": 0.4485,
-      "sim_above_concept_vec": 0.5977
+      "sim_above_concept_correct_vec": 0.5977,
+      "sim_above_concept_correct_scalar": 0.4485,
+      "sim_above_concept_total_scalar": 0.4485,
+      "sim_above_concept_total_vec": 0.5977
     },
     {
       "stem": "4_2_60",
@@ -6866,8 +7216,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:14:28",
-      "sim_above_concept_scalar": 0.4146,
-      "sim_above_concept_vec": 0.6004
+      "sim_above_concept_correct_vec": 0.6004,
+      "sim_above_concept_correct_scalar": 0.4146,
+      "sim_above_concept_total_scalar": 0.4146,
+      "sim_above_concept_total_vec": 0.6004
     },
     {
       "stem": "4_2_61",
@@ -6905,8 +7257,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:14:41",
-      "sim_above_concept_scalar": 0.2832,
-      "sim_above_concept_vec": 0.3926
+      "sim_above_concept_correct_vec": 0.3926,
+      "sim_above_concept_correct_scalar": 0.2832,
+      "sim_above_concept_total_scalar": 0.2832,
+      "sim_above_concept_total_vec": 0.3926
     },
     {
       "stem": "4_2_62",
@@ -6944,8 +7298,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:14:56",
-      "sim_above_concept_scalar": 0.3891,
-      "sim_above_concept_vec": 0.5612
+      "sim_above_concept_correct_vec": 0.5612,
+      "sim_above_concept_correct_scalar": 0.3891,
+      "sim_above_concept_total_scalar": 0.3891,
+      "sim_above_concept_total_vec": 0.5612
     },
     {
       "stem": "4_2_63",
@@ -6983,8 +7339,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:15:09",
-      "sim_above_concept_scalar": 0.031,
-      "sim_above_concept_vec": 0.378
+      "sim_above_concept_correct_vec": 0.378,
+      "sim_above_concept_correct_scalar": 0.031,
+      "sim_above_concept_total_scalar": 0.031,
+      "sim_above_concept_total_vec": 0.378
     },
     {
       "stem": "4_2_64",
@@ -7022,8 +7380,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:15:27",
-      "sim_above_concept_scalar": -0.3129,
-      "sim_above_concept_vec": 0.0947
+      "sim_above_concept_correct_vec": 0.0947,
+      "sim_above_concept_correct_scalar": -0.3129,
+      "sim_above_concept_total_scalar": -0.3129,
+      "sim_above_concept_total_vec": 0.0947
     },
     {
       "stem": "4_2_69",
@@ -7061,8 +7421,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:15:40",
-      "sim_above_concept_scalar": 0.1114,
-      "sim_above_concept_vec": 0.3649
+      "sim_above_concept_correct_vec": 0.3649,
+      "sim_above_concept_correct_scalar": 0.1114,
+      "sim_above_concept_total_scalar": 0.1114,
+      "sim_above_concept_total_vec": 0.3649
     },
     {
       "stem": "4_2_8",
@@ -7100,8 +7462,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:15:53",
-      "sim_above_concept_scalar": 0.5373,
-      "sim_above_concept_vec": 0.6578
+      "sim_above_concept_correct_vec": 0.6578,
+      "sim_above_concept_correct_scalar": 0.5373,
+      "sim_above_concept_total_scalar": 0.5373,
+      "sim_above_concept_total_vec": 0.6578
     },
     {
       "stem": "5_1_18",
@@ -7139,8 +7503,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:16:06",
-      "sim_above_concept_scalar": -0.1434,
-      "sim_above_concept_vec": 0.2651
+      "sim_above_concept_correct_vec": 0.2651,
+      "sim_above_concept_correct_scalar": -0.1434,
+      "sim_above_concept_total_scalar": -0.1434,
+      "sim_above_concept_total_vec": 0.2651
     },
     {
       "stem": "5_1_32",
@@ -7178,8 +7544,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:17:21",
-      "sim_above_concept_scalar": 0.3591,
-      "sim_above_concept_vec": 0.4559
+      "sim_above_concept_correct_vec": 0.4559,
+      "sim_above_concept_correct_scalar": 0.3591,
+      "sim_above_concept_total_scalar": 0.3591,
+      "sim_above_concept_total_vec": 0.4559
     },
     {
       "stem": "5_1_36",
@@ -7217,8 +7585,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:17:32",
-      "sim_above_concept_scalar": 0.3862,
-      "sim_above_concept_vec": 0.5105
+      "sim_above_concept_correct_vec": 0.5105,
+      "sim_above_concept_correct_scalar": 0.3862,
+      "sim_above_concept_total_scalar": 0.3862,
+      "sim_above_concept_total_vec": 0.5105
     },
     {
       "stem": "5_1_56",
@@ -7256,8 +7626,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:17:45",
-      "sim_above_concept_scalar": 0.1299,
-      "sim_above_concept_vec": 0.6445
+      "sim_above_concept_correct_vec": 0.6445,
+      "sim_above_concept_correct_scalar": 0.1299,
+      "sim_above_concept_total_scalar": 0.1299,
+      "sim_above_concept_total_vec": 0.6445
     },
     {
       "stem": "5_2_11",
@@ -7295,8 +7667,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:18:01",
-      "sim_above_concept_scalar": -0.0889,
-      "sim_above_concept_vec": 0.1758
+      "sim_above_concept_correct_vec": 0.1758,
+      "sim_above_concept_correct_scalar": -0.0889,
+      "sim_above_concept_total_scalar": -0.0889,
+      "sim_above_concept_total_vec": 0.1758
     },
     {
       "stem": "5_2_13",
@@ -7334,8 +7708,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:18:50",
-      "sim_above_concept_scalar": -0.2735,
-      "sim_above_concept_vec": 0.1883
+      "sim_above_concept_correct_vec": 0.1883,
+      "sim_above_concept_correct_scalar": -0.2735,
+      "sim_above_concept_total_scalar": -0.2735,
+      "sim_above_concept_total_vec": 0.1883
     },
     {
       "stem": "5_2_16",
@@ -7373,8 +7749,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:18:59",
-      "sim_above_concept_scalar": 0.0767,
-      "sim_above_concept_vec": 0.3192
+      "sim_above_concept_correct_vec": 0.3192,
+      "sim_above_concept_correct_scalar": 0.0767,
+      "sim_above_concept_total_scalar": 0.0767,
+      "sim_above_concept_total_vec": 0.3192
     },
     {
       "stem": "5_2_20",
@@ -7412,8 +7790,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:19:09",
-      "sim_above_concept_scalar": 0.0582,
-      "sim_above_concept_vec": 0.4836
+      "sim_above_concept_correct_vec": 0.4836,
+      "sim_above_concept_correct_scalar": 0.0582,
+      "sim_above_concept_total_scalar": 0.0582,
+      "sim_above_concept_total_vec": 0.4836
     },
     {
       "stem": "5_2_23",
@@ -7451,8 +7831,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:19:19",
-      "sim_above_concept_scalar": 0.0192,
-      "sim_above_concept_vec": 0.1942
+      "sim_above_concept_correct_vec": 0.1942,
+      "sim_above_concept_correct_scalar": 0.0192,
+      "sim_above_concept_total_scalar": 0.0192,
+      "sim_above_concept_total_vec": 0.1942
     },
     {
       "stem": "5_2_28",
@@ -7490,8 +7872,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:19:29",
-      "sim_above_concept_scalar": 0.355,
-      "sim_above_concept_vec": 0.5271
+      "sim_above_concept_correct_vec": 0.5271,
+      "sim_above_concept_correct_scalar": 0.355,
+      "sim_above_concept_total_scalar": 0.355,
+      "sim_above_concept_total_vec": 0.5271
     },
     {
       "stem": "5_2_29",
@@ -7529,8 +7913,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:19:39",
-      "sim_above_concept_scalar": -0.064,
-      "sim_above_concept_vec": 0.1572
+      "sim_above_concept_correct_vec": 0.1572,
+      "sim_above_concept_correct_scalar": -0.064,
+      "sim_above_concept_total_scalar": -0.064,
+      "sim_above_concept_total_vec": 0.1572
     },
     {
       "stem": "5_2_31",
@@ -7568,8 +7954,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:19:49",
-      "sim_above_concept_scalar": 0.0074,
-      "sim_above_concept_vec": 0.1661
+      "sim_above_concept_correct_vec": 0.1661,
+      "sim_above_concept_correct_scalar": 0.0074,
+      "sim_above_concept_total_scalar": 0.0074,
+      "sim_above_concept_total_vec": 0.1661
     },
     {
       "stem": "5_2_33",
@@ -7607,8 +7995,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:19:59",
-      "sim_above_concept_scalar": 0.4127,
-      "sim_above_concept_vec": 0.5898
+      "sim_above_concept_correct_vec": 0.5898,
+      "sim_above_concept_correct_scalar": 0.4127,
+      "sim_above_concept_total_scalar": 0.4127,
+      "sim_above_concept_total_vec": 0.5898
     },
     {
       "stem": "5_2_35",
@@ -7646,8 +8036,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:20:09",
-      "sim_above_concept_scalar": 0.3728,
-      "sim_above_concept_vec": 0.5901
+      "sim_above_concept_correct_vec": 0.5901,
+      "sim_above_concept_correct_scalar": 0.3728,
+      "sim_above_concept_total_scalar": 0.3728,
+      "sim_above_concept_total_vec": 0.5901
     },
     {
       "stem": "5_2_37",
@@ -7685,8 +8077,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:20:18",
-      "sim_above_concept_scalar": 0.149,
-      "sim_above_concept_vec": 0.2706
+      "sim_above_concept_correct_vec": 0.2706,
+      "sim_above_concept_correct_scalar": 0.149,
+      "sim_above_concept_total_scalar": 0.149,
+      "sim_above_concept_total_vec": 0.2706
     },
     {
       "stem": "5_2_46",
@@ -7724,8 +8118,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:20:28",
-      "sim_above_concept_scalar": 0.1635,
-      "sim_above_concept_vec": 0.574
+      "sim_above_concept_correct_vec": 0.574,
+      "sim_above_concept_correct_scalar": 0.1635,
+      "sim_above_concept_total_scalar": 0.1635,
+      "sim_above_concept_total_vec": 0.574
     },
     {
       "stem": "5_2_48",
@@ -7763,8 +8159,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:20:41",
-      "sim_above_concept_scalar": -0.0066,
-      "sim_above_concept_vec": 0.0715
+      "sim_above_concept_correct_vec": 0.0715,
+      "sim_above_concept_correct_scalar": -0.0066,
+      "sim_above_concept_total_scalar": -0.0066,
+      "sim_above_concept_total_vec": 0.0715
     },
     {
       "stem": "5_2_49",
@@ -7802,8 +8200,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:20:50",
-      "sim_above_concept_scalar": 0.4199,
-      "sim_above_concept_vec": 0.5966
+      "sim_above_concept_correct_vec": 0.5966,
+      "sim_above_concept_correct_scalar": 0.4199,
+      "sim_above_concept_total_scalar": 0.4199,
+      "sim_above_concept_total_vec": 0.5966
     },
     {
       "stem": "5_2_52",
@@ -7841,8 +8241,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:21:00",
-      "sim_above_concept_scalar": 0.2454,
-      "sim_above_concept_vec": 0.5679
+      "sim_above_concept_correct_vec": 0.5679,
+      "sim_above_concept_correct_scalar": 0.2454,
+      "sim_above_concept_total_scalar": 0.2454,
+      "sim_above_concept_total_vec": 0.5679
     },
     {
       "stem": "5_2_53",
@@ -7880,8 +8282,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:21:13",
-      "sim_above_concept_scalar": 0.0738,
-      "sim_above_concept_vec": 0.2492
+      "sim_above_concept_correct_vec": 0.2492,
+      "sim_above_concept_correct_scalar": 0.0738,
+      "sim_above_concept_total_scalar": 0.0738,
+      "sim_above_concept_total_vec": 0.2492
     },
     {
       "stem": "5_2_54",
@@ -7919,8 +8323,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:21:23",
-      "sim_above_concept_scalar": 0.4535,
-      "sim_above_concept_vec": 0.5797
+      "sim_above_concept_correct_vec": 0.5797,
+      "sim_above_concept_correct_scalar": 0.4535,
+      "sim_above_concept_total_scalar": 0.4535,
+      "sim_above_concept_total_vec": 0.5797
     },
     {
       "stem": "5_2_58",
@@ -7958,8 +8364,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:21:33",
-      "sim_above_concept_scalar": 0.3071,
-      "sim_above_concept_vec": 0.6719
+      "sim_above_concept_correct_vec": 0.6719,
+      "sim_above_concept_correct_scalar": 0.3071,
+      "sim_above_concept_total_scalar": 0.3071,
+      "sim_above_concept_total_vec": 0.6719
     },
     {
       "stem": "5_2_61",
@@ -7997,8 +8405,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:21:44",
-      "sim_above_concept_scalar": 0.333,
-      "sim_above_concept_vec": 0.5766
+      "sim_above_concept_correct_vec": 0.5766,
+      "sim_above_concept_correct_scalar": 0.333,
+      "sim_above_concept_total_scalar": 0.333,
+      "sim_above_concept_total_vec": 0.5766
     },
     {
       "stem": "5_2_62",
@@ -8036,8 +8446,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:21:56",
-      "sim_above_concept_scalar": -0.1216,
-      "sim_above_concept_vec": 0.0784
+      "sim_above_concept_correct_vec": 0.0784,
+      "sim_above_concept_correct_scalar": -0.1216,
+      "sim_above_concept_total_scalar": -0.1216,
+      "sim_above_concept_total_vec": 0.0784
     },
     {
       "stem": "5_2_63",
@@ -8075,8 +8487,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:22:08",
-      "sim_above_concept_scalar": 0.1037,
-      "sim_above_concept_vec": 0.6238
+      "sim_above_concept_correct_vec": 0.6238,
+      "sim_above_concept_correct_scalar": 0.1037,
+      "sim_above_concept_total_scalar": 0.1037,
+      "sim_above_concept_total_vec": 0.6238
     },
     {
       "stem": "5_2_64",
@@ -8114,8 +8528,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:22:25",
-      "sim_above_concept_scalar": 0.115,
-      "sim_above_concept_vec": 0.2174
+      "sim_above_concept_correct_vec": 0.2174,
+      "sim_above_concept_correct_scalar": 0.115,
+      "sim_above_concept_total_scalar": 0.115,
+      "sim_above_concept_total_vec": 0.2174
     },
     {
       "stem": "5_2_8",
@@ -8153,8 +8569,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:22:35",
-      "sim_above_concept_scalar": 0.4484,
-      "sim_above_concept_vec": 0.6155
+      "sim_above_concept_correct_vec": 0.6155,
+      "sim_above_concept_correct_scalar": 0.4484,
+      "sim_above_concept_total_scalar": 0.4484,
+      "sim_above_concept_total_vec": 0.6155
     },
     {
       "stem": "6_1_28",
@@ -8192,8 +8610,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:22:44",
-      "sim_above_concept_scalar": -0.0741,
-      "sim_above_concept_vec": 0.0976
+      "sim_above_concept_correct_vec": 0.0976,
+      "sim_above_concept_correct_scalar": -0.0741,
+      "sim_above_concept_total_scalar": -0.0741,
+      "sim_above_concept_total_vec": 0.0976
     },
     {
       "stem": "6_1_29",
@@ -8231,8 +8651,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:23:32",
-      "sim_above_concept_scalar": 0.1388,
-      "sim_above_concept_vec": 0.2113
+      "sim_above_concept_correct_vec": 0.2113,
+      "sim_above_concept_correct_scalar": 0.1388,
+      "sim_above_concept_total_scalar": 0.1388,
+      "sim_above_concept_total_vec": 0.2113
     },
     {
       "stem": "6_1_4",
@@ -8270,8 +8692,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:23:39",
-      "sim_above_concept_scalar": -0.0227,
-      "sim_above_concept_vec": 0.1199
+      "sim_above_concept_correct_vec": 0.1199,
+      "sim_above_concept_correct_scalar": -0.0227,
+      "sim_above_concept_total_scalar": -0.0227,
+      "sim_above_concept_total_vec": 0.1199
     },
     {
       "stem": "6_1_41",
@@ -8309,8 +8733,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:23:46",
-      "sim_above_concept_scalar": 0.2506,
-      "sim_above_concept_vec": 0.5008
+      "sim_above_concept_correct_vec": 0.5008,
+      "sim_above_concept_correct_scalar": 0.2506,
+      "sim_above_concept_total_scalar": 0.2506,
+      "sim_above_concept_total_vec": 0.5008
     },
     {
       "stem": "6_1_44",
@@ -8348,8 +8774,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:23:54",
-      "sim_above_concept_scalar": -0.0607,
-      "sim_above_concept_vec": 0.1965
+      "sim_above_concept_correct_vec": 0.1965,
+      "sim_above_concept_correct_scalar": -0.0607,
+      "sim_above_concept_total_scalar": -0.0607,
+      "sim_above_concept_total_vec": 0.1965
     },
     {
       "stem": "6_1_46",
@@ -8387,8 +8815,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:24:02",
-      "sim_above_concept_scalar": 0.0344,
-      "sim_above_concept_vec": 0.156
+      "sim_above_concept_correct_vec": 0.156,
+      "sim_above_concept_correct_scalar": 0.0344,
+      "sim_above_concept_total_scalar": 0.0344,
+      "sim_above_concept_total_vec": 0.156
     },
     {
       "stem": "6_1_56",
@@ -8426,8 +8856,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:24:12",
-      "sim_above_concept_scalar": 0.3467,
-      "sim_above_concept_vec": 0.6195
+      "sim_above_concept_correct_vec": 0.6195,
+      "sim_above_concept_correct_scalar": 0.3467,
+      "sim_above_concept_total_scalar": 0.3467,
+      "sim_above_concept_total_vec": 0.6195
     },
     {
       "stem": "6_2_11",
@@ -8465,8 +8897,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:24:22",
-      "sim_above_concept_scalar": 0.1683,
-      "sim_above_concept_vec": 0.3329
+      "sim_above_concept_correct_vec": 0.3329,
+      "sim_above_concept_correct_scalar": 0.1683,
+      "sim_above_concept_total_scalar": 0.1683,
+      "sim_above_concept_total_vec": 0.3329
     },
     {
       "stem": "6_2_13",
@@ -8504,8 +8938,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:25:06",
-      "sim_above_concept_scalar": -0.0528,
-      "sim_above_concept_vec": 0.4491
+      "sim_above_concept_correct_vec": 0.4491,
+      "sim_above_concept_correct_scalar": -0.0528,
+      "sim_above_concept_total_scalar": -0.0528,
+      "sim_above_concept_total_vec": 0.4491
     },
     {
       "stem": "6_2_14",
@@ -8543,8 +8979,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:25:17",
-      "sim_above_concept_scalar": 0.0383,
-      "sim_above_concept_vec": 0.3689
+      "sim_above_concept_correct_vec": 0.3689,
+      "sim_above_concept_correct_scalar": 0.0383,
+      "sim_above_concept_total_scalar": 0.0383,
+      "sim_above_concept_total_vec": 0.3689
     },
     {
       "stem": "6_2_19",
@@ -8582,8 +9020,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:25:27",
-      "sim_above_concept_scalar": 0.0432,
-      "sim_above_concept_vec": 0.4317
+      "sim_above_concept_correct_vec": 0.4317,
+      "sim_above_concept_correct_scalar": 0.0432,
+      "sim_above_concept_total_scalar": 0.0432,
+      "sim_above_concept_total_vec": 0.4317
     },
     {
       "stem": "6_2_24",
@@ -8621,8 +9061,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:25:41",
-      "sim_above_concept_scalar": -0.0353,
-      "sim_above_concept_vec": 0.2011
+      "sim_above_concept_correct_vec": 0.2011,
+      "sim_above_concept_correct_scalar": -0.0353,
+      "sim_above_concept_total_scalar": -0.0353,
+      "sim_above_concept_total_vec": 0.2011
     },
     {
       "stem": "6_2_26",
@@ -8660,8 +9102,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:25:53",
-      "sim_above_concept_scalar": 0.1727,
-      "sim_above_concept_vec": 0.3836
+      "sim_above_concept_correct_vec": 0.3836,
+      "sim_above_concept_correct_scalar": 0.1727,
+      "sim_above_concept_total_scalar": 0.1727,
+      "sim_above_concept_total_vec": 0.3836
     },
     {
       "stem": "6_2_31",
@@ -8699,8 +9143,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:26:06",
-      "sim_above_concept_scalar": 0.1523,
-      "sim_above_concept_vec": 0.5261
+      "sim_above_concept_correct_vec": 0.5261,
+      "sim_above_concept_correct_scalar": 0.1523,
+      "sim_above_concept_total_scalar": 0.1523,
+      "sim_above_concept_total_vec": 0.5261
     },
     {
       "stem": "6_2_32",
@@ -8738,8 +9184,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:26:17",
-      "sim_above_concept_scalar": 0.0328,
-      "sim_above_concept_vec": 0.4782
+      "sim_above_concept_correct_vec": 0.4782,
+      "sim_above_concept_correct_scalar": 0.0328,
+      "sim_above_concept_total_scalar": 0.0328,
+      "sim_above_concept_total_vec": 0.4782
     },
     {
       "stem": "6_2_33",
@@ -8777,8 +9225,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:26:28",
-      "sim_above_concept_scalar": 0.1196,
-      "sim_above_concept_vec": 0.5115
+      "sim_above_concept_correct_vec": 0.5115,
+      "sim_above_concept_correct_scalar": 0.1196,
+      "sim_above_concept_total_scalar": 0.1196,
+      "sim_above_concept_total_vec": 0.5115
     },
     {
       "stem": "6_2_34",
@@ -8816,8 +9266,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:26:39",
-      "sim_above_concept_scalar": 0.4996,
-      "sim_above_concept_vec": 0.6378
+      "sim_above_concept_correct_vec": 0.6378,
+      "sim_above_concept_correct_scalar": 0.4996,
+      "sim_above_concept_total_scalar": 0.4996,
+      "sim_above_concept_total_vec": 0.6378
     },
     {
       "stem": "6_2_35",
@@ -8855,8 +9307,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:26:51",
-      "sim_above_concept_scalar": 0.1209,
-      "sim_above_concept_vec": 0.5071
+      "sim_above_concept_correct_vec": 0.5071,
+      "sim_above_concept_correct_scalar": 0.1209,
+      "sim_above_concept_total_scalar": 0.1209,
+      "sim_above_concept_total_vec": 0.5071
     },
     {
       "stem": "6_2_37",
@@ -8894,8 +9348,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:27:02",
-      "sim_above_concept_scalar": 0.2292,
-      "sim_above_concept_vec": 0.4041
+      "sim_above_concept_correct_vec": 0.4041,
+      "sim_above_concept_correct_scalar": 0.2292,
+      "sim_above_concept_total_scalar": 0.2292,
+      "sim_above_concept_total_vec": 0.4041
     },
     {
       "stem": "6_2_47",
@@ -8933,8 +9389,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:27:16",
-      "sim_above_concept_scalar": 0.1384,
-      "sim_above_concept_vec": 0.4481
+      "sim_above_concept_correct_vec": 0.4481,
+      "sim_above_concept_correct_scalar": 0.1384,
+      "sim_above_concept_total_scalar": 0.1384,
+      "sim_above_concept_total_vec": 0.4481
     },
     {
       "stem": "6_2_50",
@@ -8972,8 +9430,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:27:28",
-      "sim_above_concept_scalar": 0.0128,
-      "sim_above_concept_vec": 0.404
+      "sim_above_concept_correct_vec": 0.404,
+      "sim_above_concept_correct_scalar": 0.0128,
+      "sim_above_concept_total_scalar": 0.0128,
+      "sim_above_concept_total_vec": 0.404
     },
     {
       "stem": "6_2_52",
@@ -9011,8 +9471,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:27:40",
-      "sim_above_concept_scalar": 0.0668,
-      "sim_above_concept_vec": 0.4407
+      "sim_above_concept_correct_vec": 0.4407,
+      "sim_above_concept_correct_scalar": 0.0668,
+      "sim_above_concept_total_scalar": 0.0668,
+      "sim_above_concept_total_vec": 0.4407
     },
     {
       "stem": "6_2_53",
@@ -9050,8 +9512,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:27:52",
-      "sim_above_concept_scalar": -0.0194,
-      "sim_above_concept_vec": 0.199
+      "sim_above_concept_correct_vec": 0.199,
+      "sim_above_concept_correct_scalar": -0.0194,
+      "sim_above_concept_total_scalar": -0.0194,
+      "sim_above_concept_total_vec": 0.199
     },
     {
       "stem": "6_2_54",
@@ -9089,8 +9553,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:28:06",
-      "sim_above_concept_scalar": 0.4539,
-      "sim_above_concept_vec": 0.6056
+      "sim_above_concept_correct_vec": 0.6056,
+      "sim_above_concept_correct_scalar": 0.4539,
+      "sim_above_concept_total_scalar": 0.4539,
+      "sim_above_concept_total_vec": 0.6056
     },
     {
       "stem": "6_2_58",
@@ -9128,8 +9594,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:28:17",
-      "sim_above_concept_scalar": 0.193,
-      "sim_above_concept_vec": 0.5634
+      "sim_above_concept_correct_vec": 0.5634,
+      "sim_above_concept_correct_scalar": 0.193,
+      "sim_above_concept_total_scalar": 0.193,
+      "sim_above_concept_total_vec": 0.5634
     },
     {
       "stem": "6_2_59",
@@ -9167,8 +9635,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:28:30",
-      "sim_above_concept_scalar": 0.2951,
-      "sim_above_concept_vec": 0.6678
+      "sim_above_concept_correct_vec": 0.6678,
+      "sim_above_concept_correct_scalar": 0.2951,
+      "sim_above_concept_total_scalar": 0.2951,
+      "sim_above_concept_total_vec": 0.6678
     },
     {
       "stem": "6_2_61",
@@ -9206,8 +9676,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:28:44",
-      "sim_above_concept_scalar": 0.3762,
-      "sim_above_concept_vec": 0.6349
+      "sim_above_concept_correct_vec": 0.6349,
+      "sim_above_concept_correct_scalar": 0.3762,
+      "sim_above_concept_total_scalar": 0.3762,
+      "sim_above_concept_total_vec": 0.6349
     },
     {
       "stem": "6_2_62",
@@ -9245,8 +9717,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:28:59",
-      "sim_above_concept_scalar": 0.2643,
-      "sim_above_concept_vec": 0.566
+      "sim_above_concept_correct_vec": 0.566,
+      "sim_above_concept_correct_scalar": 0.2643,
+      "sim_above_concept_total_scalar": 0.2643,
+      "sim_above_concept_total_vec": 0.566
     },
     {
       "stem": "6_2_63",
@@ -9284,8 +9758,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:29:14",
-      "sim_above_concept_scalar": 0.3439,
-      "sim_above_concept_vec": 0.6987
+      "sim_above_concept_correct_vec": 0.6987,
+      "sim_above_concept_correct_scalar": 0.3439,
+      "sim_above_concept_total_scalar": 0.3439,
+      "sim_above_concept_total_vec": 0.6987
     },
     {
       "stem": "6_2_64",
@@ -9323,8 +9799,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:29:33",
-      "sim_above_concept_scalar": 0.13,
-      "sim_above_concept_vec": 0.2528
+      "sim_above_concept_correct_vec": 0.2528,
+      "sim_above_concept_correct_scalar": 0.13,
+      "sim_above_concept_total_scalar": 0.13,
+      "sim_above_concept_total_vec": 0.2528
     },
     {
       "stem": "6_2_70",
@@ -9362,8 +9840,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:29:44",
-      "sim_above_concept_scalar": -0.0772,
-      "sim_above_concept_vec": 0.3552
+      "sim_above_concept_correct_vec": 0.3552,
+      "sim_above_concept_correct_scalar": -0.0772,
+      "sim_above_concept_total_scalar": -0.0772,
+      "sim_above_concept_total_vec": 0.3552
     },
     {
       "stem": "7_1_11",
@@ -9401,8 +9881,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:29:56",
-      "sim_above_concept_scalar": -0.0299,
-      "sim_above_concept_vec": 0.2174
+      "sim_above_concept_correct_vec": 0.2174,
+      "sim_above_concept_correct_scalar": -0.0299,
+      "sim_above_concept_total_scalar": -0.0299,
+      "sim_above_concept_total_vec": 0.2174
     },
     {
       "stem": "7_1_14",
@@ -9440,8 +9922,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:30:58",
-      "sim_above_concept_scalar": 0.0157,
-      "sim_above_concept_vec": 0.2953
+      "sim_above_concept_correct_vec": 0.2953,
+      "sim_above_concept_correct_scalar": 0.0157,
+      "sim_above_concept_total_scalar": 0.0157,
+      "sim_above_concept_total_vec": 0.2953
     },
     {
       "stem": "7_1_16",
@@ -9479,8 +9963,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:31:12",
-      "sim_above_concept_scalar": 0.0598,
-      "sim_above_concept_vec": 0.2878
+      "sim_above_concept_correct_vec": 0.2878,
+      "sim_above_concept_correct_scalar": 0.0598,
+      "sim_above_concept_total_scalar": 0.0598,
+      "sim_above_concept_total_vec": 0.2878
     },
     {
       "stem": "7_1_18",
@@ -9518,8 +10004,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:31:25",
-      "sim_above_concept_scalar": -0.0352,
-      "sim_above_concept_vec": 0.1737
+      "sim_above_concept_correct_vec": 0.1737,
+      "sim_above_concept_correct_scalar": -0.0352,
+      "sim_above_concept_total_scalar": -0.0352,
+      "sim_above_concept_total_vec": 0.1737
     },
     {
       "stem": "7_1_21",
@@ -9557,8 +10045,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:31:39",
-      "sim_above_concept_scalar": 0.2228,
-      "sim_above_concept_vec": 0.3784
+      "sim_above_concept_correct_vec": 0.3784,
+      "sim_above_concept_correct_scalar": 0.2228,
+      "sim_above_concept_total_scalar": 0.2228,
+      "sim_above_concept_total_vec": 0.3784
     },
     {
       "stem": "7_1_22",
@@ -9596,8 +10086,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:31:53",
-      "sim_above_concept_scalar": -0.0398,
-      "sim_above_concept_vec": 0.2818
+      "sim_above_concept_correct_vec": 0.2818,
+      "sim_above_concept_correct_scalar": -0.0398,
+      "sim_above_concept_total_scalar": -0.0398,
+      "sim_above_concept_total_vec": 0.2818
     },
     {
       "stem": "7_1_23",
@@ -9635,8 +10127,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:32:07",
-      "sim_above_concept_scalar": -0.0372,
-      "sim_above_concept_vec": 0.2461
+      "sim_above_concept_correct_vec": 0.2461,
+      "sim_above_concept_correct_scalar": -0.0372,
+      "sim_above_concept_total_scalar": -0.0372,
+      "sim_above_concept_total_vec": 0.2461
     },
     {
       "stem": "7_1_27",
@@ -9674,8 +10168,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:32:22",
-      "sim_above_concept_scalar": 0.032,
-      "sim_above_concept_vec": 0.3806
+      "sim_above_concept_correct_vec": 0.3806,
+      "sim_above_concept_correct_scalar": 0.032,
+      "sim_above_concept_total_scalar": 0.032,
+      "sim_above_concept_total_vec": 0.3806
     },
     {
       "stem": "7_1_28",
@@ -9713,8 +10209,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:32:35",
-      "sim_above_concept_scalar": 0.042,
-      "sim_above_concept_vec": 0.2279
+      "sim_above_concept_correct_vec": 0.2279,
+      "sim_above_concept_correct_scalar": 0.042,
+      "sim_above_concept_total_scalar": 0.042,
+      "sim_above_concept_total_vec": 0.2279
     },
     {
       "stem": "7_1_29",
@@ -9752,8 +10250,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:32:49",
-      "sim_above_concept_scalar": -0.2458,
-      "sim_above_concept_vec": 0.0818
+      "sim_above_concept_correct_vec": 0.0818,
+      "sim_above_concept_correct_scalar": -0.2458,
+      "sim_above_concept_total_scalar": -0.2458,
+      "sim_above_concept_total_vec": 0.0818
     },
     {
       "stem": "7_1_31",
@@ -9791,8 +10291,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:33:02",
-      "sim_above_concept_scalar": -0.2201,
-      "sim_above_concept_vec": 0.1372
+      "sim_above_concept_correct_vec": 0.1372,
+      "sim_above_concept_correct_scalar": -0.2201,
+      "sim_above_concept_total_scalar": -0.2201,
+      "sim_above_concept_total_vec": 0.1372
     },
     {
       "stem": "7_1_32",
@@ -9830,8 +10332,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:33:16",
-      "sim_above_concept_scalar": -0.2213,
-      "sim_above_concept_vec": 0.1343
+      "sim_above_concept_correct_vec": 0.1343,
+      "sim_above_concept_correct_scalar": -0.2213,
+      "sim_above_concept_total_scalar": -0.2213,
+      "sim_above_concept_total_vec": 0.1343
     },
     {
       "stem": "7_1_34",
@@ -9869,8 +10373,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:33:29",
-      "sim_above_concept_scalar": -0.1382,
-      "sim_above_concept_vec": 0.1234
+      "sim_above_concept_correct_vec": 0.1234,
+      "sim_above_concept_correct_scalar": -0.1382,
+      "sim_above_concept_total_scalar": -0.1382,
+      "sim_above_concept_total_vec": 0.1234
     },
     {
       "stem": "7_1_35",
@@ -9908,8 +10414,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:33:43",
-      "sim_above_concept_scalar": -0.2954,
-      "sim_above_concept_vec": 0.0211
+      "sim_above_concept_correct_vec": 0.0211,
+      "sim_above_concept_correct_scalar": -0.2954,
+      "sim_above_concept_total_scalar": -0.2954,
+      "sim_above_concept_total_vec": 0.0211
     },
     {
       "stem": "7_1_39",
@@ -9947,8 +10455,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:33:57",
-      "sim_above_concept_scalar": 0.1464,
-      "sim_above_concept_vec": 0.3624
+      "sim_above_concept_correct_vec": 0.3624,
+      "sim_above_concept_correct_scalar": 0.1464,
+      "sim_above_concept_total_scalar": 0.1464,
+      "sim_above_concept_total_vec": 0.3624
     },
     {
       "stem": "7_1_4",
@@ -9986,8 +10496,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:34:10",
-      "sim_above_concept_scalar": 0.0188,
-      "sim_above_concept_vec": 0.1013
+      "sim_above_concept_correct_vec": 0.1013,
+      "sim_above_concept_correct_scalar": 0.0188,
+      "sim_above_concept_total_scalar": 0.0188,
+      "sim_above_concept_total_vec": 0.1013
     },
     {
       "stem": "7_1_41",
@@ -10025,8 +10537,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:34:23",
-      "sim_above_concept_scalar": 0.3617,
-      "sim_above_concept_vec": 0.5526
+      "sim_above_concept_correct_vec": 0.5526,
+      "sim_above_concept_correct_scalar": 0.3617,
+      "sim_above_concept_total_scalar": 0.3617,
+      "sim_above_concept_total_vec": 0.5526
     },
     {
       "stem": "7_1_43",
@@ -10064,8 +10578,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:34:39",
-      "sim_above_concept_scalar": 0.0157,
-      "sim_above_concept_vec": 0.3002
+      "sim_above_concept_correct_vec": 0.3002,
+      "sim_above_concept_correct_scalar": 0.0157,
+      "sim_above_concept_total_scalar": 0.0157,
+      "sim_above_concept_total_vec": 0.3002
     },
     {
       "stem": "7_1_44",
@@ -10103,8 +10619,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:34:53",
-      "sim_above_concept_scalar": 0.1459,
-      "sim_above_concept_vec": 0.3861
+      "sim_above_concept_correct_vec": 0.3861,
+      "sim_above_concept_correct_scalar": 0.1459,
+      "sim_above_concept_total_scalar": 0.1459,
+      "sim_above_concept_total_vec": 0.3861
     },
     {
       "stem": "7_1_46",
@@ -10142,8 +10660,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:35:07",
-      "sim_above_concept_scalar": 0.3145,
-      "sim_above_concept_vec": 0.5492
+      "sim_above_concept_correct_vec": 0.5492,
+      "sim_above_concept_correct_scalar": 0.3145,
+      "sim_above_concept_total_scalar": 0.3145,
+      "sim_above_concept_total_vec": 0.5492
     },
     {
       "stem": "7_1_5",
@@ -10181,8 +10701,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:35:23",
-      "sim_above_concept_scalar": -0.0786,
-      "sim_above_concept_vec": 0.246
+      "sim_above_concept_correct_vec": 0.246,
+      "sim_above_concept_correct_scalar": -0.0786,
+      "sim_above_concept_total_scalar": -0.0786,
+      "sim_above_concept_total_vec": 0.246
     },
     {
       "stem": "7_1_50",
@@ -10220,8 +10742,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:35:37",
-      "sim_above_concept_scalar": -0.2133,
-      "sim_above_concept_vec": 0.1035
+      "sim_above_concept_correct_vec": 0.1035,
+      "sim_above_concept_correct_scalar": -0.2133,
+      "sim_above_concept_total_scalar": -0.2133,
+      "sim_above_concept_total_vec": 0.1035
     },
     {
       "stem": "7_1_52",
@@ -10259,8 +10783,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:35:51",
-      "sim_above_concept_scalar": 0.1618,
-      "sim_above_concept_vec": 0.3809
+      "sim_above_concept_correct_vec": 0.3809,
+      "sim_above_concept_correct_scalar": 0.1618,
+      "sim_above_concept_total_scalar": 0.1618,
+      "sim_above_concept_total_vec": 0.3809
     },
     {
       "stem": "7_1_53",
@@ -10298,8 +10824,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:36:05",
-      "sim_above_concept_scalar": -0.3059,
-      "sim_above_concept_vec": 0.1187
+      "sim_above_concept_correct_vec": 0.1187,
+      "sim_above_concept_correct_scalar": -0.3059,
+      "sim_above_concept_total_scalar": -0.3059,
+      "sim_above_concept_total_vec": 0.1187
     },
     {
       "stem": "7_1_56",
@@ -10337,8 +10865,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:36:20",
-      "sim_above_concept_scalar": -0.1068,
-      "sim_above_concept_vec": 0.286
+      "sim_above_concept_correct_vec": 0.286,
+      "sim_above_concept_correct_scalar": -0.1068,
+      "sim_above_concept_total_scalar": -0.1068,
+      "sim_above_concept_total_vec": 0.286
     },
     {
       "stem": "7_1_57",
@@ -10376,8 +10906,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:36:37",
-      "sim_above_concept_scalar": -0.0348,
-      "sim_above_concept_vec": 0.205
+      "sim_above_concept_correct_vec": 0.205,
+      "sim_above_concept_correct_scalar": -0.0348,
+      "sim_above_concept_total_scalar": -0.0348,
+      "sim_above_concept_total_vec": 0.205
     },
     {
       "stem": "7_1_59",
@@ -10415,8 +10947,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:36:51",
-      "sim_above_concept_scalar": 0.0587,
-      "sim_above_concept_vec": 0.3453
+      "sim_above_concept_correct_vec": 0.3453,
+      "sim_above_concept_correct_scalar": 0.0587,
+      "sim_above_concept_total_scalar": 0.0587,
+      "sim_above_concept_total_vec": 0.3453
     },
     {
       "stem": "7_1_60",
@@ -10454,8 +10988,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:37:06",
-      "sim_above_concept_scalar": 0.2483,
-      "sim_above_concept_vec": 0.3421
+      "sim_above_concept_correct_vec": 0.3421,
+      "sim_above_concept_correct_scalar": 0.2483,
+      "sim_above_concept_total_scalar": 0.2483,
+      "sim_above_concept_total_vec": 0.3421
     },
     {
       "stem": "7_1_61",
@@ -10493,8 +11029,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:37:20",
-      "sim_above_concept_scalar": -0.1507,
-      "sim_above_concept_vec": 0.1135
+      "sim_above_concept_correct_vec": 0.1135,
+      "sim_above_concept_correct_scalar": -0.1507,
+      "sim_above_concept_total_scalar": -0.1507,
+      "sim_above_concept_total_vec": 0.1135
     },
     {
       "stem": "7_1_62",
@@ -10532,8 +11070,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:37:34",
-      "sim_above_concept_scalar": 0.0105,
-      "sim_above_concept_vec": 0.0709
+      "sim_above_concept_correct_vec": 0.0709,
+      "sim_above_concept_correct_scalar": 0.0105,
+      "sim_above_concept_total_scalar": 0.0105,
+      "sim_above_concept_total_vec": 0.0709
     },
     {
       "stem": "7_1_63",
@@ -10571,8 +11111,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:37:47",
-      "sim_above_concept_scalar": -0.0071,
-      "sim_above_concept_vec": 0.363
+      "sim_above_concept_correct_vec": 0.363,
+      "sim_above_concept_correct_scalar": -0.0071,
+      "sim_above_concept_total_scalar": -0.0071,
+      "sim_above_concept_total_vec": 0.363
     },
     {
       "stem": "7_1_67",
@@ -10610,8 +11152,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:38:08",
-      "sim_above_concept_scalar": -0.002,
-      "sim_above_concept_vec": 0.0055
+      "sim_above_concept_correct_vec": 0.0055,
+      "sim_above_concept_correct_scalar": -0.002,
+      "sim_above_concept_total_scalar": -0.002,
+      "sim_above_concept_total_vec": 0.0055
     },
     {
       "stem": "7_1_68",
@@ -10649,8 +11193,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:38:21",
-      "sim_above_concept_scalar": 0.0622,
-      "sim_above_concept_vec": 0.2247
+      "sim_above_concept_correct_vec": 0.2247,
+      "sim_above_concept_correct_scalar": 0.0622,
+      "sim_above_concept_total_scalar": 0.0622,
+      "sim_above_concept_total_vec": 0.2247
     },
     {
       "stem": "7_1_69",
@@ -10688,8 +11234,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:38:37",
-      "sim_above_concept_scalar": 0.0054,
-      "sim_above_concept_vec": 0.2868
+      "sim_above_concept_correct_vec": 0.2868,
+      "sim_above_concept_correct_scalar": 0.0054,
+      "sim_above_concept_total_scalar": 0.0054,
+      "sim_above_concept_total_vec": 0.2868
     },
     {
       "stem": "7_1_70",
@@ -10727,8 +11275,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:38:53",
-      "sim_above_concept_scalar": 0.0702,
-      "sim_above_concept_vec": 0.2491
+      "sim_above_concept_correct_vec": 0.2491,
+      "sim_above_concept_correct_scalar": 0.0702,
+      "sim_above_concept_total_scalar": 0.0702,
+      "sim_above_concept_total_vec": 0.2491
     },
     {
       "stem": "7_1_71",
@@ -10766,8 +11316,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:39:09",
-      "sim_above_concept_scalar": -0.0569,
-      "sim_above_concept_vec": 0.1582
+      "sim_above_concept_correct_vec": 0.1582,
+      "sim_above_concept_correct_scalar": -0.0569,
+      "sim_above_concept_total_scalar": -0.0569,
+      "sim_above_concept_total_vec": 0.1582
     },
     {
       "stem": "7_1_8",
@@ -10805,8 +11357,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:39:22",
-      "sim_above_concept_scalar": -0.2159,
-      "sim_above_concept_vec": 0.0166
+      "sim_above_concept_correct_vec": 0.0166,
+      "sim_above_concept_correct_scalar": -0.2159,
+      "sim_above_concept_total_scalar": -0.2159,
+      "sim_above_concept_total_vec": 0.0166
     },
     {
       "stem": "7_2_47",
@@ -10844,8 +11398,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:39:35",
-      "sim_above_concept_scalar": 0.1274,
-      "sim_above_concept_vec": 0.3534
+      "sim_above_concept_correct_vec": 0.3534,
+      "sim_above_concept_correct_scalar": 0.1274,
+      "sim_above_concept_total_scalar": 0.1274,
+      "sim_above_concept_total_vec": 0.3534
     },
     {
       "stem": "8_1_15",
@@ -10883,8 +11439,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:40:37",
-      "sim_above_concept_scalar": -0.0138,
-      "sim_above_concept_vec": 0.2026
+      "sim_above_concept_correct_vec": 0.2026,
+      "sim_above_concept_correct_scalar": -0.0138,
+      "sim_above_concept_total_scalar": -0.0138,
+      "sim_above_concept_total_vec": 0.2026
     },
     {
       "stem": "8_1_23",
@@ -10922,8 +11480,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:41:38",
-      "sim_above_concept_scalar": 0.145,
-      "sim_above_concept_vec": 0.4795
+      "sim_above_concept_correct_vec": 0.4795,
+      "sim_above_concept_correct_scalar": 0.145,
+      "sim_above_concept_total_scalar": 0.145,
+      "sim_above_concept_total_vec": 0.4795
     },
     {
       "stem": "8_1_27",
@@ -10961,8 +11521,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:41:51",
-      "sim_above_concept_scalar": 0.3055,
-      "sim_above_concept_vec": 0.4499
+      "sim_above_concept_correct_vec": 0.4499,
+      "sim_above_concept_correct_scalar": 0.3055,
+      "sim_above_concept_total_scalar": 0.3055,
+      "sim_above_concept_total_vec": 0.4499
     },
     {
       "stem": "8_1_31",
@@ -11000,8 +11562,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:42:02",
-      "sim_above_concept_scalar": 0.2396,
-      "sim_above_concept_vec": 0.3751
+      "sim_above_concept_correct_vec": 0.3751,
+      "sim_above_concept_correct_scalar": 0.2396,
+      "sim_above_concept_total_scalar": 0.2396,
+      "sim_above_concept_total_vec": 0.3751
     },
     {
       "stem": "8_1_39",
@@ -11039,8 +11603,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:42:16",
-      "sim_above_concept_scalar": 0.0364,
-      "sim_above_concept_vec": 0.3319
+      "sim_above_concept_correct_vec": 0.3319,
+      "sim_above_concept_correct_scalar": 0.0364,
+      "sim_above_concept_total_scalar": 0.0364,
+      "sim_above_concept_total_vec": 0.3319
     },
     {
       "stem": "8_1_43",
@@ -11078,8 +11644,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:42:27",
-      "sim_above_concept_scalar": 0.1214,
-      "sim_above_concept_vec": 0.3734
+      "sim_above_concept_correct_vec": 0.3734,
+      "sim_above_concept_correct_scalar": 0.1214,
+      "sim_above_concept_total_scalar": 0.1214,
+      "sim_above_concept_total_vec": 0.3734
     },
     {
       "stem": "8_1_44",
@@ -11117,8 +11685,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:42:39",
-      "sim_above_concept_scalar": -0.1344,
-      "sim_above_concept_vec": 0.2099
+      "sim_above_concept_correct_vec": 0.2099,
+      "sim_above_concept_correct_scalar": -0.1344,
+      "sim_above_concept_total_scalar": -0.1344,
+      "sim_above_concept_total_vec": 0.2099
     },
     {
       "stem": "8_1_68",
@@ -11156,8 +11726,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:42:51",
-      "sim_above_concept_scalar": -0.2238,
-      "sim_above_concept_vec": 0.0514
+      "sim_above_concept_correct_vec": 0.0514,
+      "sim_above_concept_correct_scalar": -0.2238,
+      "sim_above_concept_total_scalar": -0.2238,
+      "sim_above_concept_total_vec": 0.0514
     },
     {
       "stem": "8_2_19",
@@ -11195,8 +11767,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:43:04",
-      "sim_above_concept_scalar": -0.0457,
-      "sim_above_concept_vec": 0.2576
+      "sim_above_concept_correct_vec": 0.2576,
+      "sim_above_concept_correct_scalar": -0.0457,
+      "sim_above_concept_total_scalar": -0.0457,
+      "sim_above_concept_total_vec": 0.2576
     },
     {
       "stem": "8_2_32",
@@ -11234,8 +11808,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:43:58",
-      "sim_above_concept_scalar": -0.2476,
-      "sim_above_concept_vec": 0.2069
+      "sim_above_concept_correct_vec": 0.2069,
+      "sim_above_concept_correct_scalar": -0.2476,
+      "sim_above_concept_total_scalar": -0.2476,
+      "sim_above_concept_total_vec": 0.2069
     },
     {
       "stem": "8_2_41",
@@ -11273,8 +11849,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:44:07",
-      "sim_above_concept_scalar": -0.0109,
-      "sim_above_concept_vec": 0.3287
+      "sim_above_concept_correct_vec": 0.3287,
+      "sim_above_concept_correct_scalar": -0.0109,
+      "sim_above_concept_total_scalar": -0.0109,
+      "sim_above_concept_total_vec": 0.3287
     },
     {
       "stem": "8_2_46",
@@ -11312,8 +11890,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:44:16",
-      "sim_above_concept_scalar": -0.0054,
-      "sim_above_concept_vec": 0.3768
+      "sim_above_concept_correct_vec": 0.3768,
+      "sim_above_concept_correct_scalar": -0.0054,
+      "sim_above_concept_total_scalar": -0.0054,
+      "sim_above_concept_total_vec": 0.3768
     },
     {
       "stem": "8_2_70",
@@ -11351,8 +11931,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:44:26",
-      "sim_above_concept_scalar": 0.0178,
-      "sim_above_concept_vec": 0.3398
+      "sim_above_concept_correct_vec": 0.3398,
+      "sim_above_concept_correct_scalar": 0.0178,
+      "sim_above_concept_total_scalar": 0.0178,
+      "sim_above_concept_total_vec": 0.3398
     },
     {
       "stem": "9_1_23",
@@ -11390,8 +11972,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:44:35",
-      "sim_above_concept_scalar": 0.2838,
-      "sim_above_concept_vec": 0.5322
+      "sim_above_concept_correct_vec": 0.5322,
+      "sim_above_concept_correct_scalar": 0.2838,
+      "sim_above_concept_total_scalar": 0.2838,
+      "sim_above_concept_total_vec": 0.5322
     },
     {
       "stem": "9_1_24",
@@ -11429,8 +12013,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:45:25",
-      "sim_above_concept_scalar": 0.0565,
-      "sim_above_concept_vec": 0.3344
+      "sim_above_concept_correct_vec": 0.3344,
+      "sim_above_concept_correct_scalar": 0.0565,
+      "sim_above_concept_total_scalar": 0.0565,
+      "sim_above_concept_total_vec": 0.3344
     },
     {
       "stem": "9_1_27",
@@ -11468,8 +12054,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:45:37",
-      "sim_above_concept_scalar": 0.216,
-      "sim_above_concept_vec": 0.5852
+      "sim_above_concept_correct_vec": 0.5852,
+      "sim_above_concept_correct_scalar": 0.216,
+      "sim_above_concept_total_scalar": 0.216,
+      "sim_above_concept_total_vec": 0.5852
     },
     {
       "stem": "9_1_28",
@@ -11507,8 +12095,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:45:48",
-      "sim_above_concept_scalar": -0.3017,
-      "sim_above_concept_vec": 0.0994
+      "sim_above_concept_correct_vec": 0.0994,
+      "sim_above_concept_correct_scalar": -0.3017,
+      "sim_above_concept_total_scalar": -0.3017,
+      "sim_above_concept_total_vec": 0.0994
     },
     {
       "stem": "9_1_43",
@@ -11546,8 +12136,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:45:59",
-      "sim_above_concept_scalar": -0.0119,
-      "sim_above_concept_vec": 0.2773
+      "sim_above_concept_correct_vec": 0.2773,
+      "sim_above_concept_correct_scalar": -0.0119,
+      "sim_above_concept_total_scalar": -0.0119,
+      "sim_above_concept_total_vec": 0.2773
     },
     {
       "stem": "9_1_49",
@@ -11585,8 +12177,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:46:10",
-      "sim_above_concept_scalar": 0.2142,
-      "sim_above_concept_vec": 0.4499
+      "sim_above_concept_correct_vec": 0.4499,
+      "sim_above_concept_correct_scalar": 0.2142,
+      "sim_above_concept_total_scalar": 0.2142,
+      "sim_above_concept_total_vec": 0.4499
     },
     {
       "stem": "9_1_5",
@@ -11624,8 +12218,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:46:20",
-      "sim_above_concept_scalar": 0.0382,
-      "sim_above_concept_vec": 0.148
+      "sim_above_concept_correct_vec": 0.148,
+      "sim_above_concept_correct_scalar": 0.0382,
+      "sim_above_concept_total_scalar": 0.0382,
+      "sim_above_concept_total_vec": 0.148
     },
     {
       "stem": "9_2_11",
@@ -11663,8 +12259,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:46:30",
-      "sim_above_concept_scalar": 0.3185,
-      "sim_above_concept_vec": 0.5406
+      "sim_above_concept_correct_vec": 0.5406,
+      "sim_above_concept_correct_scalar": 0.3185,
+      "sim_above_concept_total_scalar": 0.3185,
+      "sim_above_concept_total_vec": 0.5406
     },
     {
       "stem": "9_2_14",
@@ -11702,8 +12300,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:47:24",
-      "sim_above_concept_scalar": -0.0244,
-      "sim_above_concept_vec": 0.2093
+      "sim_above_concept_correct_vec": 0.2093,
+      "sim_above_concept_correct_scalar": -0.0244,
+      "sim_above_concept_total_scalar": -0.0244,
+      "sim_above_concept_total_vec": 0.2093
     },
     {
       "stem": "9_2_15",
@@ -11741,8 +12341,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:47:36",
-      "sim_above_concept_scalar": 0.2245,
-      "sim_above_concept_vec": 0.3428
+      "sim_above_concept_correct_vec": 0.3428,
+      "sim_above_concept_correct_scalar": 0.2245,
+      "sim_above_concept_total_scalar": 0.2245,
+      "sim_above_concept_total_vec": 0.3428
     },
     {
       "stem": "9_2_16",
@@ -11780,8 +12382,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:47:47",
-      "sim_above_concept_scalar": -0.1805,
-      "sim_above_concept_vec": 0.2608
+      "sim_above_concept_correct_vec": 0.2608,
+      "sim_above_concept_correct_scalar": -0.1805,
+      "sim_above_concept_total_scalar": -0.1805,
+      "sim_above_concept_total_vec": 0.2608
     },
     {
       "stem": "9_2_19",
@@ -11819,8 +12423,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:47:58",
-      "sim_above_concept_scalar": -0.0909,
-      "sim_above_concept_vec": 0.1773
+      "sim_above_concept_correct_vec": 0.1773,
+      "sim_above_concept_correct_scalar": -0.0909,
+      "sim_above_concept_total_scalar": -0.0909,
+      "sim_above_concept_total_vec": 0.1773
     },
     {
       "stem": "9_2_21",
@@ -11858,8 +12464,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:48:09",
-      "sim_above_concept_scalar": 0.3737,
-      "sim_above_concept_vec": 0.4188
+      "sim_above_concept_correct_vec": 0.4188,
+      "sim_above_concept_correct_scalar": 0.3737,
+      "sim_above_concept_total_scalar": 0.3737,
+      "sim_above_concept_total_vec": 0.4188
     },
     {
       "stem": "9_2_22",
@@ -11897,8 +12505,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:48:22",
-      "sim_above_concept_scalar": 0.0806,
-      "sim_above_concept_vec": 0.3356
+      "sim_above_concept_correct_vec": 0.3356,
+      "sim_above_concept_correct_scalar": 0.0806,
+      "sim_above_concept_total_scalar": 0.0806,
+      "sim_above_concept_total_vec": 0.3356
     },
     {
       "stem": "9_2_26",
@@ -11936,8 +12546,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:48:34",
-      "sim_above_concept_scalar": 0.1983,
-      "sim_above_concept_vec": 0.5353
+      "sim_above_concept_correct_vec": 0.5353,
+      "sim_above_concept_correct_scalar": 0.1983,
+      "sim_above_concept_total_scalar": 0.1983,
+      "sim_above_concept_total_vec": 0.5353
     },
     {
       "stem": "9_2_29",
@@ -11975,8 +12587,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:48:45",
-      "sim_above_concept_scalar": -0.0124,
-      "sim_above_concept_vec": 0.1046
+      "sim_above_concept_correct_vec": 0.1046,
+      "sim_above_concept_correct_scalar": -0.0124,
+      "sim_above_concept_total_scalar": -0.0124,
+      "sim_above_concept_total_vec": 0.1046
     },
     {
       "stem": "9_2_31",
@@ -12014,8 +12628,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:48:57",
-      "sim_above_concept_scalar": 0.1825,
-      "sim_above_concept_vec": 0.2159
+      "sim_above_concept_correct_vec": 0.2159,
+      "sim_above_concept_correct_scalar": 0.1825,
+      "sim_above_concept_total_scalar": 0.1825,
+      "sim_above_concept_total_vec": 0.2159
     },
     {
       "stem": "9_2_34",
@@ -12053,8 +12669,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:49:08",
-      "sim_above_concept_scalar": 0.0406,
-      "sim_above_concept_vec": 0.376
+      "sim_above_concept_correct_vec": 0.376,
+      "sim_above_concept_correct_scalar": 0.0406,
+      "sim_above_concept_total_scalar": 0.0406,
+      "sim_above_concept_total_vec": 0.376
     },
     {
       "stem": "9_2_35",
@@ -12092,8 +12710,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:49:19",
-      "sim_above_concept_scalar": 0.3362,
-      "sim_above_concept_vec": 0.5358
+      "sim_above_concept_correct_vec": 0.5358,
+      "sim_above_concept_correct_scalar": 0.3362,
+      "sim_above_concept_total_scalar": 0.3362,
+      "sim_above_concept_total_vec": 0.5358
     },
     {
       "stem": "9_2_36",
@@ -12131,8 +12751,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:49:29",
-      "sim_above_concept_scalar": 0.0838,
-      "sim_above_concept_vec": 0.2933
+      "sim_above_concept_correct_vec": 0.2933,
+      "sim_above_concept_correct_scalar": 0.0838,
+      "sim_above_concept_total_scalar": 0.0838,
+      "sim_above_concept_total_vec": 0.2933
     },
     {
       "stem": "9_2_38",
@@ -12170,8 +12792,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:49:41",
-      "sim_above_concept_scalar": -0.1725,
-      "sim_above_concept_vec": 0.0184
+      "sim_above_concept_correct_vec": 0.0184,
+      "sim_above_concept_correct_scalar": -0.1725,
+      "sim_above_concept_total_scalar": -0.1725,
+      "sim_above_concept_total_vec": 0.0184
     },
     {
       "stem": "9_2_39",
@@ -12209,8 +12833,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:49:52",
-      "sim_above_concept_scalar": -0.2213,
-      "sim_above_concept_vec": 0.1663
+      "sim_above_concept_correct_vec": 0.1663,
+      "sim_above_concept_correct_scalar": -0.2213,
+      "sim_above_concept_total_scalar": -0.2213,
+      "sim_above_concept_total_vec": 0.1663
     },
     {
       "stem": "9_2_41",
@@ -12248,8 +12874,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:50:03",
-      "sim_above_concept_scalar": 0.0801,
-      "sim_above_concept_vec": 0.5522
+      "sim_above_concept_correct_vec": 0.5522,
+      "sim_above_concept_correct_scalar": 0.0801,
+      "sim_above_concept_total_scalar": 0.0801,
+      "sim_above_concept_total_vec": 0.5522
     },
     {
       "stem": "9_2_44",
@@ -12287,8 +12915,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:50:14",
-      "sim_above_concept_scalar": -0.0383,
-      "sim_above_concept_vec": 0.3559
+      "sim_above_concept_correct_vec": 0.3559,
+      "sim_above_concept_correct_scalar": -0.0383,
+      "sim_above_concept_total_scalar": -0.0383,
+      "sim_above_concept_total_vec": 0.3559
     },
     {
       "stem": "9_2_53",
@@ -12326,8 +12956,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:50:28",
-      "sim_above_concept_scalar": 0.0511,
-      "sim_above_concept_vec": 0.4879
+      "sim_above_concept_correct_vec": 0.4879,
+      "sim_above_concept_correct_scalar": 0.0511,
+      "sim_above_concept_total_scalar": 0.0511,
+      "sim_above_concept_total_vec": 0.4879
     },
     {
       "stem": "9_2_56",
@@ -12365,8 +12997,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:50:40",
-      "sim_above_concept_scalar": 0.2024,
-      "sim_above_concept_vec": 0.6
+      "sim_above_concept_correct_vec": 0.6,
+      "sim_above_concept_correct_scalar": 0.2024,
+      "sim_above_concept_total_scalar": 0.2024,
+      "sim_above_concept_total_vec": 0.6
     },
     {
       "stem": "9_2_57",
@@ -12404,8 +13038,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:50:52",
-      "sim_above_concept_scalar": -0.0522,
-      "sim_above_concept_vec": 0.0812
+      "sim_above_concept_correct_vec": 0.0812,
+      "sim_above_concept_correct_scalar": -0.0522,
+      "sim_above_concept_total_scalar": -0.0522,
+      "sim_above_concept_total_vec": 0.0812
     },
     {
       "stem": "9_2_58",
@@ -12443,8 +13079,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:51:03",
-      "sim_above_concept_scalar": 0.1742,
-      "sim_above_concept_vec": 0.6522
+      "sim_above_concept_correct_vec": 0.6522,
+      "sim_above_concept_correct_scalar": 0.1742,
+      "sim_above_concept_total_scalar": 0.1742,
+      "sim_above_concept_total_vec": 0.6522
     },
     {
       "stem": "9_2_60",
@@ -12482,8 +13120,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:51:19",
-      "sim_above_concept_scalar": 0.3448,
-      "sim_above_concept_vec": 0.4162
+      "sim_above_concept_correct_vec": 0.4162,
+      "sim_above_concept_correct_scalar": 0.3448,
+      "sim_above_concept_total_scalar": 0.3448,
+      "sim_above_concept_total_vec": 0.4162
     },
     {
       "stem": "9_2_61",
@@ -12521,8 +13161,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:51:30",
-      "sim_above_concept_scalar": -0.0469,
-      "sim_above_concept_vec": 0.3415
+      "sim_above_concept_correct_vec": 0.3415,
+      "sim_above_concept_correct_scalar": -0.0469,
+      "sim_above_concept_total_scalar": -0.0469,
+      "sim_above_concept_total_vec": 0.3415
     },
     {
       "stem": "9_2_62",
@@ -12560,8 +13202,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:51:43",
-      "sim_above_concept_scalar": -0.0131,
-      "sim_above_concept_vec": 0.4319
+      "sim_above_concept_correct_vec": 0.4319,
+      "sim_above_concept_correct_scalar": -0.0131,
+      "sim_above_concept_total_scalar": -0.0131,
+      "sim_above_concept_total_vec": 0.4319
     },
     {
       "stem": "9_2_63",
@@ -12599,8 +13243,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:51:54",
-      "sim_above_concept_scalar": 0.3389,
-      "sim_above_concept_vec": 0.4998
+      "sim_above_concept_correct_vec": 0.4998,
+      "sim_above_concept_correct_scalar": 0.3389,
+      "sim_above_concept_total_scalar": 0.3389,
+      "sim_above_concept_total_vec": 0.4998
     },
     {
       "stem": "9_2_68",
@@ -12638,8 +13284,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:52:15",
-      "sim_above_concept_scalar": -0.0934,
-      "sim_above_concept_vec": 0.3136
+      "sim_above_concept_correct_vec": 0.3136,
+      "sim_above_concept_correct_scalar": -0.0934,
+      "sim_above_concept_total_scalar": -0.0934,
+      "sim_above_concept_total_vec": 0.3136
     },
     {
       "stem": "9_2_69",
@@ -12677,8 +13325,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:52:26",
-      "sim_above_concept_scalar": 0.285,
-      "sim_above_concept_vec": 0.3878
+      "sim_above_concept_correct_vec": 0.3878,
+      "sim_above_concept_correct_scalar": 0.285,
+      "sim_above_concept_total_scalar": 0.285,
+      "sim_above_concept_total_vec": 0.3878
     },
     {
       "stem": "9_2_70",
@@ -12716,8 +13366,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:52:43",
-      "sim_above_concept_scalar": 0.3453,
-      "sim_above_concept_vec": 0.4966
+      "sim_above_concept_correct_vec": 0.4966,
+      "sim_above_concept_correct_scalar": 0.3453,
+      "sim_above_concept_total_scalar": 0.3453,
+      "sim_above_concept_total_vec": 0.4966
     },
     {
       "stem": "9_2_71",
@@ -12755,8 +13407,10 @@
       "en_he_model": "Helsinki-NLP/opus-mt-en-he",
       "device": "cuda",
       "timestamp": "2026-02-27T16:53:02",
-      "sim_above_concept_scalar": 0.0488,
-      "sim_above_concept_vec": 0.2625
+      "sim_above_concept_correct_vec": 0.2625,
+      "sim_above_concept_correct_scalar": 0.0488,
+      "sim_above_concept_total_scalar": 0.0488,
+      "sim_above_concept_total_vec": 0.2625
     }
   ]
 }

@@ -1,0 +1,8 @@
+{
+  "n_rows": 327,
+  "n_subjects_matched": 61,
+  "mean_SAC_correct_vec_both": 0.3893081967213115,
+  "mean_SAC_total_vec_both": 0.3893081967213115,
+  "mean_weighted_50_50": 0.6946524590163935,
+  "mean_weighted_30_70": 0.572511475409836
+}
