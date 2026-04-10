@@ -1,5 +1,0 @@
-metric,pearson_r,spearman_rho,n
-mean_SAC_correct_vec_both,0.263388,0.273766,61
-mean_SAC_total_vec_both,0.263388,0.273766,61
-weighted_score_50_50,0.263388,0.273766,61
-weighted_score_30_70,0.263378,0.273766,61
